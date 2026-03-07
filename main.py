@@ -72,6 +72,19 @@ def analyze_stock(stock_info, client):
         df['LOWER'] = df['MID'] * (1 - P2 / 100.0)
         df['BIAS_VAL'] = (df['收盘'] - df['MA20']) / df['MA20'] * 100
 
+        # ---------- 右侧策略指标 ----------
+        df['MA20_Slope'] = (df['MA20'] / df['MA20'].shift(1) - 1) * 100
+        df['MA20_Angle'] = np.degrees(np.arctan(df['MA20_Slope']))
+        exp12 = df['收盘'].ewm(span=12, adjust=False).mean()
+        exp26 = df['收盘'].ewm(span=26, adjust=False).mean()
+        df['DIF'] = exp12 - exp26
+        df['DEA'] = df['DIF'].ewm(span=9, adjust=False).mean()
+
+        # 确保右侧指标列存在（防止因全 NaN 导致列未创建）
+        for col in ['MA20_Angle', 'DIF', 'DEA']:
+            if col not in df.columns:
+                df[col] = np.nan
+
         # 最新一根K线
         curr = df.iloc[-1]
         prev = df.iloc[-2]
@@ -81,14 +94,6 @@ def analyze_stock(stock_info, client):
         b_cond1 = (curr['最低'] <= curr['LOWER']) and bias_ok
         b_cond2 = (curr['收盘'] > curr['开盘']) and ((curr['收盘'] - curr['最低']) > (curr['最高'] - curr['收盘']))
         left_buy_signal = b_cond1 and b_cond2
-
-        # ---------- 右侧策略指标 ----------
-        df['MA20_Slope'] = (df['MA20'] / df['MA20'].shift(1) - 1) * 100
-        df['MA20_Angle'] = np.degrees(np.arctan(df['MA20_Slope']))
-        exp12 = df['收盘'].ewm(span=12, adjust=False).mean()
-        exp26 = df['收盘'].ewm(span=26, adjust=False).mean()
-        df['DIF'] = exp12 - exp26
-        df['DEA'] = df['DIF'].ewm(span=9, adjust=False).mean()
 
         # 涨跌停判断（简单按板块区分）
         prev_close = prev['收盘']
@@ -103,34 +108,38 @@ def analyze_stock(stock_info, client):
         is_limit_down = curr['收盘'] <= (limit_down_price + 0.015)
 
         # 右侧买入条件（全部基于最新K线）
-        cond_angle = curr['MA20_Angle'] > 25
+        # 使用 .get() 安全获取，避免 KeyError，同时处理 NaN
+        ma20_angle = curr['MA20_Angle'] if pd.notna(curr['MA20_Angle']) else 0.0
+        dif = curr['DIF'] if pd.notna(curr['DIF']) else 0.0
+        dea = curr['DEA'] if pd.notna(curr['DEA']) else 0.0
+
+        cond_angle = ma20_angle > 25
         cond_trend = (curr['收盘'] > curr['MA10']) and (curr['MA5'] > curr['MA20']) and (curr['MA20'] > curr['MA60']) and (curr['MA60'] > prev['MA60'])
         cond_power = (curr['收盘'] / prev['收盘'] > 1.03) and (curr['收盘'] > curr['开盘'])
         cond_vol = curr['成交量'] > curr['VOL_MA5']
-        cond_macd = (curr['DIF'] > 0) and (curr['DIF'] > curr['DEA'])
+        cond_macd = (dif > 0) and (dif > dea)
         cond_not_limit = not (is_limit_up or is_limit_down)
 
         right_buy_signal = cond_angle and cond_trend and cond_power and cond_vol and cond_macd and cond_not_limit
 
-        # 返回包含所有需要字段的字典
+        # 返回包含所有需要字段的字典（确保数值类型）
         return {
             'code': symbol,
             'name': stock_info['name'],
-            'price': float(curr['收盘']),
-            'low': float(curr['最低']),
-            'bias_val': float(curr['BIAS_VAL']),
+            'price': float(curr['收盘']) if pd.notna(curr['收盘']) else 0.0,
+            'low': float(curr['最低']) if pd.notna(curr['最低']) else 0.0,
+            'bias_val': float(curr['BIAS_VAL']) if pd.notna(curr['BIAS_VAL']) else 0.0,
             'left_buy_signal': left_buy_signal,
             'right_buy_signal': right_buy_signal,
             'is_limit_up': bool(is_limit_up),
             'is_limit_down': bool(is_limit_down),
-            'ma20_angle': float(curr['MA20_Angle']),
-            'dif': float(curr['DIF']),
-            'dea': float(curr['DEA'])
+            'ma20_angle': ma20_angle,
+            'dif': dif,
+            'dea': dea
         }
     except Exception as e:
         print(f"分析 {symbol} 出错: {e}")
         return None
-
 # ==========================================
 # 📈 更新历史记录（最新价、止盈止损）
 # ==========================================
