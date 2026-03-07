@@ -9,6 +9,25 @@ from datetime import datetime, timezone, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from mootdx.quotes import Quotes
 import warnings
+# ==========================================
+# 🔧 类型转换工具（用于JSON序列化）
+# ==========================================
+def convert_numpy(obj):
+    """将numpy类型转换为Python原生类型，以便JSON序列化"""
+    if isinstance(obj, dict):
+        return {k: convert_numpy(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [convert_numpy(v) for v in obj]
+    elif isinstance(obj, tuple):
+        return tuple(convert_numpy(v) for v in obj)
+    elif isinstance(obj, (np.integer, np.floating)):
+        return obj.item()
+    elif isinstance(obj, np.bool_):
+        return bool(obj)
+    elif isinstance(obj, np.ndarray):
+        return obj.tolist()
+    else:
+        return obj
 warnings.filterwarnings('ignore')
 
 # ==========================================
@@ -40,6 +59,7 @@ def load_history(file_path):
     return []
 
 def save_history(data, file_path):
+    data = convert_numpy(data)  # 转换numpy类型
     with open(file_path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
@@ -369,6 +389,10 @@ if __name__ == '__main__':
         left_candidates = select_today_candidates(market_data, 'left')
         right_candidates = select_today_candidates(market_data, 'right')
         print(f"左侧候选数量: {len(left_candidates)}，右侧候选数量: {len(right_candidates)}")
+
+        # 转换numpy类型为Python原生类型（确保JSON可序列化）
+        left_candidates = convert_numpy(left_candidates)
+        right_candidates = convert_numpy(right_candidates)
 
         # 保存今日候选
         daily = {
