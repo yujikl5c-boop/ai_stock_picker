@@ -1,22 +1,28 @@
 # -*- coding: utf-8 -*-
 import os
 import json
+import sys
 from pathlib import Path
 
 # ==========================================
-# 🛑 核心拦截魔法：在 mootdx 被加载前，伪造配置文件！
+# 🛑 核心拦截魔法：在 mootdx 被加载前，伪造完美的配置文件！
 # ==========================================
 _mootdx_dir = os.path.join(str(Path.home()), '.mootdx')
 _config_file = os.path.join(_mootdx_dir, 'config.json')
 if not os.path.exists(_config_file):
     os.makedirs(_mootdx_dir, exist_ok=True)
     with open(_config_file, 'w', encoding='utf-8') as f:
-        # 写入一个空的合法 JSON 结构，骗过 mootdx 的文件检查
-        json.dump({"HQ": [], "EX": []}, f)
-print("✅ 成功部署反扫描伪装，完美跳过 10 分钟的 mootdx 测速！")
+        # 伪造一个包含真实可用节点的完整配置，彻底堵死它去外网扫描的心！
+        fake_config = {
+            "HQ": [{"name": "上海双线", "ip": "124.71.187.122", "port": 7709}],
+            "EX": [{"name": "上海双线", "ip": "124.71.187.122", "port": 7709}]
+        }
+        json.dump(fake_config, f)
+
+# 注意这里加了 flush=True，强制立刻把这句话打印到 GitHub 的屏幕上
+print("✅ 成功部署反扫描伪装，完美塞入假节点！", flush=True)
 
 # 拦截部署完毕后，再导入其它库
-import sys
 import time
 import numpy as np
 import pandas as pd
@@ -25,7 +31,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError
 from mootdx.quotes import Quotes
 import warnings
 warnings.filterwarnings('ignore')
-
 # ==========================================
 # ⚙️ 全局配置
 # ==========================================
