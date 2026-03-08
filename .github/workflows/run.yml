@@ -30,7 +30,7 @@ jobs:
 
       - name: 4. 运行主程序 (自动模式)
         # 传入 auto 参数，Python 会看表自动决定干啥
-        run: python -u main.py auto
+        run: python -u main.py candidates
         timeout-minutes: 120
 
       - name: 5. 提交代码回仓库
