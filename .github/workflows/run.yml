@@ -53,10 +53,12 @@ jobs:
 
       - name: 运行 Python (候选模式)
         if: env.mode == 'candidates' || env.mode == 'manual'
+        timeout-minutes: 20      # 候选模式最多运行20分钟
         run: python main.py candidates
 
       - name: 运行 Python (历史模式)
         if: env.mode == 'history' || env.mode == 'manual'
+        timeout-minutes: 10      # 历史模式最多运行10分钟
         run: python main.py history
 
       - name: 部署到 GitHub Pages
