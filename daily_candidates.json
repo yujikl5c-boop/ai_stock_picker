@@ -1,0 +1,63 @@
+{
+    "date": "2026-03-08",
+    "left": [
+        {
+            "code": "000002",
+            "name": "假股票2",
+            "price": 27.301514693015264,
+            "low": 38.63673506679544,
+            "bias_val": -3.893432619372776,
+            "left_buy_signal": true,
+            "right_buy_signal": false,
+            "is_limit_up": false,
+            "is_limit_down": false,
+            "ma20_angle": 18.68555924413891,
+            "dif": 0.5,
+            "dea": 0.2
+        },
+        {
+            "code": "000008",
+            "name": "假股票8",
+            "price": 34.19405478340323,
+            "low": 23.433024336987263,
+            "bias_val": -7.969086931047434,
+            "left_buy_signal": true,
+            "right_buy_signal": false,
+            "is_limit_up": false,
+            "is_limit_down": false,
+            "ma20_angle": 23.61955951302503,
+            "dif": 0.5,
+            "dea": 0.2
+        }
+    ],
+    "right": [
+        {
+            "code": "000007",
+            "name": "假股票7",
+            "price": 14.180269345958346,
+            "low": 34.89945261328813,
+            "bias_val": -8.690058471753323,
+            "left_buy_signal": false,
+            "right_buy_signal": true,
+            "is_limit_up": false,
+            "is_limit_down": false,
+            "ma20_angle": 15.012296955252365,
+            "dif": 0.5,
+            "dea": 0.2
+        },
+        {
+            "code": "000009",
+            "name": "假股票9",
+            "price": 32.02688958181631,
+            "low": 12.245016493839698,
+            "bias_val": 8.79289224860992,
+            "left_buy_signal": false,
+            "right_buy_signal": true,
+            "is_limit_up": false,
+            "is_limit_down": false,
+            "ma20_angle": 27.193297039938344,
+            "dif": 0.5,
+            "dea": 0.2
+        }
+    ]
+}

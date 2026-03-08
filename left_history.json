@@ -1,0 +1,30 @@
+[
+    {
+        "code": "000002",
+        "name": "假股票2",
+        "price": 27.301514693015264,
+        "low": 38.63673506679544,
+        "bias_val": -3.893432619372776,
+        "left_buy_signal": true,
+        "right_buy_signal": false,
+        "is_limit_up": false,
+        "is_limit_down": false,
+        "ma20_angle": 18.68555924413891,
+        "dif": 0.5,
+        "dea": 0.2
+    },
+    {
+        "code": "000008",
+        "name": "假股票8",
+        "price": 34.19405478340323,
+        "low": 23.433024336987263,
+        "bias_val": -7.969086931047434,
+        "left_buy_signal": true,
+        "right_buy_signal": false,
+        "is_limit_up": false,
+        "is_limit_down": false,
+        "ma20_angle": 23.61955951302503,
+        "dif": 0.5,
+        "dea": 0.2
+    }
+]
