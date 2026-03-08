@@ -1,6 +1,21 @@
 # -*- coding: utf-8 -*-
 import os
 import json
+from pathlib import Path
+
+# ==========================================
+# 🛑 核心拦截魔法：在 mootdx 被加载前，伪造配置文件！
+# ==========================================
+_mootdx_dir = os.path.join(str(Path.home()), '.mootdx')
+_config_file = os.path.join(_mootdx_dir, 'config.json')
+if not os.path.exists(_config_file):
+    os.makedirs(_mootdx_dir, exist_ok=True)
+    with open(_config_file, 'w', encoding='utf-8') as f:
+        # 写入一个空的合法 JSON 结构，骗过 mootdx 的文件检查
+        json.dump({"HQ": [], "EX": []}, f)
+print("✅ 成功部署反扫描伪装，完美跳过 10 分钟的 mootdx 测速！")
+
+# 拦截部署完毕后，再导入其它库
 import sys
 import time
 import numpy as np
@@ -167,7 +182,6 @@ if __name__ == '__main__':
     meta_df['code'] = meta_df['code'].astype(str).str.replace(r'\.0$', '', regex=True).str.zfill(6)
     stock_list = meta_df.to_dict('records')
 
-    # 🌟 核心修改：强制指定可用节点，彻底跳过 config.json 的全网10分钟慢速扫描！
     print("\n📡 启动高可用通达信直连模式...")
     tdx_servers = [('124.71.187.122', 7709), ('115.238.90.165', 7709), ('124.71.187.72', 7709)]
     client = None
