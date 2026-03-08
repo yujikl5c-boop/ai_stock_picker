@@ -17,7 +17,6 @@ jobs:
             left_history.json
             right_history.json
             daily_candidates.json
-            best_ips_cache.json # 新增：缓存最优IP
           key: stock-cache-${{ github.run_id }}
           restore-keys: |
             stock-cache-
@@ -34,14 +33,21 @@ jobs:
 
       - name: 运行 Python (候选模式)
         run: python main.py candidates
-        timeout-minutes: 120  # 增加超时时间
+        timeout-minutes: 120
 
-      # --- 已移除 GitHub Pages 部署步骤 ---
-      # - name: 部署到 GitHub Pages
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     publish_dir: ./
-      #     publish_branch: gh-pages
-      #     keep_files: false
-      #     full_commit_message: '更新策略看板'
+      # --- 将 Post 步骤改为普通的 steps ---
+      - name: 保存历史记录和候选数据到缓存
+        uses: actions/cache@v4
+        with:
+          path: |
+            left_history.json
+            right_history.json
+            daily_candidates.json
+          key: stock-cache-${{ github.run_id }}
+          save-only: true  # 只保存，不恢复
+
+      - name: 下载代码
+        uses: actions/download-artifact@v4
+        with:
+          name: generated-files
+          path: ./generated
