@@ -1,9 +1,9 @@
 name: 股票策略定时运行
 
 on:
-  workflow_dispatch:          # 允许手动触发
+  workflow_dispatch:          # 只允许手动触发
 
-# ⚠️ 必须赋予 GitHub Actions 写入仓库的权限
+# ⚠️ 这一步极其重要：必须赋予 GitHub Actions 写入代码仓库的权限
 permissions:
   contents: write
 
@@ -31,24 +31,13 @@ jobs:
       # --- 🌟 核心修改：将生成的文件直接 Commit 并 Push 回你的 GitHub 仓库 ---
       - name: 提交生成的报告和数据回仓库
         run: |
-          # 配置机器人身份
+          # 配置 GitHub 官方机器人身份
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
-          # 将 Python 刚刚生成或更新的文件添加到暂存区
-          # 如果你有其他生成的文件，也可以加在后面
+          # 将刚刚生成的所有文件添加到暂存区
           git add index.html daily_candidates.json left_history.json right_history.json
           
-          # 提交并推送到当前分支 (如果没有文件变化则忽略报错)
+          # 提交并推送到当前分支 (如果没有文件更新，就跳过不报错)
           git commit -m "🤖 Auto-update: 每日量化选股报告与历史数据" || echo "No changes to commit"
           git push
-
-      # --- (可选) 如果你还想把文件打包成压缩包提供下载，把这里的注释解开 ---
-      - name: 上传生成的文件作为附件
-        uses: actions/upload-artifact@v4
-        with:
-          name: 股票量化报告-产出物
-          path: |
-            index.html
-            daily_candidates.json
-          retention-days: 5
