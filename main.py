@@ -3,11 +3,13 @@ import os
 import json
 import sys
 import time
+import threading
 import numpy as np
 import pandas as pd
 from datetime import datetime, timezone, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError
 from mootdx.quotes import Quotes
+from mootdx import bestip
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -25,6 +27,33 @@ LEFT_HISTORY_FILE = 'left_history.json'
 RIGHT_HISTORY_FILE = 'right_history.json'
 DAILY_CANDIDATES_FILE = 'daily_candidates.json'
 HTML_OUTPUT = 'index.html'
+BEST_IP_CACHE_FILE = 'best_ips_cache.json' # 新增：缓存文件
+
+# 用于存储 bestip 结果的全局变量和锁
+best_ip_result = None
+best_ip_lock = threading.Lock()
+
+# ==========================================
+# 🧵 异步获取最优服务器IP
+# ==========================================
+def async_get_best_ip():
+    """
+    在后台线程中异步获取最优服务器IP
+    """
+    global best_ip_result
+    try:
+        print("后台线程: 开始使用 bestip 获取最优服务器...")
+        result = bestip.bestip_quotes(silent=True)
+        if result:
+            with best_ip_lock:
+                best_ip_result = result
+            print(f"后台线程: 找到最优服务器: {result['ip']}:{result['port']}")
+        else:
+            print("后台线程: bestip 未能找到合适的服务器")
+    except Exception as e:
+        print(f"后台线程: 获取最优服务器时出错: {e}")
+        import traceback
+        traceback.print_exc()
 
 # ==========================================
 # 🔧 类型转换工具（用于JSON序列化）
@@ -51,14 +80,39 @@ def convert_numpy(obj):
 # ==========================================
 def load_history(file_path):
     if os.path.exists(file_path):
+        print(f"正在加载历史文件: {file_path}")
         with open(file_path, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    return []
+            data = json.load(f)
+        print(f"成功加载 {len(data)} 条记录 from {file_path}")
+        return data
+    else:
+        print(f"未找到历史文件: {file_path}, 将创建新的空列表")
+        return []
 
 def save_history(data, file_path):
     data = convert_numpy(data)
     with open(file_path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
+    print(f"历史记录已保存到 {file_path}")
+
+# ==========================================
+# 📦 缓存工具
+# ==========================================
+def save_best_ip_cache(best_ips):
+    """保存最优IP到缓存文件"""
+    with open(BEST_IP_CACHE_FILE, 'w', encoding='utf-8') as f:
+        json.dump(best_ips, f, ensure_ascii=False, indent=4)
+    print(f"最优IP已缓存到 {BEST_IP_CACHE_FILE}")
+
+def load_best_ip_cache():
+    """从缓存文件加载最优IP"""
+    if os.path.exists(BEST_IP_CACHE_FILE):
+        with open(BEST_IP_CACHE_FILE, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        print(f"已从缓存 {BEST_IP_CACHE_FILE} 加载最优IP")
+        return data
+    print(f"未找到缓存文件 {BEST_IP_CACHE_FILE}")
+    return None
 
 # ==========================================
 # 📊 股票分析函数（返回左右侧信号及指标）
@@ -102,7 +156,7 @@ def analyze_stock(stock_info, client):
                 df[col] = np.nan
 
         curr = df.iloc[-1]
-        prev = df.iloc[-2]
+        prev = df.iloc[-2] if len(df) > 1 else df.iloc[-1] # 修正 prev 引用
 
         # 左侧买入条件
         bias_ok = curr['BIAS_VAL'] < -BIAS_THRESH
@@ -151,6 +205,8 @@ def analyze_stock(stock_info, client):
         }
     except Exception as e:
         print(f"分析 {symbol} 出错: {e}")
+        import traceback
+        traceback.print_exc()
         return None
 
 # ==========================================
@@ -186,6 +242,7 @@ def update_history(strategy, history_file, market_data):
     else:
         print(f"{strategy} 历史记录无变化")
     return history
+
 # ==========================================
 # 🎯 选出今日候选（按策略排序，取前5）
 # ==========================================
@@ -208,14 +265,20 @@ def select_today_candidates(market_data, strategy):
 # 🖥️ 生成 HTML 看板
 # ==========================================
 def generate_dashboard(today, now_time, market_data):
+    print("开始生成 HTML 看板...")
+    # 加载今日候选
     if os.path.exists(DAILY_CANDIDATES_FILE):
+        print(f"正在加载 {DAILY_CANDIDATES_FILE}...")
         with open(DAILY_CANDIDATES_FILE, 'r', encoding='utf-8') as f:
             daily = json.load(f)
     else:
+        print(f"未找到 {DAILY_CANDIDATES_FILE}，将生成空的候选列表。")
         daily = {'date': today, 'left': [], 'right': []}
+        
     left_today = daily.get('left', [])
     right_today = daily.get('right', [])
 
+    # 加载历史记录
     left_history = load_history(LEFT_HISTORY_FILE)
     right_history = load_history(RIGHT_HISTORY_FILE)
 
@@ -328,12 +391,13 @@ def generate_dashboard(today, now_time, market_data):
     """
     with open(HTML_OUTPUT, 'w', encoding='utf-8') as f:
         f.write(html)
-    print("HTML看板已生成")
+    print(f"✅ HTML看板已生成: {HTML_OUTPUT}")
 
 # ==========================================
 # 🚀 主程序入口
 # ==========================================
 if __name__ == '__main__':
+    print("=== 开始执行股票策略脚本 ===")
     mode = 'candidates'
     if len(sys.argv) > 1:
         mode = sys.argv[1]
@@ -344,19 +408,55 @@ if __name__ == '__main__':
     now_time = beijing_now.strftime('%Y-%m-%d %H:%M:%S')
     print(f"当前北京时间: {now_time}，运行模式: {mode}")
 
+    # --- 异步启动 bestip ---
+    print("主线程: 启动后台测速线程...")
+    ip_thread = threading.Thread(target=async_get_best_ip)
+    ip_thread.start()
+
+    # --- 同步进行其他准备工作，与测速并发 ---
+    print("主线程: 正在加载股票池...")
     if not os.path.exists(EXCEL_LIST):
-        print(f"错误: 找不到股票池文件 {EXCEL_LIST}")
+        print(f"❌ 错误: 找不到股票池文件 {EXCEL_LIST}")
         sys.exit(1)
     meta_df = pd.read_excel(EXCEL_LIST, usecols=[0, 1])
     meta_df.columns = ['code', 'name']
     meta_df.dropna(subset=['code'], inplace=True)
     meta_df['code'] = meta_df['code'].astype(str).str.replace(r'\.0$', '', regex=True).str.zfill(6)
     stock_list = meta_df.to_dict('records')
-    print(f"股票池共 {len(stock_list)} 只股票")
+    print(f"主线程: 股票池共 {len(stock_list)} 只股票")
 
-    client = Quotes.factory(market='std', multithread=True, heartbeat=True)
+    # 等待后台测速线程完成
+    print("主线程: 等待后台测速完成...")
+    ip_thread.join()
+    print("主线程: 后台测速已完成")
+
+    # --- 尝试从缓存加载或从 bestip 获取结果 ---
+    cached_best_ip = load_best_ip_cache()
+    if cached_best_ip:
+        # 如果缓存存在，优先使用缓存
+        best_ip, best_port = cached_best_ip['ip'], cached_best_ip['port']
+        print(f"使用缓存的最优服务器: {best_ip}:{best_port}")
+    else:
+        # 如果没有缓存，则使用刚刚异步获取的结果
+        with best_ip_lock:
+            if best_ip_result:
+                best_ip, best_port = best_ip_result['ip'], best_ip_result['port']
+                # 获取成功后，保存到缓存文件
+                save_best_ip_cache(best_ip_result)
+            else:
+                print("⚠️ 警告: bestip 未能获取到服务器信息，将使用默认自动选择。")
+                best_ip, best_port = None, None
+
+    # --- 创建客户端 ---
+    if best_ip and best_port:
+        client = Quotes.factory(market='std', ip=best_ip, port=best_port, multithread=True, heartbeat=True)
+        print(f"✅ 已连接到指定服务器: {best_ip}:{best_port}")
+    else:
+        print("⚠️ 回退到自动选择服务器...")
+        client = Quotes.factory(market='std', multithread=True, heartbeat=True)
+
+    # --- 与之前相同的市场数据分析 ---
     market_data = {}
-
     print("正在获取行情数据...")
     with ThreadPoolExecutor(max_workers=5) as executor:
         future_to_code = {executor.submit(analyze_stock, stock, client): stock['code'] for stock in stock_list}
@@ -364,7 +464,6 @@ if __name__ == '__main__':
         for future in as_completed(future_to_code):
             code = future_to_code[future]
             try:
-                # 设置每个任务超时30秒，避免卡死
                 res = future.result(timeout=30)
                 if res:
                     market_data[res['code']] = res
@@ -376,9 +475,10 @@ if __name__ == '__main__':
             if completed % 200 == 0:
                 print(f"已处理 {completed}/{len(stock_list)} 只股票...")
 
-    print(f"成功获取 {len(market_data)} 只股票数据")
+    print(f"✅ 成功获取 {len(market_data)} 只股票数据")
 
     if mode == 'candidates':
+        print("--- 开始执行候选模式 ---")
         left_candidates = select_today_candidates(market_data, 'left')
         right_candidates = select_today_candidates(market_data, 'right')
         print(f"左侧候选数量: {len(left_candidates)}，右侧候选数量: {len(right_candidates)}")
@@ -393,6 +493,7 @@ if __name__ == '__main__':
         }
         with open(DAILY_CANDIDATES_FILE, 'w', encoding='utf-8') as f:
             json.dump(daily, f, ensure_ascii=False, indent=4)
+        print(f"✅ 今日候选已保存到 {DAILY_CANDIDATES_FILE}")
 
         left_history = load_history(LEFT_HISTORY_FILE)
         right_history = load_history(RIGHT_HISTORY_FILE)
@@ -432,14 +533,39 @@ if __name__ == '__main__':
         save_history(right_history, RIGHT_HISTORY_FILE)
 
     elif mode == 'history':
-        print("开始执行历史更新模式")
+        print("--- 开始执行历史更新模式 ---")
         update_history('left', LEFT_HISTORY_FILE, market_data)
         update_history('right', RIGHT_HISTORY_FILE, market_data)
         print("历史记录更新完成")
 
     else:
-        print(f"未知模式: {mode}，退出")
+        print(f"❌ 未知模式: {mode}，退出")
         sys.exit(1)
 
-    generate_dashboard(today, now_time, market_data)
-    print("任务完成")
+    # --- 生成最终看板 ---
+    print("--- 开始生成最终看板 ---")
+    try:
+        generate_dashboard(today, now_time, market_data)
+    except Exception as e:
+        print(f"❌ 生成看板时出错: {e}")
+        import traceback
+        traceback.print_exc()
+        sys.exit(1)
+
+    # --- 检查文件是否生成 ---
+    print("\n--- 文件生成检查 ---")
+    files_to_check = [HTML_OUTPUT, DAILY_CANDIDATES_FILE]
+    all_good = True
+    for file in files_to_check:
+        if os.path.exists(file):
+            size = os.path.getsize(file)
+            print(f"✅ {file}: 存在，大小 {size} 字节")
+        else:
+            print(f"❌ {file}: 不存在！")
+            all_good = False
+
+    if all_good:
+        print("\n🎉 脚本执行成功，所有文件均已生成！")
+    else:
+        print("\n💥 脚本执行过程中出现问题，部分文件未生成。")
+        sys.exit(1)
