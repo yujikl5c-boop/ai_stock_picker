@@ -157,10 +157,12 @@ def analyze_stock(stock_info, client):
 # 📈 更新历史记录（最新价、止盈止损）
 # ==========================================
 def update_history(strategy, history_file, market_data):
+    print(f"开始更新 {strategy} 历史记录...")
     history = load_history(history_file)
     today = datetime.now().strftime('%Y-%m-%d')
     updated = False
-    for rec in history:
+    total = len(history)
+    for i, rec in enumerate(history):
         if rec.get('take_profit_date') or rec.get('stop_loss_date'):
             continue
         code = rec['code']
@@ -171,13 +173,19 @@ def update_history(strategy, history_file, market_data):
             pct_change = (current_price / rec['price'] - 1) * 100
             if pct_change >= TAKE_PROFIT_PCT:
                 rec['take_profit_date'] = today
+                print(f"{strategy} {code} 达到止盈 {pct_change:.2f}%")
             elif pct_change <= -STOP_LOSS_PCT:
                 rec['stop_loss_date'] = today
+                print(f"{strategy} {code} 达到止损 {pct_change:.2f}%")
             updated = True
+        if i % 50 == 0:
+            print(f"已处理 {i}/{total} 条 {strategy} 历史记录")
     if updated:
         save_history(history, history_file)
+        print(f"{strategy} 历史记录已更新并保存")
+    else:
+        print(f"{strategy} 历史记录无变化")
     return history
-
 # ==========================================
 # 🎯 选出今日候选（按策略排序，取前5）
 # ==========================================
@@ -424,9 +432,10 @@ if __name__ == '__main__':
         save_history(right_history, RIGHT_HISTORY_FILE)
 
     elif mode == 'history':
+        print("开始执行历史更新模式")
         update_history('left', LEFT_HISTORY_FILE, market_data)
         update_history('right', RIGHT_HISTORY_FILE, market_data)
-        print("历史记录已更新")
+        print("历史记录更新完成")
 
     else:
         print(f"未知模式: {mode}，退出")
