@@ -9,7 +9,8 @@ import pandas as pd
 from datetime import datetime, timezone, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError
 from mootdx.quotes import Quotes
-from mootdx import bestip
+# 移除对 bestip 的导入
+# from mootdx import bestip
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -27,33 +28,7 @@ LEFT_HISTORY_FILE = 'left_history.json'
 RIGHT_HISTORY_FILE = 'right_history.json'
 DAILY_CANDIDATES_FILE = 'daily_candidates.json'
 HTML_OUTPUT = 'index.html'
-BEST_IP_CACHE_FILE = 'best_ips_cache.json' # 新增：缓存文件
-
-# 用于存储 bestip 结果的全局变量和锁
-best_ip_result = None
-best_ip_lock = threading.Lock()
-
-# ==========================================
-# 🧵 异步获取最优服务器IP
-# ==========================================
-def async_get_best_ip():
-    """
-    在后台线程中异步获取最优服务器IP
-    """
-    global best_ip_result
-    try:
-        print("后台线程: 开始使用 bestip 获取最优服务器...")
-        result = bestip.bestip_quotes(silent=True)
-        if result:
-            with best_ip_lock:
-                best_ip_result = result
-            print(f"后台线程: 找到最优服务器: {result['ip']}:{result['port']}")
-        else:
-            print("后台线程: bestip 未能找到合适的服务器")
-    except Exception as e:
-        print(f"后台线程: 获取最优服务器时出错: {e}")
-        import traceback
-        traceback.print_exc()
+# 移除 BEST_IP_CACHE_FILE 相关配置和代码
 
 # ==========================================
 # 🔧 类型转换工具（用于JSON序列化）
@@ -94,25 +69,6 @@ def save_history(data, file_path):
     with open(file_path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     print(f"历史记录已保存到 {file_path}")
-
-# ==========================================
-# 📦 缓存工具
-# ==========================================
-def save_best_ip_cache(best_ips):
-    """保存最优IP到缓存文件"""
-    with open(BEST_IP_CACHE_FILE, 'w', encoding='utf-8') as f:
-        json.dump(best_ips, f, ensure_ascii=False, indent=4)
-    print(f"最优IP已缓存到 {BEST_IP_CACHE_FILE}")
-
-def load_best_ip_cache():
-    """从缓存文件加载最优IP"""
-    if os.path.exists(BEST_IP_CACHE_FILE):
-        with open(BEST_IP_CACHE_FILE, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        print(f"已从缓存 {BEST_IP_CACHE_FILE} 加载最优IP")
-        return data
-    print(f"未找到缓存文件 {BEST_IP_CACHE_FILE}")
-    return None
 
 # ==========================================
 # 📊 股票分析函数（返回左右侧信号及指标）
@@ -156,7 +112,7 @@ def analyze_stock(stock_info, client):
                 df[col] = np.nan
 
         curr = df.iloc[-1]
-        prev = df.iloc[-2] if len(df) > 1 else df.iloc[-1] # 修正 prev 引用
+        prev = df.iloc[-2] if len(df) > 1 else df.iloc[-1]
 
         # 左侧买入条件
         bias_ok = curr['BIAS_VAL'] < -BIAS_THRESH
@@ -408,13 +364,8 @@ if __name__ == '__main__':
     now_time = beijing_now.strftime('%Y-%m-%d %H:%M:%S')
     print(f"当前北京时间: {now_time}，运行模式: {mode}")
 
-    # --- 异步启动 bestip ---
-    print("主线程: 启动后台测速线程...")
-    ip_thread = threading.Thread(target=async_get_best_ip)
-    ip_thread.start()
-
-    # --- 同步进行其他准备工作，与测速并发 ---
-    print("主线程: 正在加载股票池...")
+    # --- 加载股票池 ---
+    print("正在加载股票池...")
     if not os.path.exists(EXCEL_LIST):
         print(f"❌ 错误: 找不到股票池文件 {EXCEL_LIST}")
         sys.exit(1)
@@ -423,39 +374,21 @@ if __name__ == '__main__':
     meta_df.dropna(subset=['code'], inplace=True)
     meta_df['code'] = meta_df['code'].astype(str).str.replace(r'\.0$', '', regex=True).str.zfill(6)
     stock_list = meta_df.to_dict('records')
-    print(f"主线程: 股票池共 {len(stock_list)} 只股票")
+    print(f"股票池共 {len(stock_list)} 只股票")
 
-    # 等待后台测速线程完成
-    print("主线程: 等待后台测速完成...")
-    ip_thread.join()
-    print("主线程: 后台测速已完成")
-
-    # --- 尝试从缓存加载或从 bestip 获取结果 ---
-    cached_best_ip = load_best_ip_cache()
-    if cached_best_ip:
-        # 如果缓存存在，优先使用缓存
-        best_ip, best_port = cached_best_ip['ip'], cached_best_ip['port']
-        print(f"使用缓存的最优服务器: {best_ip}:{best_port}")
-    else:
-        # 如果没有缓存，则使用刚刚异步获取的结果
-        with best_ip_lock:
-            if best_ip_result:
-                best_ip, best_port = best_ip_result['ip'], best_ip_result['port']
-                # 获取成功后，保存到缓存文件
-                save_best_ip_cache(best_ip_result)
-            else:
-                print("⚠️ 警告: bestip 未能获取到服务器信息，将使用默认自动选择。")
-                best_ip, best_port = None, None
-
-    # --- 创建客户端 ---
-    if best_ip and best_port:
-        client = Quotes.factory(market='std', ip=best_ip, port=best_port, multithread=True, heartbeat=True)
-        print(f"✅ 已连接到指定服务器: {best_ip}:{best_port}")
-    else:
-        print("⚠️ 回退到自动选择服务器...")
+    # --- 创建客户端（移除 bestip 逻辑，让 mootdx 自动选择）---
+    print("正在连接到 TDX 服务器...")
+    try:
+        # 使用 factory 方法，不指定 IP 和端口，让 mootdx 自动处理
         client = Quotes.factory(market='std', multithread=True, heartbeat=True)
+        print("✅ 已连接到服务器 (由 mootdx 自动选择)")
+    except Exception as e:
+        print(f"❌ 连接服务器失败: {e}")
+        import traceback
+        traceback.print_exc()
+        sys.exit(1)
 
-    # --- 与之前相同的市场数据分析 ---
+    # --- 获取市场数据 ---
     market_data = {}
     print("正在获取行情数据...")
     with ThreadPoolExecutor(max_workers=5) as executor:
