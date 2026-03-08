@@ -1,10 +1,7 @@
 name: 股票策略定时运行
 
 on:
-  schedule:
-    - cron: '25 6 * * 1-5'   # 北京时间 14:25 (UTC 6:25)
-    - cron: '15 7 * * 1-5'   # 北京时间 15:15 (UTC 7:15)
-  workflow_dispatch:          # 允许手动触发
+  workflow_dispatch:          # 只允许手动触发
 
 jobs:
   run-strategy:
@@ -34,32 +31,9 @@ jobs:
           pip install --upgrade pip
           pip install mootdx pandas numpy openpyxl
 
-      - name: 获取当前 UTC 小时和分钟
-        id: time
-        run: |
-          echo "hour=$(date -u +%H)" >> $GITHUB_ENV
-          echo "minute=$(date -u +%M)" >> $GITHUB_ENV
-
-      - name: 判断运行模式
-        id: mode
-        run: |
-          if [ "${{ env.hour }}" == "06" ] && [ "${{ env.minute }}" == "25" ]; then
-            echo "mode=candidates" >> $GITHUB_ENV
-          elif [ "${{ env.hour }}" == "07" ] && [ "${{ env.minute }}" == "15" ]; then
-            echo "mode=history" >> $GITHUB_ENV
-          else
-            echo "mode=manual" >> $GITHUB_ENV
-          fi
-
       - name: 运行 Python (候选模式)
-        if: env.mode == 'candidates' || env.mode == 'manual'
-        timeout-minutes: 20
+        # 手动触发时运行
         run: python main.py candidates
-
-      - name: 运行 Python (历史模式)
-        if: env.mode == 'history'   # 只有定时任务时才会运行，手动触发不运行
-        timeout-minutes: 10
-        run: python main.py history
 
       - name: 部署到 GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
