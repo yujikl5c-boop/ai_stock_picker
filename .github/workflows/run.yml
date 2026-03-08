@@ -1,43 +1,34 @@
-name: 股票策略定时运行
+name: 极简推送测试
 
 on:
-  workflow_dispatch:          # 只允许手动触发
+  workflow_dispatch: # 允许手动触发
 
-# ⚠️ 这一步极其重要：必须赋予 GitHub Actions 写入代码仓库的权限
+# ⚠️ 必须给！赋予 Action 机器人推送到仓库的写权限
 permissions:
   contents: write
 
 jobs:
-  run-strategy:
+  test-push:
     runs-on: ubuntu-latest
     steps:
-      - name: 下载代码
+      - name: 1. 拉取仓库代码
         uses: actions/checkout@v4
 
-      - name: 设置 Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
+      - name: 2. 运行 Python 脚本生成文件
+        run: python main.py
 
-      - name: 安装依赖
+      - name: 3. 将生成的文件提交回仓库
         run: |
-          pip install --upgrade pip
-          pip install mootdx pandas numpy openpyxl
-
-      - name: 运行 Python (候选模式)
-        run: python main.py candidates
-        timeout-minutes: 120
-
-      # --- 🌟 核心修改：将生成的文件直接 Commit 并 Push 回你的 GitHub 仓库 ---
-      - name: 提交生成的报告和数据回仓库
-        run: |
-          # 配置 GitHub 官方机器人身份
+          # 配置机器人身份
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
-          # 将刚刚生成的所有文件添加到暂存区
-          git add index.html daily_candidates.json left_history.json right_history.json
+          # 强制把刚生成的 test_output.txt 加进暂存区
+          git add test_output.txt
           
-          # 提交并推送到当前分支 (如果没有文件更新，就跳过不报错)
-          git commit -m "🤖 Auto-update: 每日量化选股报告与历史数据" || echo "No changes to commit"
+          # 打印一下状态，方便在日志里查错
+          git status
+          
+          # 提交并推送
+          git commit -m "🤖 极简测试：自动推送生成的文件" || echo "没有文件变动"
           git push
