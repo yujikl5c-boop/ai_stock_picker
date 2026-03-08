@@ -3,26 +3,29 @@ import os
 import json
 import sys
 from pathlib import Path
+import socket
 
 # ==========================================
-# 🛑 核心拦截魔法：在 mootdx 被加载前，伪造完美的配置文件！
+# 🛑 核心拦截魔法1：伪造完美的配置文件！
 # ==========================================
 _mootdx_dir = os.path.join(str(Path.home()), '.mootdx')
 _config_file = os.path.join(_mootdx_dir, 'config.json')
 if not os.path.exists(_config_file):
     os.makedirs(_mootdx_dir, exist_ok=True)
     with open(_config_file, 'w', encoding='utf-8') as f:
-        # 伪造一个包含真实可用节点的完整配置，彻底堵死它去外网扫描的心！
         fake_config = {
             "HQ": [{"name": "上海双线", "ip": "124.71.187.122", "port": 7709}],
             "EX": [{"name": "上海双线", "ip": "124.71.187.122", "port": 7709}]
         }
         json.dump(fake_config, f)
 
-# 注意这里加了 flush=True，强制立刻把这句话打印到 GitHub 的屏幕上
 print("✅ 成功部署反扫描伪装，完美塞入假节点！", flush=True)
 
-# 拦截部署完毕后，再导入其它库
+# ==========================================
+# 🛑 核心拦截魔法2：底层网络强制超时，拒绝僵尸线程！
+# ==========================================
+socket.setdefaulttimeout(10) # 任何网络请求如果卡住超过10秒，强制掐断释放线程！
+
 import time
 import numpy as np
 import pandas as pd
@@ -31,6 +34,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError
 from mootdx.quotes import Quotes
 import warnings
 warnings.filterwarnings('ignore')
+
 # ==========================================
 # ⚙️ 全局配置
 # ==========================================
@@ -70,6 +74,9 @@ def save_history(data, file_path):
 def analyze_stock(stock_info, client):
     symbol = stock_info['code']
     try:
+        # 给服务器一点点喘息的时间，降低封IP概率
+        time.sleep(0.05) 
+        
         df = client.bars(symbol=symbol, frequency=9, offset=100)
         if df is None or len(df) < 60: return None
 
@@ -188,7 +195,13 @@ if __name__ == '__main__':
     stock_list = meta_df.to_dict('records')
 
     print("\n📡 启动高可用通达信直连模式...")
-    tdx_servers = [('124.71.187.122', 7709), ('115.238.90.165', 7709), ('124.71.187.72', 7709)]
+    # 扩充了 8 个最稳定的备用节点
+    tdx_servers = [
+        ('124.71.187.122', 7709), ('115.238.90.165', 7709), 
+        ('124.71.187.72', 7709), ('124.70.199.56', 7709), 
+        ('115.238.56.198', 7709), ('106.14.95.149', 7709),
+        ('218.75.126.9', 7709), ('119.147.164.60', 7709)
+    ]
     client = None
     for ip, port in tdx_servers:
         print(f"   -> 尝试直连: {ip}:{port} ...", end="")
@@ -196,24 +209,32 @@ if __name__ == '__main__':
             temp_client = Quotes.factory(market='std', server=(ip, port), multithread=True, heartbeat=True)
             test = temp_client.bars(symbol='600000', frequency=9, offset=1)
             if test is not None and not test.empty:
-                print(" [✅ 连通成功!]")
+                print(" [✅ 连通成功!]", flush=True)
                 client = temp_client
                 break
-            else: print(" [⚠️ 无数据]")
-        except: print(" [❌ 超时]")
+            else: print(" [⚠️ 无数据]", flush=True)
+        except: print(" [❌ 超时]", flush=True)
 
     if client is None: sys.exit(1)
 
     print(f"🚀 开始扫描 {len(stock_list)} 只股票...")
     market_data = {}
-    with ThreadPoolExecutor(max_workers=5) as executor:
+    
+    # 将 max_workers 降为 3，温柔扫描防止被 Ban
+    with ThreadPoolExecutor(max_workers=3) as executor:
         futures = {executor.submit(analyze_stock, s, client): s['code'] for s in stock_list}
         for i, f in enumerate(as_completed(futures), 1):
-            if i % 200 == 0: print(f"进度: {i}/{len(stock_list)}...")
+            if i % 200 == 0: print(f"进度: {i}/{len(stock_list)}...", flush=True)
             try:
+                # 哪怕底层 socket 没断，超过 10 秒也会抛出 TimeoutError
                 res = f.result(timeout=10)
                 if res: market_data[res['code']] = res
-            except: pass
+            except TimeoutError:
+                pass # 遇到卡死的股票直接跳过，保护主线程
+            except Exception:
+                pass
+
+    print(f"✅ 成功获取 {len(market_data)} 只股票数据", flush=True)
 
     left_cands, right_cands = select_today_candidates(market_data, 'left'), select_today_candidates(market_data, 'right')
     with open(DAILY_CANDIDATES_FILE, 'w', encoding='utf-8') as f:
