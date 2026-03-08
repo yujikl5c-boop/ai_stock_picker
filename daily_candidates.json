@@ -1,0 +1,97 @@
+{
+    "date": "2026-03-08",
+    "left": [
+        {
+            "code": "688228",
+            "name": "开普云",
+            "price": 117.74,
+            "bias_val": -23.315900194738806,
+            "ma20_angle": -77.13826692285852,
+            "left_buy_signal": true,
+            "right_buy_signal": false
+        },
+        {
+            "code": "301413",
+            "name": "安培龙",
+            "price": 128.86,
+            "bias_val": -15.983152294391475,
+            "ma20_angle": -36.491237588639336,
+            "left_buy_signal": true,
+            "right_buy_signal": false
+        },
+        {
+            "code": "300251",
+            "name": "光线传媒",
+            "price": 17.48,
+            "bias_val": -15.80164254232798,
+            "ma20_angle": -10.6199047555896,
+            "left_buy_signal": true,
+            "right_buy_signal": false
+        },
+        {
+            "code": "603039",
+            "name": "泛微网络",
+            "price": 43.17,
+            "bias_val": -15.23243827008982,
+            "ma20_angle": -66.56261626823888,
+            "left_buy_signal": true,
+            "right_buy_signal": false
+        },
+        {
+            "code": "688365",
+            "name": "光云科技",
+            "price": 20.89,
+            "bias_val": -14.174198849630235,
+            "ma20_angle": -56.6814640783091,
+            "left_buy_signal": true,
+            "right_buy_signal": false
+        }
+    ],
+    "right": [
+        {
+            "code": "600875",
+            "name": "东方电气",
+            "price": 44.22,
+            "bias_val": 36.10760565114347,
+            "ma20_angle": 71.46573917623535,
+            "left_buy_signal": false,
+            "right_buy_signal": true
+        },
+        {
+            "code": "000988",
+            "name": "华工科技",
+            "price": 114.78,
+            "bias_val": 35.37133354562502,
+            "ma20_angle": 67.27759283922126,
+            "left_buy_signal": false,
+            "right_buy_signal": true
+        },
+        {
+            "code": "300323",
+            "name": "华灿光电",
+            "price": 11.94,
+            "bias_val": 36.006378858639934,
+            "ma20_angle": 64.0156845158528,
+            "left_buy_signal": false,
+            "right_buy_signal": true
+        },
+        {
+            "code": "600710",
+            "name": "苏美达",
+            "price": 15.0,
+            "bias_val": 18.835412953060025,
+            "ma20_angle": 57.1490916074413,
+            "left_buy_signal": false,
+            "right_buy_signal": true
+        },
+        {
+            "code": "601179",
+            "name": "中国西电",
+            "price": 19.3,
+            "bias_val": 23.5674499007619,
+            "ma20_angle": 54.37972286440246,
+            "left_buy_signal": false,
+            "right_buy_signal": true
+        }
+    ]
+}
