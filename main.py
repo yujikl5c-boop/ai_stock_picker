@@ -6,13 +6,14 @@ from pathlib import Path
 import socket
 
 # ==========================================
-# 🛑 核心拦截魔法1：伪造完美的配置文件！
+# 🛑 核心拦截魔法1：在 mootdx 被加载前，伪造完美的配置文件！
 # ==========================================
 _mootdx_dir = os.path.join(str(Path.home()), '.mootdx')
 _config_file = os.path.join(_mootdx_dir, 'config.json')
 if not os.path.exists(_config_file):
     os.makedirs(_mootdx_dir, exist_ok=True)
     with open(_config_file, 'w', encoding='utf-8') as f:
+        # 伪造一个包含真实可用节点的完整配置，彻底堵死它去外网扫描的心！
         fake_config = {
             "HQ": [{"name": "上海双线", "ip": "124.71.187.122", "port": 7709}],
             "EX": [{"name": "上海双线", "ip": "124.71.187.122", "port": 7709}]
@@ -194,7 +195,7 @@ if __name__ == '__main__':
     meta_df['code'] = meta_df['code'].astype(str).str.replace(r'\.0$', '', regex=True).str.zfill(6)
     stock_list = meta_df.to_dict('records')
 
-    print("\n📡 启动高可用通达信直连模式...")
+    print("\n📡 启动高可用通达信直连模式...", flush=True)
     # 扩充了 8 个最稳定的备用节点
     tdx_servers = [
         ('124.71.187.122', 7709), ('115.238.90.165', 7709), 
@@ -204,7 +205,7 @@ if __name__ == '__main__':
     ]
     client = None
     for ip, port in tdx_servers:
-        print(f"   -> 尝试直连: {ip}:{port} ...", end="")
+        print(f"   -> 尝试直连: {ip}:{port} ...", end="", flush=True)
         try:
             temp_client = Quotes.factory(market='std', server=(ip, port), multithread=True, heartbeat=True)
             test = temp_client.bars(symbol='600000', frequency=9, offset=1)
@@ -217,7 +218,7 @@ if __name__ == '__main__':
 
     if client is None: sys.exit(1)
 
-    print(f"🚀 开始扫描 {len(stock_list)} 只股票...")
+    print(f"🚀 开始扫描 {len(stock_list)} 只股票...", flush=True)
     market_data = {}
     
     # 将 max_workers 降为 3，温柔扫描防止被 Ban
@@ -236,10 +237,12 @@ if __name__ == '__main__':
 
     print(f"✅ 成功获取 {len(market_data)} 只股票数据", flush=True)
 
+    print("🔍 正在筛选今日信号并写入 JSON...", flush=True)
     left_cands, right_cands = select_today_candidates(market_data, 'left'), select_today_candidates(market_data, 'right')
     with open(DAILY_CANDIDATES_FILE, 'w', encoding='utf-8') as f:
         json.dump(convert_numpy({'date': today, 'left': left_cands, 'right': right_cands}), f, ensure_ascii=False, indent=4)
 
+    print("📖 正在对比并更新历史记录...", flush=True)
     left_history, right_history = load_history(LEFT_HISTORY_FILE), load_history(RIGHT_HISTORY_FILE)
     
     for c in left_cands:
@@ -251,4 +254,9 @@ if __name__ == '__main__':
             
     save_history(left_history, LEFT_HISTORY_FILE)
     save_history(right_history, RIGHT_HISTORY_FILE)
+    
+    print("🖥️ 正在生成最终 HTML 报告看板...", flush=True)
     generate_dashboard(today, now_time, market_data)
+    
+    print("\n🎉 恭喜！量化选股全部跑通，报告已出炉，准备强制关闭后台守护线程...", flush=True)
+    os._exit(0) # 👈 强制关闭所有后台线程（包括 heartbeat），完美交接给 GitHub Actions 去做 Git 提交！
