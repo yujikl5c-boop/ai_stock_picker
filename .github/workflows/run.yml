@@ -1,7 +1,11 @@
 name: 股票策略定时运行
 
 on:
-  workflow_dispatch:          # 只允许手动触发
+  workflow_dispatch:          # 允许手动触发
+
+# ⚠️ 必须赋予 GitHub Actions 写入仓库的权限
+permissions:
+  contents: write
 
 jobs:
   run-strategy:
@@ -9,17 +13,6 @@ jobs:
     steps:
       - name: 下载代码
         uses: actions/checkout@v4
-
-      - name: 恢复缓存（历史记录）
-        uses: actions/cache@v4
-        with:
-          path: |
-            left_history.json
-            right_history.json
-            daily_candidates.json
-          key: stock-cache-${{ github.run_id }}
-          restore-keys: |
-            stock-cache-
 
       - name: 设置 Python
         uses: actions/setup-python@v5
@@ -35,26 +28,27 @@ jobs:
         run: python main.py candidates
         timeout-minutes: 120
 
-      # --- 这些步骤会在 main.py 成功后执行 ---
-      # 保存本次运行生成的文件到缓存，供下次运行使用
-      - name: 保存文件到缓存
-        uses: actions/cache@v4
+      # --- 🌟 核心修改：将生成的文件直接 Commit 并 Push 回你的 GitHub 仓库 ---
+      - name: 提交生成的报告和数据回仓库
+        run: |
+          # 配置机器人身份
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # 将 Python 刚刚生成或更新的文件添加到暂存区
+          # 如果你有其他生成的文件，也可以加在后面
+          git add index.html daily_candidates.json left_history.json right_history.json
+          
+          # 提交并推送到当前分支 (如果没有文件变化则忽略报错)
+          git commit -m "🤖 Auto-update: 每日量化选股报告与历史数据" || echo "No changes to commit"
+          git push
+
+      # --- (可选) 如果你还想把文件打包成压缩包提供下载，把这里的注释解开 ---
+      - name: 上传生成的文件作为附件
+        uses: actions/upload-artifact@v4
         with:
+          name: 股票量化报告-产出物
           path: |
-            left_history.json
-            right_history.json
+            index.html
             daily_candidates.json
-          key: stock-cache-${{ github.run_id }}
-          # 注意：这里没有 save-only: true，因为它会覆盖 restore 步骤的行为
-          # 我们需要先恢复，再让脚本更新文件，最后再保存
-        # cache 会在 job 结束时自动保存最新的文件
-        
-      # 如果你想把生成的文件打包下载下来查看，可以启用下面的步骤
-      # - name: 上传生成的文件
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: output-files
-      #     path: |
-      #       index.html
-      #       daily_candidates.json
-      #     retention-days: 5
+          retention-days: 5
