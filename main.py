@@ -121,7 +121,7 @@ def process_history(history, market_data, today_date):
     today_dt = datetime.strptime(today_date, '%Y-%m-%d')
     updated = False
     for rec in history:
-        # 如果已经标记了出局，永远跳过不再计算
+        # 已经出局的股票，直接跳过，不再请求行情和计算
         if rec.get('take_profit_date') or rec.get('stop_loss_date') or rec.get('expire_date'):
             continue
         
@@ -132,21 +132,20 @@ def process_history(history, market_data, today_date):
             rec['latest_update'] = today_date
             updated = True
             
-            # 🌟 核心：只有【非今日推荐】的股票，才计算止盈止损（第二天开始进入）
-            if rec['date'] != today_date:
-                pct_change = (current_price / rec['price'] - 1) * 100
-                rec_dt = datetime.strptime(rec['date'], '%Y-%m-%d')
-                days_held = (today_dt - rec_dt).days
-                
-                if pct_change >= TAKE_PROFIT_PCT:
-                    rec['take_profit_date'] = today_date
-                    print(f"💰 [{code}] 触发止盈: +{pct_change:.2f}%", flush=True)
-                elif pct_change <= -STOP_LOSS_PCT:
-                    rec['stop_loss_date'] = today_date
-                    print(f"🩸 [{code}] 触发止损: {pct_change:.2f}%", flush=True)
-                elif days_held >= EXPIRE_DAYS:
-                    rec['expire_date'] = today_date
-                    print(f"⏳ [{code}] 持仓达 {days_held} 天未达标，到期清盘", flush=True)
+            # 因为只有旧股票才会进入历史池，所以放心计算涨跌幅
+            pct_change = (current_price / rec['price'] - 1) * 100
+            rec_dt = datetime.strptime(rec['date'], '%Y-%m-%d')
+            days_held = (today_dt - rec_dt).days
+            
+            if pct_change >= TAKE_PROFIT_PCT:
+                rec['take_profit_date'] = today_date
+                print(f"💰 [{code}] 触发止盈: +{pct_change:.2f}%", flush=True)
+            elif pct_change <= -STOP_LOSS_PCT:
+                rec['stop_loss_date'] = today_date
+                print(f"🩸 [{code}] 触发止损: {pct_change:.2f}%", flush=True)
+            elif days_held >= EXPIRE_DAYS:
+                rec['expire_date'] = today_date
+                print(f"⏳ [{code}] 持仓达 {days_held} 天未达标，到期清盘", flush=True)
     return updated
 
 # ==========================================
@@ -210,17 +209,38 @@ if __name__ == '__main__':
             mode = 'history'  # 15点之后只更新历史
         else:
             mode = 'candidates' # 15点之前选股
-            
+
+    # =========================================
+    # 🌟 关键新增：次日结转动作
+    # 如果发现 `daily_candidates.json` 里是旧日期，将它们正式移入历史回溯池！
+    # =========================================
+    left_history, right_history = load_history(LEFT_HISTORY_FILE), load_history(RIGHT_HISTORY_FILE)
+    
+    if os.path.exists(DAILY_CANDIDATES_FILE):
+        with open(DAILY_CANDIDATES_FILE, 'r', encoding='utf-8') as f:
+            old_daily = json.load(f)
+        if old_daily.get('date') and old_daily['date'] != today:
+            old_date = old_daily['date']
+            print(f"📦 发现前一交易日 ({old_date}) 的待观察股票，正在正式移入历史回溯池...", flush=True)
+            for c in old_daily.get('left', []):
+                if not any(r['code'] == c['code'] and r['date'] == old_date for r in left_history):
+                    left_history.append({'code': c['code'], 'name': c['name'], 'date': old_date, 'price': c['price'], 'latest_price': c['price']})
+            for c in old_daily.get('right', []):
+                if not any(r['code'] == c['code'] and r['date'] == old_date for r in right_history):
+                    right_history.append({'code': c['code'], 'name': c['name'], 'date': old_date, 'price': c['price'], 'latest_price': c['price']})
+            # 立即保存一次结转后的历史池
+            save_history(left_history, LEFT_HISTORY_FILE)
+            save_history(right_history, RIGHT_HISTORY_FILE)
+
+    # 准备基础数据
     meta_df = pd.read_excel(EXCEL_LIST, usecols=[0, 1])
     meta_df.columns, stock_list = ['code', 'name'], []
     meta_df.dropna(subset=['code'], inplace=True)
     meta_df['code'] = meta_df['code'].astype(str).str.replace(r'\.0$', '', regex=True).str.zfill(6)
     stock_list = meta_df.to_dict('records')
 
-    left_history, right_history = load_history(LEFT_HISTORY_FILE), load_history(RIGHT_HISTORY_FILE)
-
     if mode == 'history':
-        # 历史模式下，剔除所有已经止盈止损清盘的股票，只查询还在交易的活水股票！
+        # 历史模式下，只查询存活在历史池中，且还没出局的股票！
         active_codes = set()
         for r in left_history + right_history:
             if not (r.get('take_profit_date') or r.get('stop_loss_date') or r.get('expire_date')):
@@ -257,27 +277,20 @@ if __name__ == '__main__':
             except: pass
 
     # ============================
-    # 写入逻辑分支
+    # 保存逻辑
     # ============================
     if mode == 'candidates':
         left_cands, right_cands = select_today_candidates(market_data, 'left'), select_today_candidates(market_data, 'right')
+        # ⚠️ 注意：这里只存入每日文件，不再强塞进历史池了！
         with open(DAILY_CANDIDATES_FILE, 'w', encoding='utf-8') as f:
             json.dump(convert_numpy({'date': today, 'left': left_cands, 'right': right_cands}), f, ensure_ascii=False, indent=4)
-        
-        # 将新选出的股票塞进历史池
-        for c in left_cands:
-            if not any(r['code'] == c['code'] and r['date'] == today for r in left_history):
-                left_history.append({'code': c['code'], 'name': c['name'], 'date': today, 'price': c['price'], 'latest_price': c['price']})
-        for c in right_cands:
-            if not any(r['code'] == c['code'] and r['date'] == today for r in right_history):
-                right_history.append({'code': c['code'], 'name': c['name'], 'date': today, 'price': c['price'], 'latest_price': c['price']})
 
-    # 不管什么模式，都要更新历史价格和止盈止损！
+    # 每天都需要更新活水历史池的最新价，并判断是否止盈止损清盘
     changed_l = process_history(left_history, market_data, today)
     changed_r = process_history(right_history, market_data, today)
 
-    if mode == 'candidates' or changed_l: save_history(left_history, LEFT_HISTORY_FILE)
-    if mode == 'candidates' or changed_r: save_history(right_history, RIGHT_HISTORY_FILE)
+    if changed_l: save_history(left_history, LEFT_HISTORY_FILE)
+    if changed_r: save_history(right_history, RIGHT_HISTORY_FILE)
     
     print("🖥️ 正在生成最终 HTML 报告看板...", flush=True)
     generate_dashboard(today, now_time)
