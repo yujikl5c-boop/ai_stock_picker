@@ -6,12 +6,20 @@ import time
 import numpy as np
 import pandas as pd
 from datetime import datetime, timezone, timedelta
+from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError
+from mootdx.quotes import Quotes
 import warnings
 warnings.filterwarnings('ignore')
 
 # ==========================================
-# ⚙️ 全局配置 (保留)
+# ⚙️ 全局配置
 # ==========================================
+P1 = 8.0
+P2 = 9.0
+BIAS_THRESH = 6.0
+TAKE_PROFIT_PCT = 12.0
+STOP_LOSS_PCT = 4.0
+
 EXCEL_LIST = 'stock_list.xlsx'
 LEFT_HISTORY_FILE = 'left_history.json'
 RIGHT_HISTORY_FILE = 'right_history.json'
@@ -37,78 +45,170 @@ def save_history(data, file_path):
         json.dump(convert_numpy(data), f, ensure_ascii=False, indent=4)
 
 # ==========================================
-# 🛑 核心修改：模拟分析，不联网！
+# 📊 股票分析函数
 # ==========================================
-def analyze_stock_mock(stock_info):
-    # 随机生成假数据，直接返回
+def analyze_stock(stock_info, client):
     symbol = stock_info['code']
-    return {
-        'code': symbol,
-        'name': stock_info['name'],
-        'price': np.random.uniform(5.0, 50.0),
-        'low': np.random.uniform(4.0, 49.0),
-        'bias_val': np.random.uniform(-10.0, 10.0),
-        # 随机产生信号
-        'left_buy_signal': np.random.choice([True, False], p=[0.2, 0.8]),
-        'right_buy_signal': np.random.choice([True, False], p=[0.2, 0.8]),
-        'is_limit_up': False,
-        'is_limit_down': False,
-        'ma20_angle': np.random.uniform(10.0, 40.0),
-        'dif': 0.5,
-        'dea': 0.2
-    }
+    try:
+        df = client.bars(symbol=symbol, frequency=9, offset=100)
+        if df is None or len(df) < 60: return None
 
-def generate_dashboard(today, now_time, left_today, right_today):
-    html = f"""<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <title>模拟跑通测试</title>
-</head>
-<body>
-    <h2>🚀 模拟测试成功！生成时间: {now_time}</h2>
-    <p>如果能在 GitHub 看到这个文件，说明 YML 权限配置完美！</p>
-    <p>左侧假候选数量: {len(left_today)}</p>
-    <p>右侧假候选数量: {len(right_today)}</p>
-</body>
-</html>
-    """
+        df.rename(columns={'datetime':'日期','open':'开盘','close':'收盘','high':'最高','low':'最低','vol':'成交量'}, inplace=True)
+        for col in ['开盘', '收盘', '最高', '最低', '成交量']: df[col] = pd.to_numeric(df[col], errors='coerce')
+
+        df['MA20'] = df['收盘'].rolling(20).mean()
+        df['MA60'] = df['收盘'].rolling(60).mean()
+        df['MA5'] = df['收盘'].rolling(5).mean()
+        df['MA10'] = df['收盘'].rolling(10).mean()
+        df['VOL_MA5'] = df['成交量'].rolling(5).mean()
+
+        df['VAR1'] = (df['收盘'] + df['最高'] + df['开盘'] + df['最低']) / 4
+        df['MID'] = df['VAR1'].ewm(span=32, adjust=False).mean()
+        df['UPPER'] = df['MID'] * (1 + P1 / 100.0)
+        df['LOWER'] = df['MID'] * (1 - P2 / 100.0)
+        df['BIAS_VAL'] = (df['收盘'] - df['MA20']) / df['MA20'] * 100
+
+        df['MA20_Slope'] = (df['MA20'] / df['MA20'].shift(1) - 1) * 100
+        df['MA20_Angle'] = np.degrees(np.arctan(df['MA20_Slope']))
+        exp12 = df['收盘'].ewm(span=12, adjust=False).mean()
+        exp26 = df['收盘'].ewm(span=26, adjust=False).mean()
+        df['DIF'] = exp12 - exp26
+        df['DEA'] = df['DIF'].ewm(span=9, adjust=False).mean()
+
+        for col in ['MA20_Angle', 'DIF', 'DEA']:
+            if col not in df.columns: df[col] = np.nan
+
+        curr, prev = df.iloc[-1], df.iloc[-2] if len(df) > 1 else df.iloc[-1]
+
+        bias_ok = curr['BIAS_VAL'] < -BIAS_THRESH
+        left_buy_signal = (curr['最低'] <= curr['LOWER']) and bias_ok and (curr['收盘'] > curr['开盘']) and ((curr['收盘'] - curr['最低']) > (curr['最高'] - curr['收盘']))
+
+        limit_pct = 0.20 if symbol.startswith(('688', '30')) else 0.10
+        is_limit_up = curr['收盘'] >= (round(prev['收盘'] * (1 + limit_pct), 2) - 0.015)
+        is_limit_down = curr['收盘'] <= (round(prev['收盘'] * (1 - limit_pct), 2) + 0.015)
+
+        ma20_angle = curr['MA20_Angle'] if pd.notna(curr['MA20_Angle']) else 0.0
+        dif, dea = (curr['DIF'] if pd.notna(curr['DIF']) else 0.0), (curr['DEA'] if pd.notna(curr['DEA']) else 0.0)
+
+        right_buy_signal = (ma20_angle > 25) and (curr['收盘'] > curr['MA10']) and (curr['MA5'] > curr['MA20']) and (curr['MA20'] > curr['MA60']) and (curr['MA60'] > prev['MA60']) and (curr['收盘'] / prev['收盘'] > 1.03) and (curr['收盘'] > curr['开盘']) and (curr['成交量'] > curr['VOL_MA5']) and (dif > 0) and (dif > dea) and not (is_limit_up or is_limit_down)
+
+        return {
+            'code': symbol, 'name': stock_info['name'],
+            'price': float(curr['收盘']) if pd.notna(curr['收盘']) else 0.0,
+            'low': float(curr['最低']) if pd.notna(curr['最低']) else 0.0,
+            'bias_val': float(curr['BIAS_VAL']) if pd.notna(curr['BIAS_VAL']) else 0.0,
+            'left_buy_signal': left_buy_signal, 'right_buy_signal': right_buy_signal,
+            'is_limit_up': bool(is_limit_up), 'is_limit_down': bool(is_limit_down),
+            'ma20_angle': ma20_angle, 'dif': dif, 'dea': dea
+        }
+    except Exception: return None
+
+def update_history(strategy, history_file, market_data):
+    history = load_history(history_file)
+    today = datetime.now().strftime('%Y-%m-%d')
+    updated = False
+    for rec in history:
+        if rec.get('take_profit_date') or rec.get('stop_loss_date'): continue
+        if rec['code'] in market_data:
+            current_price = market_data[rec['code']]['price']
+            rec['latest_price'], rec['latest_update'] = current_price, today
+            pct_change = (current_price / rec['price'] - 1) * 100
+            if pct_change >= TAKE_PROFIT_PCT: rec['take_profit_date'] = today
+            elif pct_change <= -STOP_LOSS_PCT: rec['stop_loss_date'] = today
+            updated = True
+    if updated: save_history(history, history_file)
+    return history
+
+def select_today_candidates(market_data, strategy):
+    cands = [d for d in market_data.values() if d and d.get(f'{strategy}_buy_signal')]
+    cands.sort(key=lambda x: x['bias_val'] if strategy == 'left' else x['ma20_angle'], reverse=(strategy != 'left'))
+    return cands[:5]
+
+def generate_dashboard(today, now_time, market_data):
+    daily = json.load(open(DAILY_CANDIDATES_FILE, 'r', encoding='utf-8')) if os.path.exists(DAILY_CANDIDATES_FILE) else {'left': [], 'right': []}
+    left_history = sorted(load_history(LEFT_HISTORY_FILE), key=lambda x: x['date'], reverse=True)[:10]
+    right_history = sorted(load_history(RIGHT_HISTORY_FILE), key=lambda x: x['date'], reverse=True)[:10]
+
+    html = f"""<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><title>AI策略看板</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>body {{ background: #f8f9fa; font-family: 'Microsoft YaHei'; padding: 20px; }} .positive{{color:#dc3545;font-weight:bold;}} .negative{{color:#198754;font-weight:bold;}}</style>
+    </head><body><h2>📈 AI 策略选股看板 <small class="text-muted" style="font-size:1rem;">{now_time}</small></h2>
+    <div class="row"><div class="col-md-6"><div class="card"><div class="card-header bg-primary text-white">左侧候选</div><div class="card-body"><table class="table">
+    <thead><tr><th>代码</th><th>名称</th><th>最新价</th><th>乖离率%</th></tr></thead><tbody>"""
+    for s in daily.get('left', []): html += f"<tr><td>{s['code']}</td><td>{s['name']}</td><td>{s['price']:.2f}</td><td>{s['bias_val']:.2f}</td></tr>"
+    html += """</tbody></table></div></div></div><div class="col-md-6"><div class="card"><div class="card-header bg-success text-white">右侧候选</div><div class="card-body"><table class="table">
+    <thead><tr><th>代码</th><th>名称</th><th>最新价</th><th>MA20角度</th></tr></thead><tbody>"""
+    for s in daily.get('right', []): html += f"<tr><td>{s['code']}</td><td>{s['name']}</td><td>{s['price']:.2f}</td><td>{s['ma20_angle']:.2f}</td></tr>"
+    
+    html += """</tbody></table></div></div></div></div><div class="row"><div class="col-md-6"><div class="card"><div class="card-header bg-secondary text-white">历史左侧</div><div class="card-body"><table class="table">
+    <thead><tr><th>日期</th><th>代码</th><th>名称</th><th>推荐价</th><th>最新价</th><th>涨跌%</th></tr></thead><tbody>"""
+    for r in left_history: 
+        pct = (r['latest_price']/r['price']-1)*100
+        html += f"<tr><td>{r['date']}</td><td>{r['code']}</td><td>{r['name']}</td><td>{r['price']:.2f}</td><td>{r['latest_price']:.2f}</td><td class='{'positive' if pct>0 else 'negative'}'>{pct:.2f}%</td></tr>"
+    html += """</tbody></table></div></div></div><div class="col-md-6"><div class="card"><div class="card-header bg-secondary text-white">历史右侧</div><div class="card-body"><table class="table">
+    <thead><tr><th>日期</th><th>代码</th><th>名称</th><th>推荐价</th><th>最新价</th><th>涨跌%</th></tr></thead><tbody>"""
+    for r in right_history: 
+        pct = (r['latest_price']/r['price']-1)*100
+        html += f"<tr><td>{r['date']}</td><td>{r['code']}</td><td>{r['name']}</td><td>{r['price']:.2f}</td><td>{r['latest_price']:.2f}</td><td class='{'positive' if pct>0 else 'negative'}'>{pct:.2f}%</td></tr>"
+    html += "</tbody></table></div></div></div></div></body></html>"
+    
     with open(HTML_OUTPUT, 'w', encoding='utf-8') as f: f.write(html)
-    print(f"✅ HTML看板已生成: {HTML_OUTPUT}")
 
 # ==========================================
 # 🚀 主程序入口
 # ==========================================
 if __name__ == '__main__':
-    print("=== 开始执行 [光速模拟版] 脚本 ===")
-    
     beijing_now = datetime.now(timezone.utc) + timedelta(hours=8)
-    today = beijing_now.strftime('%Y-%m-%d')
-    now_time = beijing_now.strftime('%Y-%m-%d %H:%M:%S')
-
-    # 制造 10 只假股票，跳过 Excel 读取
-    stock_list = [{'code': str(i).zfill(6), 'name': f'假股票{i}'} for i in range(1, 11)]
+    today, now_time = beijing_now.strftime('%Y-%m-%d'), beijing_now.strftime('%Y-%m-%d %H:%M:%S')
     
+    meta_df = pd.read_excel(EXCEL_LIST, usecols=[0, 1])
+    meta_df.columns, stock_list = ['code', 'name'], []
+    meta_df.dropna(subset=['code'], inplace=True)
+    meta_df['code'] = meta_df['code'].astype(str).str.replace(r'\.0$', '', regex=True).str.zfill(6)
+    stock_list = meta_df.to_dict('records')
+
+    # 🌟 核心修改：强制指定可用节点，彻底跳过 config.json 的全网10分钟慢速扫描！
+    print("\n📡 启动高可用通达信直连模式...")
+    tdx_servers = [('124.71.187.122', 7709), ('115.238.90.165', 7709), ('124.71.187.72', 7709)]
+    client = None
+    for ip, port in tdx_servers:
+        print(f"   -> 尝试直连: {ip}:{port} ...", end="")
+        try:
+            temp_client = Quotes.factory(market='std', server=(ip, port), multithread=True, heartbeat=True)
+            test = temp_client.bars(symbol='600000', frequency=9, offset=1)
+            if test is not None and not test.empty:
+                print(" [✅ 连通成功!]")
+                client = temp_client
+                break
+            else: print(" [⚠️ 无数据]")
+        except: print(" [❌ 超时]")
+
+    if client is None: sys.exit(1)
+
+    print(f"🚀 开始扫描 {len(stock_list)} 只股票...")
     market_data = {}
-    left_candidates = []
-    right_candidates = []
-    
-    print("🤖 正在伪造行情数据...")
-    for stock in stock_list:
-        res = analyze_stock_mock(stock)
-        market_data[res['code']] = res
-        if res['left_buy_signal']: left_candidates.append(res)
-        if res['right_buy_signal']: right_candidates.append(res)
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        futures = {executor.submit(analyze_stock, s, client): s['code'] for s in stock_list}
+        for i, f in enumerate(as_completed(futures), 1):
+            if i % 200 == 0: print(f"进度: {i}/{len(stock_list)}...")
+            try:
+                res = f.result(timeout=10)
+                if res: market_data[res['code']] = res
+            except: pass
 
-    print("💾 正在伪造 JSON 文件...")
-    daily = {'date': today, 'left': left_candidates, 'right': right_candidates}
+    left_cands, right_cands = select_today_candidates(market_data, 'left'), select_today_candidates(market_data, 'right')
     with open(DAILY_CANDIDATES_FILE, 'w', encoding='utf-8') as f:
-        json.dump(convert_numpy(daily), f, ensure_ascii=False, indent=4)
-        
-    save_history(left_candidates, LEFT_HISTORY_FILE)
-    save_history(right_candidates, RIGHT_HISTORY_FILE)
+        json.dump(convert_numpy({'date': today, 'left': left_cands, 'right': right_cands}), f, ensure_ascii=False, indent=4)
 
-    print("🖥️ 正在伪造 HTML...")
-    generate_dashboard(today, now_time, left_candidates, right_candidates)
-
-    print("\n🎉 光速模拟版跑完啦！")
+    left_history, right_history = load_history(LEFT_HISTORY_FILE), load_history(RIGHT_HISTORY_FILE)
+    
+    for c in left_cands:
+        if not any(r['code'] == c['code'] and r['date'] == today for r in left_history):
+            left_history.append({'code': c['code'], 'name': c['name'], 'date': today, 'price': c['price'], 'latest_price': c['price']})
+    for c in right_cands:
+        if not any(r['code'] == c['code'] and r['date'] == today for r in right_history):
+            right_history.append({'code': c['code'], 'name': c['name'], 'date': today, 'price': c['price'], 'latest_price': c['price']})
+            
+    save_history(left_history, LEFT_HISTORY_FILE)
+    save_history(right_history, RIGHT_HISTORY_FILE)
+    generate_dashboard(today, now_time, market_data)
