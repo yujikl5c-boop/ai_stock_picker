@@ -4,6 +4,14 @@ import json
 import sys
 from pathlib import Path
 import socket
+import time
+import numpy as np
+import pandas as pd
+from datetime import datetime, timezone, timedelta
+from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError
+from mootdx.quotes import Quotes
+import warnings
+warnings.filterwarnings('ignore')
 
 # ==========================================
 # 🛑 反扫描伪装
@@ -17,15 +25,6 @@ if not os.path.exists(_config_file):
         json.dump(fake_config, f)
 
 socket.setdefaulttimeout(10) # 强制超时防卡死
-
-import time
-import numpy as np
-import pandas as pd
-from datetime import datetime, timezone, timedelta
-from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError
-from mootdx.quotes import Quotes
-import warnings
-warnings.filterwarnings('ignore')
 
 # ==========================================
 # ⚙️ 全局配置 (加入止盈止损参数)
@@ -159,7 +158,7 @@ def generate_dashboard(today, now_time):
     html = f"""<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><title>AI策略看板</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>body {{ background: #f8f9fa; font-family: 'Microsoft YaHei'; padding: 20px; }} .positive{{color:#dc3545;font-weight:bold;}} .negative{{color:#198754;font-weight:bold;}} .badge{{font-size:0.9em;}}</style>
-    </head><body><h2>📈 AI 策略选股看板 <small class="text-muted" style="font-size:1rem;">更新时间: {now_time}</small></h2>
+    </head><body><h2>📈 AI 策略选股看板 <small class="text-muted" style="font-size:1rem;">更新时间: {now_time} (北京时间)</small></h2>
     
     <div class="row"><div class="col-md-6"><div class="card mb-4"><div class="card-header bg-primary text-white">今日抄底 (5只)</div><div class="card-body"><table class="table">
     <thead><tr><th>代码</th><th>名称</th><th>最新价</th><th>乖离率%</th></tr></thead><tbody>"""
@@ -199,16 +198,25 @@ def generate_dashboard(today, now_time):
 # 🚀 主程序入口
 # ==========================================
 if __name__ == '__main__':
+    # 🌟 强制将基准时间定为北京时间 (UTC+8)
     beijing_now = datetime.now(timezone.utc) + timedelta(hours=8)
-    today, now_time = beijing_now.strftime('%Y-%m-%d'), beijing_now.strftime('%Y-%m-%d %H:%M:%S')
+    today = beijing_now.strftime('%Y-%m-%d')
+    now_time = beijing_now.strftime('%Y-%m-%d %H:%M:%S')
     
-    # 🌟 智能判别运行模式
+    print(f"\n==============================================")
+    print(f"🕒 当前运行基准时间: {now_time} (北京时间)")
+    print(f"==============================================", flush=True)
+
+    # 🌟 智能判别运行模式 (严格基于北京时间的时针)
     mode = 'auto' if len(sys.argv) == 1 else sys.argv[1]
     if mode == 'auto':
+        # 如果当前北京时间在 15:00 及以后，就判定为收盘后，走历史模式
         if beijing_now.hour >= 15:
-            mode = 'history'  # 15点之后只更新历史
+            mode = 'history'  
+            print("👉 判定: 15:00之后，启动【极速历史收尾模式】", flush=True)
         else:
-            mode = 'candidates' # 15点之前选股
+            mode = 'candidates' 
+            print("👉 判定: 15:00之前，启动【全盘选股模式】", flush=True)
 
     # =========================================
     # 🌟 关键新增：次日结转动作
@@ -221,7 +229,7 @@ if __name__ == '__main__':
             old_daily = json.load(f)
         if old_daily.get('date') and old_daily['date'] != today:
             old_date = old_daily['date']
-            print(f"📦 发现前一交易日 ({old_date}) 的待观察股票，正在正式移入历史回溯池...", flush=True)
+            print(f"📦 发现前一交易日 (北京时间 {old_date}) 的待观察股票，正在正式移入历史回溯池...", flush=True)
             for c in old_daily.get('left', []):
                 if not any(r['code'] == c['code'] and r['date'] == old_date for r in left_history):
                     left_history.append({'code': c['code'], 'name': c['name'], 'date': old_date, 'price': c['price'], 'latest_price': c['price']})
@@ -246,9 +254,9 @@ if __name__ == '__main__':
             if not (r.get('take_profit_date') or r.get('stop_loss_date') or r.get('expire_date')):
                 active_codes.add(r['code'])
         stock_list = [s for s in stock_list if s['code'] in active_codes]
-        print(f"\n🕒 当前是下午收盘后，启动【极速历史收尾模式】，只需扫描 {len(stock_list)} 只持仓股票！", flush=True)
+        print(f"\n只需扫描 {len(stock_list)} 只持仓股票！", flush=True)
     else:
-        print(f"\n🕒 当前是下午收盘前，启动【全盘选股模式】，开始扫描全部 {len(stock_list)} 只股票...", flush=True)
+        print(f"\n开始扫描全部 {len(stock_list)} 只股票...", flush=True)
 
     tdx_servers = [
         ('124.71.187.122', 7709), ('115.238.90.165', 7709), 
