@@ -27,7 +27,7 @@ jobs:
           pip install mootdx pandas numpy openpyxl
 
       - name: 4. 运行主程序 (生成看板与数据)
-        run: python main.py candidates
+        run: python -u main.py candidates
         timeout-minutes: 120
 
       - name: 5. 将生成的报告和数据提交回仓库
