@@ -1,0 +1,42 @@
+[
+    {
+        "code": "688228",
+        "name": "开普云",
+        "date": "2026-03-08",
+        "price": 117.74,
+        "latest_price": 120.1,
+        "latest_update": "2026-03-09"
+    },
+    {
+        "code": "301413",
+        "name": "安培龙",
+        "date": "2026-03-08",
+        "price": 128.86,
+        "latest_price": 126.89,
+        "latest_update": "2026-03-09"
+    },
+    {
+        "code": "300251",
+        "name": "光线传媒",
+        "date": "2026-03-08",
+        "price": 17.48,
+        "latest_price": 17.28,
+        "latest_update": "2026-03-09"
+    },
+    {
+        "code": "603039",
+        "name": "泛微网络",
+        "date": "2026-03-08",
+        "price": 43.17,
+        "latest_price": 43.6,
+        "latest_update": "2026-03-09"
+    },
+    {
+        "code": "688365",
+        "name": "光云科技",
+        "date": "2026-03-08",
+        "price": 20.89,
+        "latest_price": 21.28,
+        "latest_update": "2026-03-09"
+    }
+]

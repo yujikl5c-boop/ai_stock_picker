@@ -1,0 +1,43 @@
+[
+    {
+        "code": "600875",
+        "name": "东方电气",
+        "date": "2026-03-08",
+        "price": 44.22,
+        "latest_price": 43.0,
+        "latest_update": "2026-03-09"
+    },
+    {
+        "code": "000988",
+        "name": "华工科技",
+        "date": "2026-03-08",
+        "price": 114.78,
+        "latest_price": 118.6,
+        "latest_update": "2026-03-09"
+    },
+    {
+        "code": "300323",
+        "name": "华灿光电",
+        "date": "2026-03-08",
+        "price": 11.94,
+        "latest_price": 11.71,
+        "latest_update": "2026-03-09"
+    },
+    {
+        "code": "600710",
+        "name": "苏美达",
+        "date": "2026-03-08",
+        "price": 15.0,
+        "latest_price": 14.33,
+        "latest_update": "2026-03-09",
+        "stop_loss_date": "2026-03-09"
+    },
+    {
+        "code": "601179",
+        "name": "中国西电",
+        "date": "2026-03-08",
+        "price": 19.3,
+        "latest_price": 20.17,
+        "latest_update": "2026-03-09"
+    }
+]
