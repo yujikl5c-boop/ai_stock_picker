@@ -1,10 +1,13 @@
 name: 股票策略定时运行
 
 on:
-  workflow_dispatch:          # 允许手动触发
-  schedule:
-    - cron: '25 6 * * 1-5'  # 北京时间 14:25 (自动执行选股+更新历史)
-    - cron: '15 7 * * 1-5'  # 北京时间 15:15 (只更新历史池收盘价)
+  workflow_dispatch:          
+    # 🌟 新增：允许接收外界 API 传来的参数
+    inputs:
+      run_mode:
+        description: '外界传入的运行模式'
+        required: false
+        default: 'auto'
 
 permissions:
   contents: write
@@ -28,9 +31,15 @@ jobs:
           pip install --upgrade pip
           pip install mootdx pandas numpy openpyxl
 
-      - name: 4. 运行主程序 (自动模式)
-        # 传入 auto 参数，Python 会看表自动决定干啥
-        run: python -u main.py auto
+      - name: 4. 运行主程序 (精准接收飞牛OS指令)
+        run: |
+          # 读取外界传入的参数
+          MODE="${{ github.event.inputs.run_mode }}"
+          if [ -z "$MODE" ]; then
+            MODE="auto"
+          fi
+          echo "🚀 接收到外界遥控指令，当前强制执行模式: $MODE"
+          python -u main.py $MODE
         timeout-minutes: 120
 
       - name: 5. 提交代码回仓库
