@@ -13,7 +13,7 @@
         "name": "华工科技",
         "date": "2026-03-08",
         "price": 114.78,
-        "latest_price": 121.62,
+        "latest_price": 123.51,
         "latest_update": "2026-03-10"
     },
     {
@@ -39,7 +39,7 @@
         "name": "中国西电",
         "date": "2026-03-08",
         "price": 19.3,
-        "latest_price": 19.83,
+        "latest_price": 19.99,
         "latest_update": "2026-03-10"
     },
     {
@@ -47,7 +47,7 @@
         "name": "协鑫集成",
         "date": "2026-03-09",
         "price": 5.78,
-        "latest_price": 5.99,
+        "latest_price": 6.07,
         "latest_update": "2026-03-10"
     },
     {
@@ -55,15 +55,16 @@
         "name": "欧科亿",
         "date": "2026-03-09",
         "price": 85.0,
-        "latest_price": 94.75,
-        "latest_update": "2026-03-10"
+        "latest_price": 95.31,
+        "latest_update": "2026-03-10",
+        "take_profit_date": "2026-03-10"
     },
     {
         "code": "000988",
         "name": "华工科技",
         "date": "2026-03-09",
         "price": 118.6,
-        "latest_price": 121.62,
+        "latest_price": 123.51,
         "latest_update": "2026-03-10"
     },
     {
@@ -71,7 +72,7 @@
         "name": "泰豪科技",
         "date": "2026-03-09",
         "price": 16.99,
-        "latest_price": 16.84,
+        "latest_price": 16.85,
         "latest_update": "2026-03-10"
     },
     {
@@ -79,7 +80,7 @@
         "name": "德业股份",
         "date": "2026-03-09",
         "price": 124.5,
-        "latest_price": 120.19,
+        "latest_price": 119.89,
         "latest_update": "2026-03-10"
     }
 ]

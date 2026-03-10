@@ -4,7 +4,7 @@
         "name": "开普云",
         "date": "2026-03-08",
         "price": 117.74,
-        "latest_price": 121.21,
+        "latest_price": 121.94,
         "latest_update": "2026-03-10"
     },
     {
@@ -12,7 +12,7 @@
         "name": "安培龙",
         "date": "2026-03-08",
         "price": 128.86,
-        "latest_price": 132.07,
+        "latest_price": 132.2,
         "latest_update": "2026-03-10"
     },
     {
@@ -20,7 +20,7 @@
         "name": "光线传媒",
         "date": "2026-03-08",
         "price": 17.48,
-        "latest_price": 17.27,
+        "latest_price": 17.3,
         "latest_update": "2026-03-10"
     },
     {
@@ -28,7 +28,7 @@
         "name": "泛微网络",
         "date": "2026-03-08",
         "price": 43.17,
-        "latest_price": 44.2,
+        "latest_price": 44.23,
         "latest_update": "2026-03-10"
     },
     {
@@ -36,7 +36,7 @@
         "name": "光云科技",
         "date": "2026-03-08",
         "price": 20.89,
-        "latest_price": 21.38,
+        "latest_price": 21.59,
         "latest_update": "2026-03-10"
     },
     {
@@ -44,7 +44,7 @@
         "name": "松霖科技",
         "date": "2026-03-09",
         "price": 30.07,
-        "latest_price": 29.3,
+        "latest_price": 29.48,
         "latest_update": "2026-03-10"
     },
     {
@@ -52,7 +52,7 @@
         "name": "开普云",
         "date": "2026-03-09",
         "price": 120.1,
-        "latest_price": 121.21,
+        "latest_price": 121.94,
         "latest_update": "2026-03-10"
     },
     {
@@ -60,7 +60,7 @@
         "name": "安培龙",
         "date": "2026-03-09",
         "price": 126.89,
-        "latest_price": 132.07,
+        "latest_price": 132.2,
         "latest_update": "2026-03-10"
     },
     {
@@ -68,7 +68,7 @@
         "name": "光线传媒",
         "date": "2026-03-09",
         "price": 17.28,
-        "latest_price": 17.27,
+        "latest_price": 17.3,
         "latest_update": "2026-03-10"
     },
     {
@@ -76,7 +76,7 @@
         "name": "多利科技",
         "date": "2026-03-09",
         "price": 34.28,
-        "latest_price": 35.01,
+        "latest_price": 35.25,
         "latest_update": "2026-03-10"
     }
 ]
