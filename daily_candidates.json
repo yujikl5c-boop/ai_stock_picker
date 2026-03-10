@@ -1,95 +1,95 @@
 {
-    "date": "2026-03-09",
+    "date": "2026-03-10",
     "left": [
         {
-            "code": "603992",
-            "name": "松霖科技",
-            "price": 30.07,
-            "bias_val": -18.906163616995457,
-            "ma20_angle": -59.5815946005073,
+            "code": "688622",
+            "name": "禾信仪器",
+            "price": 79.43,
+            "bias_val": -33.07861135801636,
+            "ma20_angle": -46.710384069759655,
             "left_buy_signal": true,
             "right_buy_signal": false
         },
         {
-            "code": "688228",
-            "name": "开普云",
-            "price": 120.1,
-            "bias_val": -18.46793026665943,
-            "ma20_angle": -76.16597056590322,
+            "code": "688003",
+            "name": "天准科技",
+            "price": 62.18,
+            "bias_val": -14.026961631524374,
+            "ma20_angle": -51.80246131431216,
+            "left_buy_signal": true,
+            "right_buy_signal": false
+        },
+        {
+            "code": "688680",
+            "name": "海优新材",
+            "price": 52.66,
+            "bias_val": -12.96083568175996,
+            "ma20_angle": -16.99665173274498,
+            "left_buy_signal": true,
+            "right_buy_signal": false
+        },
+        {
+            "code": "688686",
+            "name": "奥普特",
+            "price": 99.0,
+            "bias_val": -12.385116089721173,
+            "ma20_angle": -38.74350242813124,
             "left_buy_signal": true,
             "right_buy_signal": false
         },
         {
             "code": "301413",
             "name": "安培龙",
-            "price": 126.89,
-            "bias_val": -16.43672332382827,
-            "ma20_angle": -44.83628430331027,
-            "left_buy_signal": true,
-            "right_buy_signal": false
-        },
-        {
-            "code": "300251",
-            "name": "光线传媒",
-            "price": 17.28,
-            "bias_val": -16.30542706996341,
-            "ma20_angle": -28.772056752867666,
-            "left_buy_signal": true,
-            "right_buy_signal": false
-        },
-        {
-            "code": "001311",
-            "name": "多利科技",
-            "price": 34.28,
-            "bias_val": -14.17770322709861,
-            "ma20_angle": -46.935973359068704,
+            "price": 132.07,
+            "bias_val": -12.305281470365607,
+            "ma20_angle": -39.393200812051,
             "left_buy_signal": true,
             "right_buy_signal": false
         }
     ],
     "right": [
         {
-            "code": "002506",
-            "name": "协鑫集成",
-            "price": 5.78,
-            "bias_val": 21.748288572933138,
-            "ma20_angle": 69.62876457495204,
+            "code": "688127",
+            "name": "蓝特光学",
+            "price": 64.73,
+            "bias_val": 25.079708604664656,
+            "ma20_angle": 64.57035894775899,
             "left_buy_signal": false,
             "right_buy_signal": true
         },
         {
-            "code": "688308",
-            "name": "欧科亿",
-            "price": 85.0,
-            "bias_val": 35.6538114731206,
-            "ma20_angle": 68.9579906545476,
+            "code": "688031",
+            "name": "星环科技",
+            "price": 253.57,
+            "bias_val": 22.901914026337842,
+            "ma20_angle": 60.32232959928669,
             "left_buy_signal": false,
             "right_buy_signal": true
         },
         {
-            "code": "000988",
-            "name": "华工科技",
-            "price": 118.6,
-            "bias_val": 36.55964121429845,
-            "ma20_angle": 67.62318123232716,
+            "code": "601868",
+            "name": "中国能建",
+            "price": 3.12,
+            "bias_val": 22.689736531655523,
+            "ma20_angle": 55.14707552132253,
             "left_buy_signal": false,
             "right_buy_signal": true
         },
         {
-            "code": "600590",
-            "name": "泰豪科技",
-            "price": 16.99,
-            "bias_val": 26.54079618664581,
-            "ma20_angle": 65.78122996181574,
+            "code": "300285",
+            "name": "国瓷材料",
+            "price": 37.99,
+            "bias_val": 12.388136972117469,
+            "ma20_angle": 54.65565300781602,
             "left_buy_signal": false,
             "right_buy_signal": true
         },
         {
-            "code": "605117",
-            "name": "德业股份",
-            "price": 124.5,
-            "bias_val": 22.881042268117557,
-            "ma20_angle": 63.89685595475823,
+            "code": "002432",
+            "name": "九安医疗",
+            "price": 53.01,
+            "bias_val": 16.965645065201546,
+            "ma20_angle": 53.895563370434274,
             "left_buy_signal": false,
             "right_buy_signal": true
         }

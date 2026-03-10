@@ -4,24 +4,26 @@
         "name": "东方电气",
         "date": "2026-03-08",
         "price": 44.22,
-        "latest_price": 43.0,
-        "latest_update": "2026-03-09"
+        "latest_price": 41.91,
+        "latest_update": "2026-03-10",
+        "stop_loss_date": "2026-03-10"
     },
     {
         "code": "000988",
         "name": "华工科技",
         "date": "2026-03-08",
         "price": 114.78,
-        "latest_price": 118.6,
-        "latest_update": "2026-03-09"
+        "latest_price": 121.62,
+        "latest_update": "2026-03-10"
     },
     {
         "code": "300323",
         "name": "华灿光电",
         "date": "2026-03-08",
         "price": 11.94,
-        "latest_price": 11.71,
-        "latest_update": "2026-03-09"
+        "latest_price": 11.0,
+        "latest_update": "2026-03-10",
+        "stop_loss_date": "2026-03-10"
     },
     {
         "code": "600710",
@@ -37,7 +39,47 @@
         "name": "中国西电",
         "date": "2026-03-08",
         "price": 19.3,
-        "latest_price": 20.17,
-        "latest_update": "2026-03-09"
+        "latest_price": 19.83,
+        "latest_update": "2026-03-10"
+    },
+    {
+        "code": "002506",
+        "name": "协鑫集成",
+        "date": "2026-03-09",
+        "price": 5.78,
+        "latest_price": 5.99,
+        "latest_update": "2026-03-10"
+    },
+    {
+        "code": "688308",
+        "name": "欧科亿",
+        "date": "2026-03-09",
+        "price": 85.0,
+        "latest_price": 94.75,
+        "latest_update": "2026-03-10"
+    },
+    {
+        "code": "000988",
+        "name": "华工科技",
+        "date": "2026-03-09",
+        "price": 118.6,
+        "latest_price": 121.62,
+        "latest_update": "2026-03-10"
+    },
+    {
+        "code": "600590",
+        "name": "泰豪科技",
+        "date": "2026-03-09",
+        "price": 16.99,
+        "latest_price": 16.84,
+        "latest_update": "2026-03-10"
+    },
+    {
+        "code": "605117",
+        "name": "德业股份",
+        "date": "2026-03-09",
+        "price": 124.5,
+        "latest_price": 120.19,
+        "latest_update": "2026-03-10"
     }
 ]
