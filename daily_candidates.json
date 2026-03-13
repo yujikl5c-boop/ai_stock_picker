@@ -1,39 +1,21 @@
 {
-    "date": "2026-03-12",
+    "date": "2026-03-13",
     "left": [
         {
-            "code": "002512",
-            "name": "达华智能",
-            "price": 4.54,
-            "bias_val": -18.37468536497663,
-            "ma20_angle": -54.30143072128246,
+            "code": "600115",
+            "name": "中国东航",
+            "price": 4.68,
+            "bias_val": -15.294117647058833,
+            "ma20_angle": -56.42195749562084,
             "left_buy_signal": true,
             "right_buy_signal": false
         },
         {
             "code": "603121",
             "name": "华培动力",
-            "price": 19.57,
-            "bias_val": -14.657014521826351,
-            "ma20_angle": -24.606305628613605,
-            "left_buy_signal": true,
-            "right_buy_signal": false
-        },
-        {
-            "code": "603992",
-            "name": "松霖科技",
-            "price": 30.76,
-            "bias_val": -13.193170594045437,
-            "ma20_angle": -53.8895337309739,
-            "left_buy_signal": true,
-            "right_buy_signal": false
-        },
-        {
-            "code": "603885",
-            "name": "吉祥航空",
-            "price": 12.05,
-            "bias_val": -11.96990174233845,
-            "ma20_angle": -50.31850153220269,
+            "price": 19.63,
+            "bias_val": -13.995925431006162,
+            "ma20_angle": -23.880350864585107,
             "left_buy_signal": true,
             "right_buy_signal": false
         },
@@ -41,55 +23,73 @@
             "code": "601111",
             "name": "中国国航",
             "price": 7.38,
-            "bias_val": -10.46405823475887,
-            "ma20_angle": -44.568326449867975,
+            "bias_val": -9.542195256480973,
+            "ma20_angle": -45.877667031552825,
+            "left_buy_signal": true,
+            "right_buy_signal": false
+        },
+        {
+            "code": "605499",
+            "name": "东鹏饮料",
+            "price": 227.76,
+            "bias_val": -8.491900231421969,
+            "ma20_angle": -42.93539954189783,
+            "left_buy_signal": true,
+            "right_buy_signal": false
+        },
+        {
+            "code": "603983",
+            "name": "丸美股份",
+            "price": 27.49,
+            "bias_val": -7.9308727979101254,
+            "ma20_angle": -42.43557879176124,
             "left_buy_signal": true,
             "right_buy_signal": false
         }
     ],
     "right": [
         {
-            "code": "301658",
-            "name": "首航新能",
-            "price": 52.26,
-            "bias_val": 46.46860986547085,
-            "ma20_angle": 69.27037819074762,
+            "code": "002015",
+            "name": "协鑫能科",
+            "price": 22.15,
+            "bias_val": 48.80252594807024,
+            "ma20_angle": 75.63797249587087,
             "left_buy_signal": false,
             "right_buy_signal": true
         },
         {
-            "code": "603588",
-            "name": "高能环境",
-            "price": 15.94,
-            "bias_val": 30.1808975458369,
-            "ma20_angle": 67.56165726791684,
+            "code": "688308",
+            "name": "欧科亿",
+            "price": 92.4,
+            "bias_val": 29.70241437394724,
+            "ma20_angle": 73.09588191314411,
+            "left_buy_signal": false,
+            "right_buy_signal": true
+        },
+        {
+            "code": "600714",
+            "name": "金瑞矿业",
+            "price": 24.51,
+            "bias_val": 26.794444013346812,
+            "ma20_angle": 68.7450433246721,
             "left_buy_signal": false,
             "right_buy_signal": true
         },
         {
             "code": "688097",
             "name": "博众精工",
-            "price": 63.4,
-            "bias_val": 37.16857238671152,
-            "ma20_angle": 65.77675880723604,
+            "price": 65.99,
+            "bias_val": 39.306108231916475,
+            "ma20_angle": 67.97961884739225,
             "left_buy_signal": false,
             "right_buy_signal": true
         },
         {
-            "code": "605117",
-            "name": "德业股份",
-            "price": 136.97,
-            "bias_val": 27.228732124860077,
-            "ma20_angle": 65.6843184122112,
-            "left_buy_signal": false,
-            "right_buy_signal": true
-        },
-        {
-            "code": "601789",
-            "name": "宁波建工",
-            "price": 7.53,
-            "bias_val": 35.35861944993707,
-            "ma20_angle": 64.15032736530263,
+            "code": "300720",
+            "name": "海川智能",
+            "price": 48.34,
+            "bias_val": 28.916980025068682,
+            "ma20_angle": 64.2918976442198,
             "left_buy_signal": false,
             "right_buy_signal": true
         }
