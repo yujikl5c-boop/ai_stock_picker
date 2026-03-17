@@ -85,8 +85,9 @@
         "name": "德业股份",
         "date": "2026-03-09",
         "price": 124.5,
-        "latest_price": 130.0,
-        "latest_update": "2026-03-16"
+        "latest_price": 125.63,
+        "latest_update": "2026-03-17",
+        "expire_date": "2026-03-17"
     },
     {
         "code": "688127",
@@ -120,16 +121,17 @@
         "name": "国瓷材料",
         "date": "2026-03-10",
         "price": 37.99,
-        "latest_price": 37.39,
-        "latest_update": "2026-03-16"
+        "latest_price": 36.0,
+        "latest_update": "2026-03-17",
+        "stop_loss_date": "2026-03-17"
     },
     {
         "code": "002432",
         "name": "九安医疗",
         "date": "2026-03-10",
         "price": 53.01,
-        "latest_price": 54.36,
-        "latest_update": "2026-03-16"
+        "latest_price": 54.63,
+        "latest_update": "2026-03-17"
     },
     {
         "code": "002015",
@@ -145,8 +147,8 @@
         "name": "金开新能",
         "date": "2026-03-11",
         "price": 9.95,
-        "latest_price": 10.65,
-        "latest_update": "2026-03-16"
+        "latest_price": 9.98,
+        "latest_update": "2026-03-17"
     },
     {
         "code": "600545",
@@ -198,8 +200,9 @@
         "name": "博众精工",
         "date": "2026-03-12",
         "price": 63.4,
-        "latest_price": 63.1,
-        "latest_update": "2026-03-16"
+        "latest_price": 59.78,
+        "latest_update": "2026-03-17",
+        "stop_loss_date": "2026-03-17"
     },
     {
         "code": "605117",
@@ -224,24 +227,25 @@
         "name": "协鑫能科",
         "date": "2026-03-13",
         "price": 22.15,
-        "latest_price": 21.36,
-        "latest_update": "2026-03-16"
+        "latest_price": 20.23,
+        "latest_update": "2026-03-17",
+        "stop_loss_date": "2026-03-17"
     },
     {
         "code": "688308",
         "name": "欧科亿",
         "date": "2026-03-13",
         "price": 92.4,
-        "latest_price": 97.15,
-        "latest_update": "2026-03-16"
+        "latest_price": 89.9,
+        "latest_update": "2026-03-17"
     },
     {
         "code": "600714",
         "name": "金瑞矿业",
         "date": "2026-03-13",
         "price": 24.51,
-        "latest_price": 25.3,
-        "latest_update": "2026-03-16"
+        "latest_price": 25.34,
+        "latest_update": "2026-03-17"
     },
     {
         "code": "688097",
@@ -257,7 +261,51 @@
         "name": "海川智能",
         "date": "2026-03-13",
         "price": 48.34,
-        "latest_price": 49.15,
-        "latest_update": "2026-03-16"
+        "latest_price": 49.21,
+        "latest_update": "2026-03-17"
+    },
+    {
+        "code": "688308",
+        "name": "欧科亿",
+        "date": "2026-03-16",
+        "price": 98.01,
+        "latest_price": 89.9,
+        "latest_update": "2026-03-17",
+        "stop_loss_date": "2026-03-17"
+    },
+    {
+        "code": "300936",
+        "name": "中英科技",
+        "date": "2026-03-16",
+        "price": 65.01,
+        "latest_price": 67.0,
+        "latest_update": "2026-03-17"
+    },
+    {
+        "code": "603588",
+        "name": "高能环境",
+        "date": "2026-03-16",
+        "price": 15.98,
+        "latest_price": 14.87,
+        "latest_update": "2026-03-17",
+        "stop_loss_date": "2026-03-17"
+    },
+    {
+        "code": "301626",
+        "name": "苏州天脉",
+        "date": "2026-03-16",
+        "price": 253.94,
+        "latest_price": 240.52,
+        "latest_update": "2026-03-17",
+        "stop_loss_date": "2026-03-17"
+    },
+    {
+        "code": "688700",
+        "name": "东威科技",
+        "date": "2026-03-16",
+        "price": 52.93,
+        "latest_price": 50.76,
+        "latest_update": "2026-03-17",
+        "stop_loss_date": "2026-03-17"
     }
 ]
