@@ -139,7 +139,7 @@
         "name": "登康口腔",
         "date": "2026-03-11",
         "price": 35.38,
-        "latest_price": 35.07,
+        "latest_price": 35.29,
         "latest_update": "2026-03-18"
     },
     {
@@ -147,7 +147,7 @@
         "name": "百亚股份",
         "date": "2026-03-11",
         "price": 18.94,
-        "latest_price": 18.51,
+        "latest_price": 18.49,
         "latest_update": "2026-03-18"
     },
     {
@@ -155,7 +155,7 @@
         "name": "古井贡酒",
         "date": "2026-03-11",
         "price": 112.38,
-        "latest_price": 110.97,
+        "latest_price": 111.05,
         "latest_update": "2026-03-18"
     },
     {
@@ -163,7 +163,7 @@
         "name": "赢合科技",
         "date": "2026-03-11",
         "price": 24.99,
-        "latest_price": 24.74,
+        "latest_price": 24.7,
         "latest_update": "2026-03-18"
     },
     {
@@ -171,7 +171,7 @@
         "name": "华致酒行",
         "date": "2026-03-11",
         "price": 14.24,
-        "latest_price": 13.85,
+        "latest_price": 13.89,
         "latest_update": "2026-03-18"
     },
     {
@@ -196,7 +196,7 @@
         "name": "松霖科技",
         "date": "2026-03-12",
         "price": 30.76,
-        "latest_price": 32.98,
+        "latest_price": 32.99,
         "latest_update": "2026-03-18"
     },
     {
@@ -204,7 +204,7 @@
         "name": "吉祥航空",
         "date": "2026-03-12",
         "price": 12.05,
-        "latest_price": 12.07,
+        "latest_price": 12.06,
         "latest_update": "2026-03-18"
     },
     {
@@ -212,7 +212,7 @@
         "name": "中国国航",
         "date": "2026-03-12",
         "price": 7.38,
-        "latest_price": 7.1,
+        "latest_price": 7.12,
         "latest_update": "2026-03-18"
     },
     {
@@ -237,7 +237,7 @@
         "name": "中国国航",
         "date": "2026-03-13",
         "price": 7.38,
-        "latest_price": 7.1,
+        "latest_price": 7.12,
         "latest_update": "2026-03-18"
     },
     {
@@ -245,7 +245,7 @@
         "name": "东鹏饮料",
         "date": "2026-03-13",
         "price": 227.76,
-        "latest_price": 233.95,
+        "latest_price": 234.3,
         "latest_update": "2026-03-18"
     },
     {
@@ -253,7 +253,7 @@
         "name": "丸美股份",
         "date": "2026-03-13",
         "price": 27.49,
-        "latest_price": 27.61,
+        "latest_price": 27.62,
         "latest_update": "2026-03-18"
     },
     {
@@ -261,7 +261,7 @@
         "name": "光线传媒",
         "date": "2026-03-16",
         "price": 16.63,
-        "latest_price": 16.32,
+        "latest_price": 16.4,
         "latest_update": "2026-03-18"
     },
     {
@@ -269,7 +269,7 @@
         "name": "天准科技",
         "date": "2026-03-16",
         "price": 59.2,
-        "latest_price": 59.06,
+        "latest_price": 58.9,
         "latest_update": "2026-03-18"
     },
     {
@@ -277,7 +277,7 @@
         "name": "航宇科技",
         "date": "2026-03-16",
         "price": 62.3,
-        "latest_price": 62.05,
+        "latest_price": 62.24,
         "latest_update": "2026-03-18"
     },
     {
@@ -285,7 +285,7 @@
         "name": "洛阳钼业",
         "date": "2026-03-16",
         "price": 19.39,
-        "latest_price": 19.39,
+        "latest_price": 19.41,
         "latest_update": "2026-03-18"
     },
     {
@@ -293,7 +293,7 @@
         "name": "海优新材",
         "date": "2026-03-16",
         "price": 49.87,
-        "latest_price": 49.0,
+        "latest_price": 49.06,
         "latest_update": "2026-03-18"
     },
     {
@@ -301,7 +301,7 @@
         "name": "蒙娜丽莎",
         "date": "2026-03-17",
         "price": 13.26,
-        "latest_price": 13.23,
+        "latest_price": 13.18,
         "latest_update": "2026-03-18"
     },
     {
@@ -309,7 +309,7 @@
         "name": "招金黄金",
         "date": "2026-03-17",
         "price": 17.89,
-        "latest_price": 17.67,
+        "latest_price": 17.73,
         "latest_update": "2026-03-18"
     },
     {
@@ -317,7 +317,7 @@
         "name": "葵花药业",
         "date": "2026-03-17",
         "price": 12.63,
-        "latest_price": 12.61,
+        "latest_price": 12.6,
         "latest_update": "2026-03-18"
     },
     {
@@ -325,7 +325,7 @@
         "name": "百济神州",
         "date": "2026-03-17",
         "price": 237.21,
-        "latest_price": 238.75,
+        "latest_price": 238.5,
         "latest_update": "2026-03-18"
     }
 ]
