@@ -148,8 +148,9 @@
         "name": "金开新能",
         "date": "2026-03-11",
         "price": 9.95,
-        "latest_price": 10.45,
-        "latest_update": "2026-03-18"
+        "latest_price": 11.3,
+        "latest_update": "2026-03-19",
+        "take_profit_date": "2026-03-19"
     },
     {
         "code": "600545",
@@ -237,8 +238,9 @@
         "name": "欧科亿",
         "date": "2026-03-13",
         "price": 92.4,
-        "latest_price": 94.02,
-        "latest_update": "2026-03-18"
+        "latest_price": 85.56,
+        "latest_update": "2026-03-19",
+        "stop_loss_date": "2026-03-19"
     },
     {
         "code": "600714",
@@ -263,8 +265,9 @@
         "name": "海川智能",
         "date": "2026-03-13",
         "price": 48.34,
-        "latest_price": 52.7,
-        "latest_update": "2026-03-18"
+        "latest_price": 54.2,
+        "latest_update": "2026-03-19",
+        "take_profit_date": "2026-03-19"
     },
     {
         "code": "688308",
@@ -280,8 +283,9 @@
         "name": "中英科技",
         "date": "2026-03-16",
         "price": 65.01,
-        "latest_price": 64.0,
-        "latest_update": "2026-03-18"
+        "latest_price": 60.13,
+        "latest_update": "2026-03-19",
+        "stop_loss_date": "2026-03-19"
     },
     {
         "code": "603588",
@@ -324,31 +328,74 @@
         "name": "绿色动力",
         "date": "2026-03-17",
         "price": 9.62,
-        "latest_price": 9.38,
-        "latest_update": "2026-03-18"
+        "latest_price": 9.67,
+        "latest_update": "2026-03-19"
     },
     {
         "code": "601975",
         "name": "招商南油",
         "date": "2026-03-17",
         "price": 4.96,
-        "latest_price": 5.0,
-        "latest_update": "2026-03-18"
+        "latest_price": 4.68,
+        "latest_update": "2026-03-19",
+        "stop_loss_date": "2026-03-19"
     },
     {
         "code": "603050",
         "name": "科林电气",
         "date": "2026-03-17",
         "price": 24.6,
-        "latest_price": 24.37,
-        "latest_update": "2026-03-18"
+        "latest_price": 22.92,
+        "latest_update": "2026-03-19",
+        "stop_loss_date": "2026-03-19"
     },
     {
         "code": "300080",
         "name": "易成新能",
         "date": "2026-03-17",
         "price": 6.35,
-        "latest_price": 6.27,
-        "latest_update": "2026-03-18"
+        "latest_price": 5.93,
+        "latest_update": "2026-03-19",
+        "stop_loss_date": "2026-03-19"
+    },
+    {
+        "code": "600726",
+        "name": "华电能源",
+        "date": "2026-03-18",
+        "price": 4.51,
+        "latest_price": 5.02,
+        "latest_update": "2026-03-19"
+    },
+    {
+        "code": "600821",
+        "name": "金开新能",
+        "date": "2026-03-18",
+        "price": 10.51,
+        "latest_price": 11.3,
+        "latest_update": "2026-03-19"
+    },
+    {
+        "code": "300672",
+        "name": "国科微",
+        "date": "2026-03-18",
+        "price": 197.81,
+        "latest_price": 193.68,
+        "latest_update": "2026-03-19"
+    },
+    {
+        "code": "002636",
+        "name": "金安国纪",
+        "date": "2026-03-18",
+        "price": 33.75,
+        "latest_price": 33.45,
+        "latest_update": "2026-03-19"
+    },
+    {
+        "code": "688158",
+        "name": "优刻得",
+        "date": "2026-03-18",
+        "price": 47.37,
+        "latest_price": 47.69,
+        "latest_update": "2026-03-19"
     }
 ]

@@ -139,48 +139,54 @@
         "name": "登康口腔",
         "date": "2026-03-11",
         "price": 35.38,
-        "latest_price": 35.29,
-        "latest_update": "2026-03-18"
+        "latest_price": 34.49,
+        "latest_update": "2026-03-19",
+        "expire_date": "2026-03-19"
     },
     {
         "code": "003006",
         "name": "百亚股份",
         "date": "2026-03-11",
         "price": 18.94,
-        "latest_price": 18.49,
-        "latest_update": "2026-03-18"
+        "latest_price": 17.77,
+        "latest_update": "2026-03-19",
+        "stop_loss_date": "2026-03-19"
     },
     {
         "code": "000596",
         "name": "古井贡酒",
         "date": "2026-03-11",
         "price": 112.38,
-        "latest_price": 111.05,
-        "latest_update": "2026-03-18"
+        "latest_price": 108.96,
+        "latest_update": "2026-03-19",
+        "expire_date": "2026-03-19"
     },
     {
         "code": "300457",
         "name": "赢合科技",
         "date": "2026-03-11",
         "price": 24.99,
-        "latest_price": 24.7,
-        "latest_update": "2026-03-18"
+        "latest_price": 24.34,
+        "latest_update": "2026-03-19",
+        "expire_date": "2026-03-19"
     },
     {
         "code": "300755",
         "name": "华致酒行",
         "date": "2026-03-11",
         "price": 14.24,
-        "latest_price": 13.89,
-        "latest_update": "2026-03-18"
+        "latest_price": 13.59,
+        "latest_update": "2026-03-19",
+        "stop_loss_date": "2026-03-19"
     },
     {
         "code": "002512",
         "name": "达华智能",
         "date": "2026-03-12",
         "price": 4.54,
-        "latest_price": 4.36,
-        "latest_update": "2026-03-18"
+        "latest_price": 4.14,
+        "latest_update": "2026-03-19",
+        "stop_loss_date": "2026-03-19"
     },
     {
         "code": "603121",
@@ -196,32 +202,35 @@
         "name": "松霖科技",
         "date": "2026-03-12",
         "price": 30.76,
-        "latest_price": 32.99,
-        "latest_update": "2026-03-18"
+        "latest_price": 31.91,
+        "latest_update": "2026-03-19"
     },
     {
         "code": "603885",
         "name": "吉祥航空",
         "date": "2026-03-12",
         "price": 12.05,
-        "latest_price": 12.06,
-        "latest_update": "2026-03-18"
+        "latest_price": 11.46,
+        "latest_update": "2026-03-19",
+        "stop_loss_date": "2026-03-19"
     },
     {
         "code": "601111",
         "name": "中国国航",
         "date": "2026-03-12",
         "price": 7.38,
-        "latest_price": 7.12,
-        "latest_update": "2026-03-18"
+        "latest_price": 6.81,
+        "latest_update": "2026-03-19",
+        "stop_loss_date": "2026-03-19"
     },
     {
         "code": "600115",
         "name": "中国东航",
         "date": "2026-03-13",
         "price": 4.68,
-        "latest_price": 4.68,
-        "latest_update": "2026-03-18"
+        "latest_price": 4.42,
+        "latest_update": "2026-03-19",
+        "stop_loss_date": "2026-03-19"
     },
     {
         "code": "603121",
@@ -237,95 +246,142 @@
         "name": "中国国航",
         "date": "2026-03-13",
         "price": 7.38,
-        "latest_price": 7.12,
-        "latest_update": "2026-03-18"
+        "latest_price": 6.81,
+        "latest_update": "2026-03-19",
+        "stop_loss_date": "2026-03-19"
     },
     {
         "code": "605499",
         "name": "东鹏饮料",
         "date": "2026-03-13",
         "price": 227.76,
-        "latest_price": 234.3,
-        "latest_update": "2026-03-18"
+        "latest_price": 230.42,
+        "latest_update": "2026-03-19"
     },
     {
         "code": "603983",
         "name": "丸美股份",
         "date": "2026-03-13",
         "price": 27.49,
-        "latest_price": 27.62,
-        "latest_update": "2026-03-18"
+        "latest_price": 26.86,
+        "latest_update": "2026-03-19"
     },
     {
         "code": "300251",
         "name": "光线传媒",
         "date": "2026-03-16",
         "price": 16.63,
-        "latest_price": 16.4,
-        "latest_update": "2026-03-18"
+        "latest_price": 15.99,
+        "latest_update": "2026-03-19"
     },
     {
         "code": "688003",
         "name": "天准科技",
         "date": "2026-03-16",
         "price": 59.2,
-        "latest_price": 58.9,
-        "latest_update": "2026-03-18"
+        "latest_price": 58.03,
+        "latest_update": "2026-03-19"
     },
     {
         "code": "688239",
         "name": "航宇科技",
         "date": "2026-03-16",
         "price": 62.3,
-        "latest_price": 62.24,
-        "latest_update": "2026-03-18"
+        "latest_price": 59.13,
+        "latest_update": "2026-03-19",
+        "stop_loss_date": "2026-03-19"
     },
     {
         "code": "603993",
         "name": "洛阳钼业",
         "date": "2026-03-16",
         "price": 19.39,
-        "latest_price": 19.41,
-        "latest_update": "2026-03-18"
+        "latest_price": 17.79,
+        "latest_update": "2026-03-19",
+        "stop_loss_date": "2026-03-19"
     },
     {
         "code": "688680",
         "name": "海优新材",
         "date": "2026-03-16",
         "price": 49.87,
-        "latest_price": 49.06,
-        "latest_update": "2026-03-18"
+        "latest_price": 48.62,
+        "latest_update": "2026-03-19"
     },
     {
         "code": "002918",
         "name": "蒙娜丽莎",
         "date": "2026-03-17",
         "price": 13.26,
-        "latest_price": 13.18,
-        "latest_update": "2026-03-18"
+        "latest_price": 12.7,
+        "latest_update": "2026-03-19",
+        "stop_loss_date": "2026-03-19"
     },
     {
         "code": "000506",
         "name": "招金黄金",
         "date": "2026-03-17",
         "price": 17.89,
-        "latest_price": 17.73,
-        "latest_update": "2026-03-18"
+        "latest_price": 16.65,
+        "latest_update": "2026-03-19",
+        "stop_loss_date": "2026-03-19"
     },
     {
         "code": "002737",
         "name": "葵花药业",
         "date": "2026-03-17",
         "price": 12.63,
-        "latest_price": 12.6,
-        "latest_update": "2026-03-18"
+        "latest_price": 12.33,
+        "latest_update": "2026-03-19"
     },
     {
         "code": "688235",
         "name": "百济神州",
         "date": "2026-03-17",
         "price": 237.21,
-        "latest_price": 238.5,
-        "latest_update": "2026-03-18"
+        "latest_price": 234.92,
+        "latest_update": "2026-03-19"
+    },
+    {
+        "code": "688031",
+        "name": "星环科技",
+        "date": "2026-03-18",
+        "price": 177.01,
+        "latest_price": 160.9,
+        "latest_update": "2026-03-19",
+        "stop_loss_date": "2026-03-19"
+    },
+    {
+        "code": "688210",
+        "name": "统联精密",
+        "date": "2026-03-18",
+        "price": 42.71,
+        "latest_price": 40.73,
+        "latest_update": "2026-03-19",
+        "stop_loss_date": "2026-03-19"
+    },
+    {
+        "code": "603121",
+        "name": "华培动力",
+        "date": "2026-03-18",
+        "price": 18.66,
+        "latest_price": 17.93,
+        "latest_update": "2026-03-19"
+    },
+    {
+        "code": "300251",
+        "name": "光线传媒",
+        "date": "2026-03-18",
+        "price": 16.32,
+        "latest_price": 15.99,
+        "latest_update": "2026-03-19"
+    },
+    {
+        "code": "000880",
+        "name": "潍柴重机",
+        "date": "2026-03-18",
+        "price": 28.47,
+        "latest_price": 27.73,
+        "latest_update": "2026-03-19"
     }
 ]

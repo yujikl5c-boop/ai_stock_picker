@@ -1,95 +1,77 @@
 {
-    "date": "2026-03-18",
+    "date": "2026-03-19",
     "left": [
         {
-            "code": "688031",
-            "name": "星环科技",
-            "price": 177.01,
-            "bias_val": -17.39235945827382,
-            "ma20_angle": -5.816455147990712,
+            "code": "688622",
+            "name": "禾信仪器",
+            "price": 75.43,
+            "bias_val": -24.65702114058263,
+            "ma20_angle": -74.6164839816226,
             "left_buy_signal": true,
             "right_buy_signal": false
         },
         {
-            "code": "688210",
-            "name": "统联精密",
-            "price": 42.71,
-            "bias_val": -16.49885628262526,
-            "ma20_angle": -55.29965921340948,
+            "code": "002549",
+            "name": "凯美特气",
+            "price": 18.09,
+            "bias_val": -11.475409836065568,
+            "ma20_angle": -30.790273469333098,
             "left_buy_signal": true,
             "right_buy_signal": false
         },
         {
-            "code": "603121",
-            "name": "华培动力",
-            "price": 18.66,
-            "bias_val": -16.12163711145574,
-            "ma20_angle": -50.784433332708204,
-            "left_buy_signal": true,
-            "right_buy_signal": false
-        },
-        {
-            "code": "300251",
-            "name": "光线传媒",
-            "price": 16.32,
-            "bias_val": -14.684510429191269,
-            "ma20_angle": -67.02074291903432,
-            "left_buy_signal": true,
-            "right_buy_signal": false
-        },
-        {
-            "code": "000880",
-            "name": "潍柴重机",
-            "price": 28.47,
-            "bias_val": -13.322779029409986,
-            "ma20_angle": -48.723535481481775,
+            "code": "688169",
+            "name": "石头科技",
+            "price": 126.41,
+            "bias_val": -7.783103174082107,
+            "ma20_angle": -42.83907434540039,
             "left_buy_signal": true,
             "right_buy_signal": false
         }
     ],
     "right": [
         {
-            "code": "600726",
-            "name": "华电能源",
-            "price": 4.51,
-            "bias_val": 43.242814038431,
-            "ma20_angle": 72.70991390052261,
-            "left_buy_signal": false,
-            "right_buy_signal": true
-        },
-        {
             "code": "600821",
             "name": "金开新能",
-            "price": 10.51,
-            "bias_val": 26.840453777455952,
-            "ma20_angle": 71.16540415525861,
+            "price": 11.3,
+            "bias_val": 32.132834424695965,
+            "ma20_angle": 72.88544765537493,
             "left_buy_signal": false,
             "right_buy_signal": true
         },
         {
-            "code": "300672",
-            "name": "国科微",
-            "price": 197.81,
-            "bias_val": 30.160422177477734,
-            "ma20_angle": 61.063256885407625,
+            "code": "300317",
+            "name": "珈伟新能",
+            "price": 6.98,
+            "bias_val": 30.699372717910308,
+            "ma20_angle": 67.59982094692944,
             "left_buy_signal": false,
             "right_buy_signal": true
         },
         {
-            "code": "002636",
-            "name": "金安国纪",
-            "price": 33.75,
-            "bias_val": 21.37668129180752,
-            "ma20_angle": 58.414557031594924,
+            "code": "300302",
+            "name": "同有科技",
+            "price": 26.36,
+            "bias_val": 32.449000100492405,
+            "ma20_angle": 63.48068645586759,
             "left_buy_signal": false,
             "right_buy_signal": true
         },
         {
-            "code": "688158",
-            "name": "优刻得",
-            "price": 47.37,
-            "bias_val": 13.048147485233583,
-            "ma20_angle": 54.67330144702929,
+            "code": "603393",
+            "name": "新天然气",
+            "price": 41.92,
+            "bias_val": 11.941892757957705,
+            "ma20_angle": 58.680989302086445,
+            "left_buy_signal": false,
+            "right_buy_signal": true
+        },
+        {
+            "code": "001400",
+            "name": "江顺科技",
+            "price": 145.7,
+            "bias_val": 15.77826515368232,
+            "ma20_angle": 56.05186833270811,
             "left_buy_signal": false,
             "right_buy_signal": true
         }
