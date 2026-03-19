@@ -263,7 +263,7 @@
         "name": "丸美股份",
         "date": "2026-03-13",
         "price": 27.49,
-        "latest_price": 26.9,
+        "latest_price": 26.91,
         "latest_update": "2026-03-19"
     },
     {
@@ -279,7 +279,7 @@
         "name": "天准科技",
         "date": "2026-03-16",
         "price": 59.2,
-        "latest_price": 57.8,
+        "latest_price": 57.9,
         "latest_update": "2026-03-19"
     },
     {
@@ -381,7 +381,7 @@
         "name": "潍柴重机",
         "date": "2026-03-18",
         "price": 28.47,
-        "latest_price": 27.79,
+        "latest_price": 27.77,
         "latest_update": "2026-03-19"
     }
 ]
