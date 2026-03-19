@@ -4,76 +4,94 @@
         {
             "code": "688622",
             "name": "禾信仪器",
-            "price": 75.43,
-            "bias_val": -24.65702114058263,
-            "ma20_angle": -74.6164839816226,
+            "price": 75.0,
+            "bias_val": -25.070433792235303,
+            "ma20_angle": -74.69948681610352,
             "left_buy_signal": true,
-            "right_buy_signal": false
+            "right_buy_signal": false,
+            "eps": -0.514
         },
         {
-            "code": "002549",
-            "name": "凯美特气",
-            "price": 18.09,
-            "bias_val": -11.475409836065568,
-            "ma20_angle": -30.790273469333098,
+            "code": "300229",
+            "name": "拓尔思",
+            "price": 19.64,
+            "bias_val": -8.378428811345398,
+            "ma20_angle": -41.74318645839758,
             "left_buy_signal": true,
-            "right_buy_signal": false
+            "right_buy_signal": false,
+            "eps": -0.183
         },
         {
             "code": "688169",
             "name": "石头科技",
-            "price": 126.41,
-            "bias_val": -7.783103174082107,
-            "ma20_angle": -42.83907434540039,
+            "price": 126.05,
+            "bias_val": -8.033649251063382,
+            "ma20_angle": -43.237261263069115,
             "left_buy_signal": true,
-            "right_buy_signal": false
+            "right_buy_signal": false,
+            "eps": 4.005
+        },
+        {
+            "code": "300454",
+            "name": "深信服",
+            "price": 116.35,
+            "bias_val": -7.097258430913822,
+            "ma20_angle": -50.3109916003715,
+            "left_buy_signal": true,
+            "right_buy_signal": false,
+            "eps": -0.19
         }
     ],
     "right": [
         {
             "code": "600821",
             "name": "金开新能",
-            "price": 11.3,
-            "bias_val": 32.132834424695965,
-            "ma20_angle": 72.88544765537493,
+            "price": 11.13,
+            "bias_val": 30.27447767308481,
+            "ma20_angle": 72.36113372725603,
             "left_buy_signal": false,
-            "right_buy_signal": true
+            "right_buy_signal": true,
+            "eps": 0.281
         },
         {
             "code": "300317",
             "name": "珈伟新能",
-            "price": 6.98,
-            "bias_val": 30.699372717910308,
-            "ma20_angle": 67.59982094692944,
+            "price": 6.97,
+            "bias_val": 30.524344569288388,
+            "ma20_angle": 67.51976233097686,
             "left_buy_signal": false,
-            "right_buy_signal": true
+            "right_buy_signal": true,
+            "eps": -0.05
+        },
+        {
+            "code": "301658",
+            "name": "首航新能",
+            "price": 50.29,
+            "bias_val": 26.464819192274792,
+            "ma20_angle": 66.47612466107248,
+            "left_buy_signal": false,
+            "right_buy_signal": true,
+            "eps": 0.277
         },
         {
             "code": "300302",
             "name": "同有科技",
-            "price": 26.36,
-            "bias_val": 32.449000100492405,
-            "ma20_angle": 63.48068645586759,
+            "price": 26.44,
+            "bias_val": 32.82427408821462,
+            "ma20_angle": 63.71296008736048,
             "left_buy_signal": false,
-            "right_buy_signal": true
+            "right_buy_signal": true,
+            "eps": 0.019
         },
         {
             "code": "603393",
             "name": "新天然气",
-            "price": 41.92,
-            "bias_val": 11.941892757957705,
-            "ma20_angle": 58.680989302086445,
+            "price": 41.93,
+            "bias_val": 11.967101486040821,
+            "ma20_angle": 58.701986375152366,
             "left_buy_signal": false,
-            "right_buy_signal": true
-        },
-        {
-            "code": "001400",
-            "name": "江顺科技",
-            "price": 145.7,
-            "bias_val": 15.77826515368232,
-            "ma20_angle": 56.05186833270811,
-            "left_buy_signal": false,
-            "right_buy_signal": true
+            "right_buy_signal": true,
+            "eps": 1.924
         }
     ]
 }

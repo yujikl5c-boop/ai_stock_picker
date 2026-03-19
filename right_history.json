@@ -328,7 +328,7 @@
         "name": "绿色动力",
         "date": "2026-03-17",
         "price": 9.62,
-        "latest_price": 9.67,
+        "latest_price": 9.73,
         "latest_update": "2026-03-19"
     },
     {
@@ -371,7 +371,7 @@
         "name": "金开新能",
         "date": "2026-03-18",
         "price": 10.51,
-        "latest_price": 11.3,
+        "latest_price": 11.13,
         "latest_update": "2026-03-19"
     },
     {
@@ -379,7 +379,7 @@
         "name": "国科微",
         "date": "2026-03-18",
         "price": 197.81,
-        "latest_price": 193.68,
+        "latest_price": 192.21,
         "latest_update": "2026-03-19"
     },
     {
@@ -387,7 +387,7 @@
         "name": "金安国纪",
         "date": "2026-03-18",
         "price": 33.75,
-        "latest_price": 33.45,
+        "latest_price": 33.6,
         "latest_update": "2026-03-19"
     },
     {
@@ -395,7 +395,7 @@
         "name": "优刻得",
         "date": "2026-03-18",
         "price": 47.37,
-        "latest_price": 47.69,
+        "latest_price": 47.82,
         "latest_update": "2026-03-19"
     }
 ]
