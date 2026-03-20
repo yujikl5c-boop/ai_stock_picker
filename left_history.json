@@ -202,8 +202,9 @@
         "name": "松霖科技",
         "date": "2026-03-12",
         "price": 30.76,
-        "latest_price": 31.82,
-        "latest_update": "2026-03-19"
+        "latest_price": 33.38,
+        "latest_update": "2026-03-20",
+        "expire_date": "2026-03-20"
     },
     {
         "code": "603885",
@@ -255,32 +256,33 @@
         "name": "东鹏饮料",
         "date": "2026-03-13",
         "price": 227.76,
-        "latest_price": 229.95,
-        "latest_update": "2026-03-19"
+        "latest_price": 229.4,
+        "latest_update": "2026-03-20"
     },
     {
         "code": "603983",
         "name": "丸美股份",
         "date": "2026-03-13",
         "price": 27.49,
-        "latest_price": 26.91,
-        "latest_update": "2026-03-19"
+        "latest_price": 26.86,
+        "latest_update": "2026-03-20"
     },
     {
         "code": "300251",
         "name": "光线传媒",
         "date": "2026-03-16",
         "price": 16.63,
-        "latest_price": 16.0,
-        "latest_update": "2026-03-19"
+        "latest_price": 15.61,
+        "latest_update": "2026-03-20",
+        "stop_loss_date": "2026-03-20"
     },
     {
         "code": "688003",
         "name": "天准科技",
         "date": "2026-03-16",
         "price": 59.2,
-        "latest_price": 57.9,
-        "latest_update": "2026-03-19"
+        "latest_price": 59.81,
+        "latest_update": "2026-03-20"
     },
     {
         "code": "688239",
@@ -305,8 +307,8 @@
         "name": "海优新材",
         "date": "2026-03-16",
         "price": 49.87,
-        "latest_price": 48.96,
-        "latest_update": "2026-03-19"
+        "latest_price": 55.17,
+        "latest_update": "2026-03-20"
     },
     {
         "code": "002918",
@@ -331,16 +333,16 @@
         "name": "葵花药业",
         "date": "2026-03-17",
         "price": 12.63,
-        "latest_price": 12.33,
-        "latest_update": "2026-03-19"
+        "latest_price": 12.43,
+        "latest_update": "2026-03-20"
     },
     {
         "code": "688235",
         "name": "百济神州",
         "date": "2026-03-17",
         "price": 237.21,
-        "latest_price": 235.0,
-        "latest_update": "2026-03-19"
+        "latest_price": 229.46,
+        "latest_update": "2026-03-20"
     },
     {
         "code": "688031",
@@ -365,23 +367,63 @@
         "name": "华培动力",
         "date": "2026-03-18",
         "price": 18.66,
-        "latest_price": 17.94,
-        "latest_update": "2026-03-19"
+        "latest_price": 17.34,
+        "latest_update": "2026-03-20",
+        "stop_loss_date": "2026-03-20"
     },
     {
         "code": "300251",
         "name": "光线传媒",
         "date": "2026-03-18",
         "price": 16.32,
-        "latest_price": 16.0,
-        "latest_update": "2026-03-19"
+        "latest_price": 15.61,
+        "latest_update": "2026-03-20",
+        "stop_loss_date": "2026-03-20"
     },
     {
         "code": "000880",
         "name": "潍柴重机",
         "date": "2026-03-18",
         "price": 28.47,
-        "latest_price": 27.77,
-        "latest_update": "2026-03-19"
+        "latest_price": 26.98,
+        "latest_update": "2026-03-20",
+        "stop_loss_date": "2026-03-20"
+    },
+    {
+        "code": "688622",
+        "name": "禾信仪器",
+        "date": "2026-03-19",
+        "price": 75.0,
+        "latest_price": 81.89,
+        "eps": -0.514,
+        "latest_update": "2026-03-20"
+    },
+    {
+        "code": "300229",
+        "name": "拓尔思",
+        "date": "2026-03-19",
+        "price": 19.64,
+        "latest_price": 18.87,
+        "eps": -0.183,
+        "latest_update": "2026-03-20"
+    },
+    {
+        "code": "688169",
+        "name": "石头科技",
+        "date": "2026-03-19",
+        "price": 126.05,
+        "latest_price": 126.45,
+        "eps": 4.005,
+        "latest_update": "2026-03-20"
+    },
+    {
+        "code": "300454",
+        "name": "深信服",
+        "date": "2026-03-19",
+        "price": 116.35,
+        "latest_price": 111.62,
+        "eps": -0.19,
+        "latest_update": "2026-03-20",
+        "stop_loss_date": "2026-03-20"
     }
 ]

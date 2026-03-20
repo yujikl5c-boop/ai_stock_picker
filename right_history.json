@@ -328,8 +328,8 @@
         "name": "绿色动力",
         "date": "2026-03-17",
         "price": 9.62,
-        "latest_price": 9.73,
-        "latest_update": "2026-03-19"
+        "latest_price": 9.61,
+        "latest_update": "2026-03-20"
     },
     {
         "code": "601975",
@@ -363,39 +363,89 @@
         "name": "华电能源",
         "date": "2026-03-18",
         "price": 4.51,
-        "latest_price": 5.02,
-        "latest_update": "2026-03-19"
+        "latest_price": 5.52,
+        "latest_update": "2026-03-20",
+        "take_profit_date": "2026-03-20"
     },
     {
         "code": "600821",
         "name": "金开新能",
         "date": "2026-03-18",
         "price": 10.51,
-        "latest_price": 11.11,
-        "latest_update": "2026-03-19"
+        "latest_price": 11.19,
+        "latest_update": "2026-03-20"
     },
     {
         "code": "300672",
         "name": "国科微",
         "date": "2026-03-18",
         "price": 197.81,
-        "latest_price": 193.02,
-        "latest_update": "2026-03-19"
+        "latest_price": 197.35,
+        "latest_update": "2026-03-20"
     },
     {
         "code": "002636",
         "name": "金安国纪",
         "date": "2026-03-18",
         "price": 33.75,
-        "latest_price": 33.6,
-        "latest_update": "2026-03-19"
+        "latest_price": 31.57,
+        "latest_update": "2026-03-20",
+        "stop_loss_date": "2026-03-20"
     },
     {
         "code": "688158",
         "name": "优刻得",
         "date": "2026-03-18",
         "price": 47.37,
-        "latest_price": 47.84,
-        "latest_update": "2026-03-19"
+        "latest_price": 45.77,
+        "latest_update": "2026-03-20"
+    },
+    {
+        "code": "600821",
+        "name": "金开新能",
+        "date": "2026-03-19",
+        "price": 11.13,
+        "latest_price": 11.19,
+        "eps": 0.281,
+        "latest_update": "2026-03-20"
+    },
+    {
+        "code": "300317",
+        "name": "珈伟新能",
+        "date": "2026-03-19",
+        "price": 6.97,
+        "latest_price": 6.2,
+        "eps": -0.05,
+        "latest_update": "2026-03-20",
+        "stop_loss_date": "2026-03-20"
+    },
+    {
+        "code": "301658",
+        "name": "首航新能",
+        "date": "2026-03-19",
+        "price": 50.29,
+        "latest_price": 60.35,
+        "eps": 0.277,
+        "latest_update": "2026-03-20",
+        "take_profit_date": "2026-03-20"
+    },
+    {
+        "code": "300302",
+        "name": "同有科技",
+        "date": "2026-03-19",
+        "price": 26.44,
+        "latest_price": 24.79,
+        "eps": 0.019,
+        "latest_update": "2026-03-20",
+        "stop_loss_date": "2026-03-20"
+    },
+    {
+        "code": "603393",
+        "name": "新天然气",
+        "date": "2026-03-19",
+        "price": 41.93,
+        "latest_price": 41.94,
+        "eps": 1.924,
+        "latest_update": "2026-03-20"
     }
 ]
