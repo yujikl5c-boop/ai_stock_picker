@@ -328,7 +328,7 @@
         "name": "绿色动力",
         "date": "2026-03-17",
         "price": 9.62,
-        "latest_price": 10.32,
+        "latest_price": 10.38,
         "latest_update": "2026-03-23"
     },
     {
@@ -372,8 +372,9 @@
         "name": "金开新能",
         "date": "2026-03-18",
         "price": 10.51,
-        "latest_price": 10.26,
-        "latest_update": "2026-03-23"
+        "latest_price": 10.06,
+        "latest_update": "2026-03-23",
+        "stop_loss_date": "2026-03-23"
     },
     {
         "code": "300672",
@@ -447,16 +448,17 @@
         "name": "新天然气",
         "date": "2026-03-19",
         "price": 41.93,
-        "latest_price": 40.39,
+        "latest_price": 40.2,
         "eps": 1.924,
-        "latest_update": "2026-03-23"
+        "latest_update": "2026-03-23",
+        "stop_loss_date": "2026-03-23"
     },
     {
         "code": "300720",
         "name": "海川智能",
         "date": "2026-03-20",
         "price": 57.22,
-        "latest_price": 59.3,
+        "latest_price": 60.78,
         "eps": 0.142,
         "latest_update": "2026-03-23"
     },
