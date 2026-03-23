@@ -256,16 +256,18 @@
         "name": "东鹏饮料",
         "date": "2026-03-13",
         "price": 227.76,
-        "latest_price": 228.09,
-        "latest_update": "2026-03-20"
+        "latest_price": 218.0,
+        "latest_update": "2026-03-23",
+        "stop_loss_date": "2026-03-23"
     },
     {
         "code": "603983",
         "name": "丸美股份",
         "date": "2026-03-13",
         "price": 27.49,
-        "latest_price": 26.81,
-        "latest_update": "2026-03-20"
+        "latest_price": 25.63,
+        "latest_update": "2026-03-23",
+        "stop_loss_date": "2026-03-23"
     },
     {
         "code": "300251",
@@ -281,8 +283,9 @@
         "name": "天准科技",
         "date": "2026-03-16",
         "price": 59.2,
-        "latest_price": 59.18,
-        "latest_update": "2026-03-20"
+        "latest_price": 54.4,
+        "latest_update": "2026-03-23",
+        "stop_loss_date": "2026-03-23"
     },
     {
         "code": "688239",
@@ -307,8 +310,8 @@
         "name": "海优新材",
         "date": "2026-03-16",
         "price": 49.87,
-        "latest_price": 55.6,
-        "latest_update": "2026-03-20"
+        "latest_price": 51.4,
+        "latest_update": "2026-03-23"
     },
     {
         "code": "002918",
@@ -333,8 +336,9 @@
         "name": "葵花药业",
         "date": "2026-03-17",
         "price": 12.63,
-        "latest_price": 12.4,
-        "latest_update": "2026-03-20"
+        "latest_price": 11.78,
+        "latest_update": "2026-03-23",
+        "stop_loss_date": "2026-03-23"
     },
     {
         "code": "688235",
@@ -395,9 +399,10 @@
         "name": "禾信仪器",
         "date": "2026-03-19",
         "price": 75.0,
-        "latest_price": 81.59,
+        "latest_price": 92.74,
         "eps": -0.514,
-        "latest_update": "2026-03-20"
+        "latest_update": "2026-03-23",
+        "take_profit_date": "2026-03-23"
     },
     {
         "code": "300229",
@@ -414,9 +419,10 @@
         "name": "石头科技",
         "date": "2026-03-19",
         "price": 126.05,
-        "latest_price": 125.68,
+        "latest_price": 120.0,
         "eps": 4.005,
-        "latest_update": "2026-03-20"
+        "latest_update": "2026-03-23",
+        "stop_loss_date": "2026-03-23"
     },
     {
         "code": "300454",
@@ -427,5 +433,55 @@
         "eps": -0.19,
         "latest_update": "2026-03-20",
         "stop_loss_date": "2026-03-20"
+    },
+    {
+        "code": "688622",
+        "name": "禾信仪器",
+        "date": "2026-03-20",
+        "price": 81.89,
+        "latest_price": 92.74,
+        "eps": -0.514,
+        "latest_update": "2026-03-23",
+        "take_profit_date": "2026-03-23"
+    },
+    {
+        "code": "001288",
+        "name": "运机集团",
+        "date": "2026-03-20",
+        "price": 30.94,
+        "latest_price": 28.88,
+        "eps": 0.457,
+        "latest_update": "2026-03-23",
+        "stop_loss_date": "2026-03-23"
+    },
+    {
+        "code": "301500",
+        "name": "飞南资源",
+        "date": "2026-03-20",
+        "price": 20.18,
+        "latest_price": 18.76,
+        "eps": 0.356,
+        "latest_update": "2026-03-23",
+        "stop_loss_date": "2026-03-23"
+    },
+    {
+        "code": "688147",
+        "name": "微导纳米",
+        "date": "2026-03-20",
+        "price": 71.03,
+        "latest_price": 66.24,
+        "eps": 0.539,
+        "latest_update": "2026-03-23",
+        "stop_loss_date": "2026-03-23"
+    },
+    {
+        "code": "688003",
+        "name": "天准科技",
+        "date": "2026-03-20",
+        "price": 59.81,
+        "latest_price": 54.4,
+        "eps": -0.078,
+        "latest_update": "2026-03-23",
+        "stop_loss_date": "2026-03-23"
     }
 ]

@@ -328,8 +328,8 @@
         "name": "绿色动力",
         "date": "2026-03-17",
         "price": 9.62,
-        "latest_price": 9.8,
-        "latest_update": "2026-03-20"
+        "latest_price": 10.32,
+        "latest_update": "2026-03-23"
     },
     {
         "code": "601975",
@@ -372,16 +372,17 @@
         "name": "金开新能",
         "date": "2026-03-18",
         "price": 10.51,
-        "latest_price": 10.71,
-        "latest_update": "2026-03-20"
+        "latest_price": 10.26,
+        "latest_update": "2026-03-23"
     },
     {
         "code": "300672",
         "name": "国科微",
         "date": "2026-03-18",
         "price": 197.81,
-        "latest_price": 195.1,
-        "latest_update": "2026-03-20"
+        "latest_price": 175.22,
+        "latest_update": "2026-03-23",
+        "stop_loss_date": "2026-03-23"
     },
     {
         "code": "002636",
@@ -406,9 +407,10 @@
         "name": "金开新能",
         "date": "2026-03-19",
         "price": 11.13,
-        "latest_price": 10.71,
+        "latest_price": 10.26,
         "eps": 0.281,
-        "latest_update": "2026-03-20"
+        "latest_update": "2026-03-23",
+        "stop_loss_date": "2026-03-23"
     },
     {
         "code": "300317",
@@ -445,8 +447,57 @@
         "name": "新天然气",
         "date": "2026-03-19",
         "price": 41.93,
-        "latest_price": 42.5,
+        "latest_price": 40.39,
         "eps": 1.924,
-        "latest_update": "2026-03-20"
+        "latest_update": "2026-03-23"
+    },
+    {
+        "code": "300720",
+        "name": "海川智能",
+        "date": "2026-03-20",
+        "price": 57.22,
+        "latest_price": 59.3,
+        "eps": 0.142,
+        "latest_update": "2026-03-23"
+    },
+    {
+        "code": "002015",
+        "name": "协鑫能科",
+        "date": "2026-03-20",
+        "price": 21.65,
+        "latest_price": 19.49,
+        "eps": 0.469,
+        "latest_update": "2026-03-23",
+        "stop_loss_date": "2026-03-23"
+    },
+    {
+        "code": "300763",
+        "name": "锦浪科技",
+        "date": "2026-03-20",
+        "price": 119.77,
+        "latest_price": 113.26,
+        "eps": 2.174,
+        "latest_update": "2026-03-23",
+        "stop_loss_date": "2026-03-23"
+    },
+    {
+        "code": "688498",
+        "name": "源杰科技",
+        "date": "2026-03-20",
+        "price": 1112.05,
+        "latest_price": 1031.63,
+        "eps": 1.232,
+        "latest_update": "2026-03-23",
+        "stop_loss_date": "2026-03-23"
+    },
+    {
+        "code": "688275",
+        "name": "万润新能",
+        "date": "2026-03-20",
+        "price": 121.89,
+        "latest_price": 116.01,
+        "eps": -2.791,
+        "latest_update": "2026-03-23",
+        "stop_loss_date": "2026-03-23"
     }
 ]
