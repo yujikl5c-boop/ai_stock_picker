@@ -328,8 +328,9 @@
         "name": "绿色动力",
         "date": "2026-03-17",
         "price": 9.62,
-        "latest_price": 10.38,
-        "latest_update": "2026-03-23"
+        "latest_price": 11.1,
+        "latest_update": "2026-03-24",
+        "take_profit_date": "2026-03-24"
     },
     {
         "code": "601975",
@@ -458,9 +459,9 @@
         "name": "海川智能",
         "date": "2026-03-20",
         "price": 57.22,
-        "latest_price": 60.78,
+        "latest_price": 60.94,
         "eps": 0.142,
-        "latest_update": "2026-03-23"
+        "latest_update": "2026-03-24"
     },
     {
         "code": "002015",
@@ -501,5 +502,52 @@
         "eps": -2.791,
         "latest_update": "2026-03-23",
         "stop_loss_date": "2026-03-23"
+    },
+    {
+        "code": "688106",
+        "name": "金宏气体",
+        "date": "2026-03-23",
+        "price": 31.0,
+        "latest_price": 29.38,
+        "eps": 0.241,
+        "latest_update": "2026-03-24",
+        "stop_loss_date": "2026-03-24"
+    },
+    {
+        "code": "600617",
+        "name": "国新能源",
+        "date": "2026-03-23",
+        "price": 4.15,
+        "latest_price": 4.17,
+        "eps": -0.005,
+        "latest_update": "2026-03-24"
+    },
+    {
+        "code": "000968",
+        "name": "蓝焰控股",
+        "date": "2026-03-23",
+        "price": 10.68,
+        "latest_price": 10.5,
+        "eps": 0.277,
+        "latest_update": "2026-03-24"
+    },
+    {
+        "code": "300080",
+        "name": "易成新能",
+        "date": "2026-03-23",
+        "price": 6.31,
+        "latest_price": 6.18,
+        "eps": -0.141,
+        "latest_update": "2026-03-24"
+    },
+    {
+        "code": "600982",
+        "name": "宁波能源",
+        "date": "2026-03-23",
+        "price": 5.53,
+        "latest_price": 6.27,
+        "eps": 0.216,
+        "latest_update": "2026-03-24",
+        "take_profit_date": "2026-03-24"
     }
 ]
