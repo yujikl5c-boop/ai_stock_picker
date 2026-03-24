@@ -490,7 +490,7 @@
         "name": "东方铁塔",
         "date": "2026-03-23",
         "price": 21.59,
-        "latest_price": 22.1,
+        "latest_price": 22.15,
         "eps": 0.666,
         "latest_update": "2026-03-24"
     },
@@ -499,7 +499,7 @@
         "name": "兴发集团",
         "date": "2026-03-23",
         "price": 32.11,
-        "latest_price": 31.3,
+        "latest_price": 31.43,
         "eps": 1.097,
         "latest_update": "2026-03-24"
     },
@@ -517,7 +517,7 @@
         "name": "川发龙蟒",
         "date": "2026-03-23",
         "price": 11.35,
-        "latest_price": 11.26,
+        "latest_price": 11.29,
         "eps": 0.231,
         "latest_update": "2026-03-24"
     },
@@ -526,7 +526,7 @@
         "name": "山推股份",
         "date": "2026-03-23",
         "price": 10.98,
-        "latest_price": 11.47,
+        "latest_price": 11.53,
         "eps": 0.807,
         "latest_update": "2026-03-24"
     }

@@ -459,7 +459,7 @@
         "name": "海川智能",
         "date": "2026-03-20",
         "price": 57.22,
-        "latest_price": 60.94,
+        "latest_price": 61.91,
         "eps": 0.142,
         "latest_update": "2026-03-24"
     },
@@ -518,7 +518,7 @@
         "name": "国新能源",
         "date": "2026-03-23",
         "price": 4.15,
-        "latest_price": 4.17,
+        "latest_price": 4.24,
         "eps": -0.005,
         "latest_update": "2026-03-24"
     },
@@ -527,7 +527,7 @@
         "name": "蓝焰控股",
         "date": "2026-03-23",
         "price": 10.68,
-        "latest_price": 10.5,
+        "latest_price": 10.48,
         "eps": 0.277,
         "latest_update": "2026-03-24"
     },
@@ -536,7 +536,7 @@
         "name": "易成新能",
         "date": "2026-03-23",
         "price": 6.31,
-        "latest_price": 6.18,
+        "latest_price": 6.23,
         "eps": -0.141,
         "latest_update": "2026-03-24"
     },
