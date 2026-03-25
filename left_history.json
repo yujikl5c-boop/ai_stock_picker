@@ -499,7 +499,7 @@
         "name": "兴发集团",
         "date": "2026-03-23",
         "price": 32.11,
-        "latest_price": 32.95,
+        "latest_price": 33.01,
         "eps": 1.097,
         "latest_update": "2026-03-25"
     },
@@ -508,7 +508,7 @@
         "name": "六国化工",
         "date": "2026-03-23",
         "price": 6.89,
-        "latest_price": 6.92,
+        "latest_price": 6.97,
         "eps": -0.397,
         "latest_update": "2026-03-25"
     },
@@ -535,7 +535,7 @@
         "name": "兴业银锡",
         "date": "2026-03-24",
         "price": 38.1,
-        "latest_price": 40.14,
+        "latest_price": 40.15,
         "eps": 0.768,
         "latest_update": "2026-03-25"
     },
@@ -544,7 +544,7 @@
         "name": "中金黄金",
         "date": "2026-03-24",
         "price": 24.42,
-        "latest_price": 25.54,
+        "latest_price": 25.52,
         "eps": 0.759,
         "latest_update": "2026-03-25"
     },
@@ -562,7 +562,7 @@
         "name": "达华智能",
         "date": "2026-03-24",
         "price": 3.96,
-        "latest_price": 3.97,
+        "latest_price": 3.98,
         "eps": -0.092,
         "latest_update": "2026-03-25"
     },
