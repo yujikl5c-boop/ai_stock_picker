@@ -459,9 +459,10 @@
         "name": "海川智能",
         "date": "2026-03-20",
         "price": 57.22,
-        "latest_price": 61.91,
+        "latest_price": 70.88,
         "eps": 0.142,
-        "latest_update": "2026-03-24"
+        "latest_update": "2026-03-25",
+        "take_profit_date": "2026-03-25"
     },
     {
         "code": "002015",
@@ -518,18 +519,19 @@
         "name": "国新能源",
         "date": "2026-03-23",
         "price": 4.15,
-        "latest_price": 4.24,
+        "latest_price": 4.3,
         "eps": -0.005,
-        "latest_update": "2026-03-24"
+        "latest_update": "2026-03-25"
     },
     {
         "code": "000968",
         "name": "蓝焰控股",
         "date": "2026-03-23",
         "price": 10.68,
-        "latest_price": 10.48,
+        "latest_price": 9.87,
         "eps": 0.277,
-        "latest_update": "2026-03-24"
+        "latest_update": "2026-03-25",
+        "stop_loss_date": "2026-03-25"
     },
     {
         "code": "300080",
@@ -538,7 +540,7 @@
         "price": 6.31,
         "latest_price": 6.23,
         "eps": -0.141,
-        "latest_update": "2026-03-24"
+        "latest_update": "2026-03-25"
     },
     {
         "code": "600982",
@@ -549,5 +551,50 @@
         "eps": 0.216,
         "latest_update": "2026-03-24",
         "take_profit_date": "2026-03-24"
+    },
+    {
+        "code": "601330",
+        "name": "绿色动力",
+        "date": "2026-03-24",
+        "price": 11.1,
+        "latest_price": 11.22,
+        "eps": 0.438,
+        "latest_update": "2026-03-25"
+    },
+    {
+        "code": "001258",
+        "name": "立新能源",
+        "date": "2026-03-24",
+        "price": 11.14,
+        "latest_price": 11.58,
+        "eps": 0.142,
+        "latest_update": "2026-03-25"
+    },
+    {
+        "code": "603105",
+        "name": "芯能科技",
+        "date": "2026-03-24",
+        "price": 13.4,
+        "latest_price": 13.93,
+        "eps": 0.372,
+        "latest_update": "2026-03-25"
+    },
+    {
+        "code": "000617",
+        "name": "中油资本",
+        "date": "2026-03-24",
+        "price": 10.77,
+        "latest_price": 10.88,
+        "eps": 0.316,
+        "latest_update": "2026-03-25"
+    },
+    {
+        "code": "600681",
+        "name": "百川能源",
+        "date": "2026-03-24",
+        "price": 4.89,
+        "latest_price": 4.76,
+        "eps": 0.141,
+        "latest_update": "2026-03-25"
     }
 ]
