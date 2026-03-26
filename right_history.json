@@ -519,7 +519,7 @@
         "name": "国新能源",
         "date": "2026-03-23",
         "price": 4.15,
-        "latest_price": 4.22,
+        "latest_price": 4.23,
         "eps": -0.005,
         "latest_update": "2026-03-26"
     },
@@ -568,7 +568,7 @@
         "name": "立新能源",
         "date": "2026-03-24",
         "price": 11.14,
-        "latest_price": 10.96,
+        "latest_price": 10.85,
         "eps": 0.142,
         "latest_update": "2026-03-26"
     },
@@ -577,7 +577,7 @@
         "name": "芯能科技",
         "date": "2026-03-24",
         "price": 13.4,
-        "latest_price": 13.21,
+        "latest_price": 13.15,
         "eps": 0.372,
         "latest_update": "2026-03-26"
     },
@@ -596,7 +596,7 @@
         "name": "百川能源",
         "date": "2026-03-24",
         "price": 4.89,
-        "latest_price": 4.98,
+        "latest_price": 5.09,
         "eps": 0.141,
         "latest_update": "2026-03-26"
     },
@@ -605,7 +605,7 @@
         "name": "海川智能",
         "date": "2026-03-25",
         "price": 70.88,
-        "latest_price": 68.77,
+        "latest_price": 69.2,
         "eps": 0.142,
         "latest_update": "2026-03-26"
     },
@@ -634,7 +634,7 @@
         "name": "迪森股份",
         "date": "2026-03-25",
         "price": 8.68,
-        "latest_price": 9.06,
+        "latest_price": 9.09,
         "eps": 0.14,
         "latest_update": "2026-03-26"
     },
@@ -643,7 +643,7 @@
         "name": "华电新能",
         "date": "2026-03-25",
         "price": 7.49,
-        "latest_price": 7.21,
+        "latest_price": 7.23,
         "eps": 0.185,
         "latest_update": "2026-03-26"
     }
