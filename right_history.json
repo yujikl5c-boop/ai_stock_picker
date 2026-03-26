@@ -519,9 +519,9 @@
         "name": "国新能源",
         "date": "2026-03-23",
         "price": 4.15,
-        "latest_price": 4.33,
+        "latest_price": 4.22,
         "eps": -0.005,
-        "latest_update": "2026-03-25"
+        "latest_update": "2026-03-26"
     },
     {
         "code": "000968",
@@ -538,9 +538,10 @@
         "name": "易成新能",
         "date": "2026-03-23",
         "price": 6.31,
-        "latest_price": 6.28,
+        "latest_price": 5.88,
         "eps": -0.141,
-        "latest_update": "2026-03-25"
+        "latest_update": "2026-03-26",
+        "stop_loss_date": "2026-03-26"
     },
     {
         "code": "600982",
@@ -557,44 +558,93 @@
         "name": "绿色动力",
         "date": "2026-03-24",
         "price": 11.1,
-        "latest_price": 10.68,
+        "latest_price": 9.73,
         "eps": 0.438,
-        "latest_update": "2026-03-25"
+        "latest_update": "2026-03-26",
+        "stop_loss_date": "2026-03-26"
     },
     {
         "code": "001258",
         "name": "立新能源",
         "date": "2026-03-24",
         "price": 11.14,
-        "latest_price": 11.79,
+        "latest_price": 10.96,
         "eps": 0.142,
-        "latest_update": "2026-03-25"
+        "latest_update": "2026-03-26"
     },
     {
         "code": "603105",
         "name": "芯能科技",
         "date": "2026-03-24",
         "price": 13.4,
-        "latest_price": 13.89,
+        "latest_price": 13.21,
         "eps": 0.372,
-        "latest_update": "2026-03-25"
+        "latest_update": "2026-03-26"
     },
     {
         "code": "000617",
         "name": "中油资本",
         "date": "2026-03-24",
         "price": 10.77,
-        "latest_price": 10.83,
+        "latest_price": 10.32,
         "eps": 0.316,
-        "latest_update": "2026-03-25"
+        "latest_update": "2026-03-26",
+        "stop_loss_date": "2026-03-26"
     },
     {
         "code": "600681",
         "name": "百川能源",
         "date": "2026-03-24",
         "price": 4.89,
-        "latest_price": 4.84,
+        "latest_price": 4.98,
         "eps": 0.141,
-        "latest_update": "2026-03-25"
+        "latest_update": "2026-03-26"
+    },
+    {
+        "code": "300720",
+        "name": "海川智能",
+        "date": "2026-03-25",
+        "price": 70.88,
+        "latest_price": 68.77,
+        "eps": 0.142,
+        "latest_update": "2026-03-26"
+    },
+    {
+        "code": "601218",
+        "name": "吉鑫科技",
+        "date": "2026-03-25",
+        "price": 8.03,
+        "latest_price": 7.59,
+        "eps": 0.118,
+        "latest_update": "2026-03-26",
+        "stop_loss_date": "2026-03-26"
+    },
+    {
+        "code": "603105",
+        "name": "芯能科技",
+        "date": "2026-03-25",
+        "price": 13.93,
+        "latest_price": 13.21,
+        "eps": 0.372,
+        "latest_update": "2026-03-26",
+        "stop_loss_date": "2026-03-26"
+    },
+    {
+        "code": "300335",
+        "name": "迪森股份",
+        "date": "2026-03-25",
+        "price": 8.68,
+        "latest_price": 9.06,
+        "eps": 0.14,
+        "latest_update": "2026-03-26"
+    },
+    {
+        "code": "600930",
+        "name": "华电新能",
+        "date": "2026-03-25",
+        "price": 7.49,
+        "latest_price": 7.21,
+        "eps": 0.185,
+        "latest_update": "2026-03-26"
     }
 ]
