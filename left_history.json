@@ -490,7 +490,7 @@
         "name": "东方铁塔",
         "date": "2026-03-23",
         "price": 21.59,
-        "latest_price": 22.6,
+        "latest_price": 22.61,
         "eps": 0.666,
         "latest_update": "2026-03-27"
     },
@@ -499,7 +499,7 @@
         "name": "兴发集团",
         "date": "2026-03-23",
         "price": 32.11,
-        "latest_price": 33.66,
+        "latest_price": 33.72,
         "eps": 1.097,
         "latest_update": "2026-03-27"
     },
@@ -517,7 +517,7 @@
         "name": "川发龙蟒",
         "date": "2026-03-23",
         "price": 11.35,
-        "latest_price": 11.84,
+        "latest_price": 11.85,
         "eps": 0.231,
         "latest_update": "2026-03-27"
     },
@@ -526,7 +526,7 @@
         "name": "山推股份",
         "date": "2026-03-23",
         "price": 10.98,
-        "latest_price": 11.69,
+        "latest_price": 11.66,
         "eps": 0.807,
         "latest_update": "2026-03-27"
     },
@@ -535,7 +535,7 @@
         "name": "兴业银锡",
         "date": "2026-03-24",
         "price": 38.1,
-        "latest_price": 39.97,
+        "latest_price": 40.08,
         "eps": 0.768,
         "latest_update": "2026-03-27"
     },
@@ -544,7 +544,7 @@
         "name": "中金黄金",
         "date": "2026-03-24",
         "price": 24.42,
-        "latest_price": 25.55,
+        "latest_price": 25.54,
         "eps": 0.759,
         "latest_update": "2026-03-27"
     },
@@ -571,7 +571,7 @@
         "name": "百通能源",
         "date": "2026-03-24",
         "price": 16.34,
-        "latest_price": 16.79,
+        "latest_price": 16.78,
         "eps": 0.287,
         "latest_update": "2026-03-27"
     },
@@ -590,7 +590,7 @@
         "name": "统联精密",
         "date": "2026-03-25",
         "price": 38.55,
-        "latest_price": 39.55,
+        "latest_price": 39.67,
         "eps": 0.036,
         "latest_update": "2026-03-27"
     },
@@ -618,7 +618,7 @@
         "name": "蒙娜丽莎",
         "date": "2026-03-25",
         "price": 11.3,
-        "latest_price": 11.46,
+        "latest_price": 11.37,
         "eps": 0.197,
         "latest_update": "2026-03-27"
     },
@@ -627,7 +627,7 @@
         "name": "统联精密",
         "date": "2026-03-26",
         "price": 38.95,
-        "latest_price": 39.55,
+        "latest_price": 39.67,
         "eps": 0.036,
         "latest_update": "2026-03-27"
     },
@@ -645,7 +645,7 @@
         "name": "中矿资源",
         "date": "2026-03-26",
         "price": 68.25,
-        "latest_price": 72.88,
+        "latest_price": 73.02,
         "eps": 0.283,
         "latest_update": "2026-03-27"
     },
@@ -654,7 +654,7 @@
         "name": "爱博医疗",
         "date": "2026-03-26",
         "price": 50.57,
-        "latest_price": 52.12,
+        "latest_price": 52.08,
         "eps": 1.5,
         "latest_update": "2026-03-27"
     },
@@ -663,7 +663,7 @@
         "name": "肯特股份",
         "date": "2026-03-26",
         "price": 41.18,
-        "latest_price": 41.37,
+        "latest_price": 41.45,
         "eps": 0.702,
         "latest_update": "2026-03-27"
     }
