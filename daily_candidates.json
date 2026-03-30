@@ -1,107 +1,107 @@
 {
-    "date": "2026-03-27",
+    "date": "2026-03-30",
     "left": [
-        {
-            "code": "603358",
-            "name": "华达科技",
-            "price": 29.97,
-            "bias_val": -32.936516816218756,
-            "ma20_angle": -65.70687631513364,
-            "left_buy_signal": true,
-            "right_buy_signal": false,
-            "eps": 0.837
-        },
         {
             "code": "688031",
             "name": "星环科技",
-            "price": 143.1,
-            "bias_val": -26.379421221864956,
-            "ma20_angle": -64.35561578588548,
+            "price": 142.7,
+            "bias_val": -24.83975118639426,
+            "ma20_angle": -66.73004864831567,
             "left_buy_signal": true,
             "right_buy_signal": false,
             "eps": -2.024
         },
         {
-            "code": "301535",
-            "name": "浙江华远",
-            "price": 20.69,
-            "bias_val": -19.135464707261775,
-            "ma20_angle": -55.12842069033864,
+            "code": "603358",
+            "name": "华达科技",
+            "price": 33.33,
+            "bias_val": -24.10856596384171,
+            "ma20_angle": -60.41690402772031,
             "left_buy_signal": true,
             "right_buy_signal": false,
-            "eps": 0.186
+            "eps": 0.837
         },
         {
             "code": "600860",
             "name": "京城股份",
-            "price": 11.46,
-            "bias_val": -17.45597291749199,
-            "ma20_angle": -47.280983157097964,
+            "price": 11.3,
+            "bias_val": -17.79725748372313,
+            "ma20_angle": -44.51514190408146,
             "left_buy_signal": true,
             "right_buy_signal": false,
-            "eps": -0.05
+            "eps": -0.098
         },
         {
-            "code": "300774",
-            "name": "倍杰特",
-            "price": 17.54,
-            "bias_val": -16.745775583823818,
-            "ma20_angle": -67.73613287144673,
+            "code": "688631",
+            "name": "莱斯信息",
+            "price": 52.77,
+            "bias_val": -14.703434007095911,
+            "ma20_angle": -50.17904874959655,
             "left_buy_signal": true,
             "right_buy_signal": false,
-            "eps": 0.199
+            "eps": -0.305
+        },
+        {
+            "code": "300170",
+            "name": "汉得信息",
+            "price": 19.22,
+            "bias_val": -14.125505439760518,
+            "ma20_angle": -50.05678290298751,
+            "left_buy_signal": true,
+            "right_buy_signal": false,
+            "eps": 0.142
         }
     ],
     "right": [
         {
-            "code": "301327",
-            "name": "华宝新能",
-            "price": 77.0,
-            "bias_val": 21.111076158419586,
-            "ma20_angle": 57.53883079093789,
+            "code": "603115",
+            "name": "海星股份",
+            "price": 45.06,
+            "bias_val": 35.130677302784484,
+            "ma20_angle": 65.235439534438,
             "left_buy_signal": false,
             "right_buy_signal": true,
-            "eps": 0.817
+            "eps": 0.608
         },
         {
-            "code": "600773",
-            "name": "西藏城投",
-            "price": 19.64,
-            "bias_val": 16.14772760874064,
-            "ma20_angle": 57.46727331801961,
+            "code": "688428",
+            "name": "诺诚健华",
+            "price": 27.05,
+            "bias_val": 14.813242784380314,
+            "ma20_angle": 43.10969657720137,
             "left_buy_signal": false,
             "right_buy_signal": true,
-            "eps": -0.118
+            "eps": 0.364
         },
         {
-            "code": "000968",
-            "name": "蓝焰控股",
-            "price": 11.62,
-            "bias_val": 15.714001194981073,
-            "ma20_angle": 56.773873592589595,
+            "code": "002709",
+            "name": "天赐材料",
+            "price": 48.26,
+            "bias_val": 8.358125175413969,
+            "ma20_angle": 37.856309886742466,
             "left_buy_signal": false,
             "right_buy_signal": true,
-            "eps": 0.277
+            "eps": 0.668
         },
         {
-            "code": "688106",
-            "name": "金宏气体",
-            "price": 29.89,
-            "bias_val": 12.51646903820818,
-            "ma20_angle": 51.256954004005124,
+            "code": "603876",
+            "name": "鼎胜新材",
+            "price": 23.07,
+            "bias_val": 13.17422551448405,
+            "ma20_angle": 37.54942392918874,
             "left_buy_signal": false,
             "right_buy_signal": true,
-            "eps": 0.241
+            "eps": 0.33
         },
         {
-            "code": "600563",
-            "name": "法拉电子",
-            "price": 142.1,
-            "bias_val": 16.58913202221839,
-            "ma20_angle": 46.716052347926606,
+            "code": "301239",
+            "name": "普瑞眼科",
+            "price": 36.41,
+            "bias_val": 6.9623971797884545,
+            "ma20_angle": 34.2846420632417,
             "left_buy_signal": false,
             "right_buy_signal": true,
-            "eps": 3.945
+            "eps": 0.109
         }
     ]
 }

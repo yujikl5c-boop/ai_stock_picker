@@ -519,9 +519,9 @@
         "name": "国新能源",
         "date": "2026-03-23",
         "price": 4.15,
-        "latest_price": 4.34,
+        "latest_price": 4.09,
         "eps": -0.005,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30"
     },
     {
         "code": "000968",
@@ -598,9 +598,10 @@
         "name": "百川能源",
         "date": "2026-03-24",
         "price": 4.89,
-        "latest_price": 4.86,
+        "latest_price": 4.51,
         "eps": 0.141,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30",
+        "stop_loss_date": "2026-03-30"
     },
     {
         "code": "300720",
@@ -637,9 +638,10 @@
         "name": "迪森股份",
         "date": "2026-03-25",
         "price": 8.68,
-        "latest_price": 8.52,
+        "latest_price": 7.87,
         "eps": 0.14,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30",
+        "stop_loss_date": "2026-03-30"
     },
     {
         "code": "600930",
@@ -656,9 +658,10 @@
         "name": "华电能源",
         "date": "2026-03-26",
         "price": 6.58,
-        "latest_price": 6.68,
+        "latest_price": 6.01,
         "eps": 0.034,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30",
+        "stop_loss_date": "2026-03-30"
     },
     {
         "code": "600758",
@@ -685,17 +688,65 @@
         "name": "海星股份",
         "date": "2026-03-26",
         "price": 38.89,
-        "latest_price": 43.43,
+        "latest_price": 45.06,
         "eps": 0.608,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30",
+        "take_profit_date": "2026-03-30"
     },
     {
         "code": "301327",
         "name": "华宝新能",
         "date": "2026-03-26",
         "price": 71.17,
-        "latest_price": 76.28,
+        "latest_price": 74.91,
         "eps": 0.817,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30"
+    },
+    {
+        "code": "301327",
+        "name": "华宝新能",
+        "date": "2026-03-27",
+        "price": 77.0,
+        "latest_price": 74.91,
+        "eps": 0.817,
+        "latest_update": "2026-03-30"
+    },
+    {
+        "code": "600773",
+        "name": "西藏城投",
+        "date": "2026-03-27",
+        "price": 19.64,
+        "latest_price": 19.42,
+        "eps": -0.118,
+        "latest_update": "2026-03-30"
+    },
+    {
+        "code": "000968",
+        "name": "蓝焰控股",
+        "date": "2026-03-27",
+        "price": 11.62,
+        "latest_price": 10.98,
+        "eps": 0.277,
+        "latest_update": "2026-03-30",
+        "stop_loss_date": "2026-03-30"
+    },
+    {
+        "code": "688106",
+        "name": "金宏气体",
+        "date": "2026-03-27",
+        "price": 29.89,
+        "latest_price": 29.03,
+        "eps": 0.241,
+        "latest_update": "2026-03-30"
+    },
+    {
+        "code": "600563",
+        "name": "法拉电子",
+        "date": "2026-03-27",
+        "price": 142.1,
+        "latest_price": 133.21,
+        "eps": 3.945,
+        "latest_update": "2026-03-30",
+        "stop_loss_date": "2026-03-30"
     }
 ]

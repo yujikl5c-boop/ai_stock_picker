@@ -490,90 +490,90 @@
         "name": "东方铁塔",
         "date": "2026-03-23",
         "price": 21.59,
-        "latest_price": 22.61,
+        "latest_price": 22.84,
         "eps": 0.666,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30"
     },
     {
         "code": "600141",
         "name": "兴发集团",
         "date": "2026-03-23",
         "price": 32.11,
-        "latest_price": 33.72,
+        "latest_price": 34.31,
         "eps": 1.097,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30"
     },
     {
         "code": "600470",
         "name": "六国化工",
         "date": "2026-03-23",
         "price": 6.89,
-        "latest_price": 7.43,
+        "latest_price": 7.46,
         "eps": -0.397,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30"
     },
     {
         "code": "002312",
         "name": "川发龙蟒",
         "date": "2026-03-23",
         "price": 11.35,
-        "latest_price": 11.85,
+        "latest_price": 11.96,
         "eps": 0.231,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30"
     },
     {
         "code": "000680",
         "name": "山推股份",
         "date": "2026-03-23",
         "price": 10.98,
-        "latest_price": 11.66,
+        "latest_price": 11.65,
         "eps": 0.807,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30"
     },
     {
         "code": "000426",
         "name": "兴业银锡",
         "date": "2026-03-24",
         "price": 38.1,
-        "latest_price": 40.08,
+        "latest_price": 40.1,
         "eps": 0.768,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30"
     },
     {
         "code": "600489",
         "name": "中金黄金",
         "date": "2026-03-24",
         "price": 24.42,
-        "latest_price": 25.54,
+        "latest_price": 26.71,
         "eps": 0.759,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30"
     },
     {
         "code": "600497",
         "name": "驰宏锌锗",
         "date": "2026-03-24",
         "price": 7.76,
-        "latest_price": 7.95,
+        "latest_price": 8.04,
         "eps": 0.263,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30"
     },
     {
         "code": "002512",
         "name": "达华智能",
         "date": "2026-03-24",
         "price": 3.96,
-        "latest_price": 3.97,
+        "latest_price": 3.93,
         "eps": -0.092,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30"
     },
     {
         "code": "001376",
         "name": "百通能源",
         "date": "2026-03-24",
         "price": 16.34,
-        "latest_price": 16.78,
+        "latest_price": 15.99,
         "eps": 0.287,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30"
     },
     {
         "code": "301535",
@@ -590,18 +590,18 @@
         "name": "统联精密",
         "date": "2026-03-25",
         "price": 38.55,
-        "latest_price": 39.67,
+        "latest_price": 42.25,
         "eps": 0.036,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30"
     },
     {
         "code": "002512",
         "name": "达华智能",
         "date": "2026-03-25",
         "price": 3.97,
-        "latest_price": 3.97,
+        "latest_price": 3.93,
         "eps": -0.092,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30"
     },
     {
         "code": "002738",
@@ -618,53 +618,99 @@
         "name": "蒙娜丽莎",
         "date": "2026-03-25",
         "price": 11.3,
-        "latest_price": 11.37,
+        "latest_price": 11.27,
         "eps": 0.197,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30"
     },
     {
         "code": "688210",
         "name": "统联精密",
         "date": "2026-03-26",
         "price": 38.95,
-        "latest_price": 39.67,
+        "latest_price": 42.25,
         "eps": 0.036,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30"
     },
     {
         "code": "002512",
         "name": "达华智能",
         "date": "2026-03-26",
         "price": 4.1,
-        "latest_price": 3.97,
+        "latest_price": 3.93,
         "eps": -0.092,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30",
+        "stop_loss_date": "2026-03-30"
     },
     {
         "code": "002738",
         "name": "中矿资源",
         "date": "2026-03-26",
         "price": 68.25,
-        "latest_price": 73.02,
+        "latest_price": 73.32,
         "eps": 0.283,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30"
     },
     {
         "code": "688050",
         "name": "爱博医疗",
         "date": "2026-03-26",
         "price": 50.57,
-        "latest_price": 52.08,
+        "latest_price": 51.69,
         "eps": 1.5,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30"
     },
     {
         "code": "301591",
         "name": "肯特股份",
         "date": "2026-03-26",
         "price": 41.18,
-        "latest_price": 41.45,
+        "latest_price": 41.67,
         "eps": 0.702,
-        "latest_update": "2026-03-27"
+        "latest_update": "2026-03-30"
+    },
+    {
+        "code": "603358",
+        "name": "华达科技",
+        "date": "2026-03-27",
+        "price": 29.97,
+        "latest_price": 33.33,
+        "eps": 0.837,
+        "latest_update": "2026-03-30"
+    },
+    {
+        "code": "688031",
+        "name": "星环科技",
+        "date": "2026-03-27",
+        "price": 143.1,
+        "latest_price": 142.7,
+        "eps": -2.024,
+        "latest_update": "2026-03-30"
+    },
+    {
+        "code": "301535",
+        "name": "浙江华远",
+        "date": "2026-03-27",
+        "price": 20.69,
+        "latest_price": 20.33,
+        "eps": 0.186,
+        "latest_update": "2026-03-30"
+    },
+    {
+        "code": "600860",
+        "name": "京城股份",
+        "date": "2026-03-27",
+        "price": 11.46,
+        "latest_price": 11.3,
+        "eps": -0.05,
+        "latest_update": "2026-03-30"
+    },
+    {
+        "code": "300774",
+        "name": "倍杰特",
+        "date": "2026-03-27",
+        "price": 17.54,
+        "latest_price": 17.32,
+        "eps": 0.199,
+        "latest_update": "2026-03-30"
     }
 ]
