@@ -519,9 +519,10 @@
         "name": "国新能源",
         "date": "2026-03-23",
         "price": 4.15,
-        "latest_price": 4.09,
+        "latest_price": 3.87,
         "eps": -0.005,
-        "latest_update": "2026-03-30"
+        "latest_update": "2026-03-31",
+        "stop_loss_date": "2026-03-31"
     },
     {
         "code": "000968",
@@ -698,27 +699,29 @@
         "name": "华宝新能",
         "date": "2026-03-26",
         "price": 71.17,
-        "latest_price": 74.82,
+        "latest_price": 71.38,
         "eps": 0.817,
-        "latest_update": "2026-03-30"
+        "latest_update": "2026-03-31"
     },
     {
         "code": "301327",
         "name": "华宝新能",
         "date": "2026-03-27",
         "price": 77.0,
-        "latest_price": 74.82,
+        "latest_price": 71.38,
         "eps": 0.817,
-        "latest_update": "2026-03-30"
+        "latest_update": "2026-03-31",
+        "stop_loss_date": "2026-03-31"
     },
     {
         "code": "600773",
         "name": "西藏城投",
         "date": "2026-03-27",
         "price": 19.64,
-        "latest_price": 19.62,
+        "latest_price": 18.3,
         "eps": -0.118,
-        "latest_update": "2026-03-30"
+        "latest_update": "2026-03-31",
+        "stop_loss_date": "2026-03-31"
     },
     {
         "code": "000968",
@@ -735,9 +738,10 @@
         "name": "金宏气体",
         "date": "2026-03-27",
         "price": 29.89,
-        "latest_price": 28.88,
+        "latest_price": 26.14,
         "eps": 0.241,
-        "latest_update": "2026-03-30"
+        "latest_update": "2026-03-31",
+        "stop_loss_date": "2026-03-31"
     },
     {
         "code": "600563",
@@ -748,5 +752,52 @@
         "eps": 3.945,
         "latest_update": "2026-03-30",
         "stop_loss_date": "2026-03-30"
+    },
+    {
+        "code": "603115",
+        "name": "海星股份",
+        "date": "2026-03-30",
+        "price": 45.06,
+        "latest_price": 44.03,
+        "eps": 0.608,
+        "latest_update": "2026-03-31"
+    },
+    {
+        "code": "688428",
+        "name": "诺诚健华",
+        "date": "2026-03-30",
+        "price": 27.05,
+        "latest_price": 27.03,
+        "eps": 0.364,
+        "latest_update": "2026-03-31"
+    },
+    {
+        "code": "002709",
+        "name": "天赐材料",
+        "date": "2026-03-30",
+        "price": 48.26,
+        "latest_price": 46.14,
+        "eps": 0.668,
+        "latest_update": "2026-03-31",
+        "stop_loss_date": "2026-03-31"
+    },
+    {
+        "code": "603876",
+        "name": "鼎胜新材",
+        "date": "2026-03-30",
+        "price": 23.07,
+        "latest_price": 22.04,
+        "eps": 0.33,
+        "latest_update": "2026-03-31",
+        "stop_loss_date": "2026-03-31"
+    },
+    {
+        "code": "301239",
+        "name": "普瑞眼科",
+        "date": "2026-03-30",
+        "price": 36.41,
+        "latest_price": 35.33,
+        "eps": 0.109,
+        "latest_update": "2026-03-31"
     }
 ]
