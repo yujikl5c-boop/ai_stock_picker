@@ -699,7 +699,7 @@
         "name": "华宝新能",
         "date": "2026-03-26",
         "price": 71.17,
-        "latest_price": 71.38,
+        "latest_price": 71.4,
         "eps": 0.817,
         "latest_update": "2026-03-31"
     },
@@ -758,7 +758,7 @@
         "name": "海星股份",
         "date": "2026-03-30",
         "price": 45.06,
-        "latest_price": 44.03,
+        "latest_price": 43.95,
         "eps": 0.608,
         "latest_update": "2026-03-31"
     },
@@ -767,7 +767,7 @@
         "name": "诺诚健华",
         "date": "2026-03-30",
         "price": 27.05,
-        "latest_price": 27.03,
+        "latest_price": 27.02,
         "eps": 0.364,
         "latest_update": "2026-03-31"
     },
@@ -796,7 +796,7 @@
         "name": "普瑞眼科",
         "date": "2026-03-30",
         "price": 36.41,
-        "latest_price": 35.33,
+        "latest_price": 35.3,
         "eps": 0.109,
         "latest_update": "2026-03-31"
     }
