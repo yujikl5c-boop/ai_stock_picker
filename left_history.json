@@ -600,18 +600,20 @@
         "name": "统联精密",
         "date": "2026-03-25",
         "price": 38.55,
-        "latest_price": 42.99,
+        "latest_price": 41.2,
         "eps": 0.036,
-        "latest_update": "2026-04-01"
+        "latest_update": "2026-04-02",
+        "expire_date": "2026-04-02"
     },
     {
         "code": "002512",
         "name": "达华智能",
         "date": "2026-03-25",
         "price": 3.97,
-        "latest_price": 3.98,
+        "latest_price": 3.8,
         "eps": -0.092,
-        "latest_update": "2026-04-01"
+        "latest_update": "2026-04-02",
+        "stop_loss_date": "2026-04-02"
     },
     {
         "code": "002738",
@@ -628,18 +630,19 @@
         "name": "蒙娜丽莎",
         "date": "2026-03-25",
         "price": 11.3,
-        "latest_price": 11.32,
+        "latest_price": 11.06,
         "eps": 0.197,
-        "latest_update": "2026-04-01"
+        "latest_update": "2026-04-02",
+        "expire_date": "2026-04-02"
     },
     {
         "code": "688210",
         "name": "统联精密",
         "date": "2026-03-26",
         "price": 38.95,
-        "latest_price": 42.99,
+        "latest_price": 41.2,
         "eps": 0.036,
-        "latest_update": "2026-04-01"
+        "latest_update": "2026-04-02"
     },
     {
         "code": "002512",
@@ -656,27 +659,27 @@
         "name": "中矿资源",
         "date": "2026-03-26",
         "price": 68.25,
-        "latest_price": 74.59,
+        "latest_price": 73.73,
         "eps": 0.283,
-        "latest_update": "2026-04-01"
+        "latest_update": "2026-04-02"
     },
     {
         "code": "688050",
         "name": "爱博医疗",
         "date": "2026-03-26",
         "price": 50.57,
-        "latest_price": 52.54,
+        "latest_price": 51.69,
         "eps": 1.5,
-        "latest_update": "2026-04-01"
+        "latest_update": "2026-04-02"
     },
     {
         "code": "301591",
         "name": "肯特股份",
         "date": "2026-03-26",
         "price": 41.18,
-        "latest_price": 42.11,
+        "latest_price": 41.14,
         "eps": 0.702,
-        "latest_update": "2026-04-01"
+        "latest_update": "2026-04-02"
     },
     {
         "code": "603358",
@@ -693,27 +696,28 @@
         "name": "星环科技",
         "date": "2026-03-27",
         "price": 143.1,
-        "latest_price": 145.92,
+        "latest_price": 128.29,
         "eps": -2.024,
-        "latest_update": "2026-04-01"
+        "latest_update": "2026-04-02",
+        "stop_loss_date": "2026-04-02"
     },
     {
         "code": "301535",
         "name": "浙江华远",
         "date": "2026-03-27",
         "price": 20.69,
-        "latest_price": 20.44,
+        "latest_price": 19.87,
         "eps": 0.186,
-        "latest_update": "2026-04-01"
+        "latest_update": "2026-04-02"
     },
     {
         "code": "600860",
         "name": "京城股份",
         "date": "2026-03-27",
         "price": 11.46,
-        "latest_price": 11.5,
+        "latest_price": 11.22,
         "eps": -0.05,
-        "latest_update": "2026-04-01"
+        "latest_update": "2026-04-02"
     },
     {
         "code": "300774",
@@ -730,53 +734,101 @@
         "name": "星环科技",
         "date": "2026-03-30",
         "price": 142.7,
-        "latest_price": 145.92,
+        "latest_price": 128.29,
         "eps": -2.024,
-        "latest_update": "2026-04-01"
+        "latest_update": "2026-04-02",
+        "stop_loss_date": "2026-04-02"
     },
     {
         "code": "603358",
         "name": "华达科技",
         "date": "2026-03-30",
         "price": 33.33,
-        "latest_price": 36.01,
+        "latest_price": 36.06,
         "eps": 0.837,
-        "latest_update": "2026-04-01"
+        "latest_update": "2026-04-02"
     },
     {
         "code": "600860",
         "name": "京城股份",
         "date": "2026-03-30",
         "price": 11.3,
-        "latest_price": 11.5,
+        "latest_price": 11.22,
         "eps": -0.098,
-        "latest_update": "2026-04-01"
+        "latest_update": "2026-04-02"
     },
     {
         "code": "688631",
         "name": "莱斯信息",
         "date": "2026-03-30",
         "price": 52.77,
-        "latest_price": 52.97,
+        "latest_price": 50.93,
         "eps": -0.305,
-        "latest_update": "2026-04-01"
+        "latest_update": "2026-04-02"
     },
     {
         "code": "300170",
         "name": "汉得信息",
         "date": "2026-03-30",
         "price": 19.22,
-        "latest_price": 19.62,
+        "latest_price": 18.78,
         "eps": 0.142,
-        "latest_update": "2026-04-01"
+        "latest_update": "2026-04-02"
     },
     {
         "code": "002085",
         "name": "万丰奥威",
         "date": "2026-03-31",
         "price": 14.1,
-        "latest_price": 14.11,
+        "latest_price": 13.82,
         "eps": 0.343,
-        "latest_update": "2026-04-01"
+        "latest_update": "2026-04-02"
+    },
+    {
+        "code": "688031",
+        "name": "星环科技",
+        "date": "2026-04-01",
+        "price": 143.89,
+        "latest_price": 128.29,
+        "eps": -2.024,
+        "latest_update": "2026-04-02",
+        "stop_loss_date": "2026-04-02"
+    },
+    {
+        "code": "002364",
+        "name": "中恒电气",
+        "date": "2026-04-01",
+        "price": 26.85,
+        "latest_price": 25.69,
+        "eps": 0.129,
+        "latest_update": "2026-04-02",
+        "stop_loss_date": "2026-04-02"
+    },
+    {
+        "code": "603358",
+        "name": "华达科技",
+        "date": "2026-04-01",
+        "price": 36.78,
+        "latest_price": 36.06,
+        "eps": 0.837,
+        "latest_update": "2026-04-02"
+    },
+    {
+        "code": "688408",
+        "name": "中信博",
+        "date": "2026-04-01",
+        "price": 36.58,
+        "latest_price": 35.72,
+        "eps": 0.554,
+        "latest_update": "2026-04-02"
+    },
+    {
+        "code": "301525",
+        "name": "儒竞科技",
+        "date": "2026-04-01",
+        "price": 71.28,
+        "latest_price": 69.15,
+        "eps": 1.421,
+        "latest_update": "2026-04-02"
     }
 ]

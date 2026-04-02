@@ -1,107 +1,97 @@
 {
-    "date": "2026-04-01",
+    "date": "2026-04-02",
     "left": [
         {
-            "code": "688031",
-            "name": "星环科技",
-            "price": 143.89,
-            "bias_val": -22.214473762453856,
-            "ma20_angle": -48.383334658769265,
+            "code": "688196",
+            "name": "卓越新能",
+            "price": 65.08,
+            "bias_val": -15.052472197566956,
+            "ma20_angle": -58.90154861134256,
             "left_buy_signal": true,
             "right_buy_signal": false,
-            "eps": -2.024
+            "eps": 1.316
         },
         {
-            "code": "002364",
-            "name": "中恒电气",
-            "price": 26.85,
-            "bias_val": -13.786183312729777,
-            "ma20_angle": -40.41813049326064,
+            "code": "300724",
+            "name": "捷佳伟创",
+            "price": 107.5,
+            "bias_val": -9.535771239107458,
+            "ma20_angle": -15.746120302321497,
             "left_buy_signal": true,
             "right_buy_signal": false,
-            "eps": 0.129
+            "eps": 7.718
         },
         {
-            "code": "603358",
-            "name": "华达科技",
-            "price": 36.78,
-            "bias_val": -13.504615203715678,
-            "ma20_angle": -55.42254668706633,
+            "code": "000830",
+            "name": "鲁西化工",
+            "price": 15.77,
+            "bias_val": -8.70672687275675,
+            "ma20_angle": -40.34792190514876,
             "left_buy_signal": true,
             "right_buy_signal": false,
-            "eps": 0.837
+            "eps": 0.537
         },
         {
-            "code": "688408",
-            "name": "中信博",
-            "price": 36.58,
-            "bias_val": -11.424282047556774,
-            "ma20_angle": -34.192384385308216,
+            "code": "600792",
+            "name": "云煤能源",
+            "price": 4.43,
+            "bias_val": -8.05313408053134,
+            "ma20_angle": -23.45958807736181,
             "left_buy_signal": true,
             "right_buy_signal": false,
-            "eps": 0.554
-        },
-        {
-            "code": "301525",
-            "name": "儒竞科技",
-            "price": 71.28,
-            "bias_val": -10.747154502084818,
-            "ma20_angle": -43.73489032653094,
-            "left_buy_signal": true,
-            "right_buy_signal": false,
-            "eps": 1.421
+            "eps": -0.164
         }
     ],
     "right": [
         {
-            "code": "600513",
-            "name": "联环药业",
-            "price": 30.56,
-            "bias_val": 30.059156488062282,
-            "ma20_angle": 64.66350429110337,
+            "code": "603016",
+            "name": "新宏泰",
+            "price": 50.9,
+            "bias_val": 34.412506436748224,
+            "ma20_angle": 69.16326299831273,
             "left_buy_signal": false,
             "right_buy_signal": true,
-            "eps": -0.123
+            "eps": 0.323
         },
         {
-            "code": "002294",
-            "name": "信立泰",
-            "price": 66.0,
-            "bias_val": 17.267663441805933,
-            "ma20_angle": 60.125249413373226,
+            "code": "688513",
+            "name": "苑东生物",
+            "price": 76.96,
+            "bias_val": 23.623571365465395,
+            "ma20_angle": 60.47186042306902,
             "left_buy_signal": false,
             "right_buy_signal": true,
-            "eps": 0.521
+            "eps": 1.247
+        },
+        {
+            "code": "688693",
+            "name": "锴威特",
+            "price": 55.05,
+            "bias_val": 23.41527390120052,
+            "ma20_angle": 59.66652842446211,
+            "left_buy_signal": false,
+            "right_buy_signal": true,
+            "eps": -0.662
         },
         {
             "code": "688428",
             "name": "诺诚健华",
-            "price": 28.89,
-            "bias_val": 19.27912305691461,
-            "ma20_angle": 57.8275075426622,
+            "price": 29.79,
+            "bias_val": 21.009017791859602,
+            "ma20_angle": 58.83941646196433,
             "left_buy_signal": false,
             "right_buy_signal": true,
             "eps": 0.364
         },
         {
-            "code": "688091",
-            "name": "上海谊众",
-            "price": 62.79,
-            "bias_val": 16.309008900538103,
-            "ma20_angle": 55.85677561530918,
+            "code": "002821",
+            "name": "凯莱英",
+            "price": 127.02,
+            "bias_val": 25.39302549421261,
+            "ma20_angle": 56.02989720257877,
             "left_buy_signal": false,
             "right_buy_signal": true,
-            "eps": 0.245
-        },
-        {
-            "code": "600066",
-            "name": "宇通客车",
-            "price": 37.05,
-            "bias_val": 16.67270236651917,
-            "ma20_angle": 50.67822620931587,
-            "left_buy_signal": false,
-            "right_buy_signal": true,
-            "eps": 2.509
+            "eps": 3.138
         }
     ]
 }
