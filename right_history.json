@@ -759,18 +759,19 @@
         "name": "海星股份",
         "date": "2026-03-30",
         "price": 45.06,
-        "latest_price": 43.75,
+        "latest_price": 42.25,
         "eps": 0.608,
-        "latest_update": "2026-04-02"
+        "latest_update": "2026-04-03",
+        "stop_loss_date": "2026-04-03"
     },
     {
         "code": "688428",
         "name": "诺诚健华",
         "date": "2026-03-30",
         "price": 27.05,
-        "latest_price": 29.95,
+        "latest_price": 29.53,
         "eps": 0.364,
-        "latest_update": "2026-04-02"
+        "latest_update": "2026-04-03"
     },
     {
         "code": "002709",
@@ -797,9 +798,9 @@
         "name": "普瑞眼科",
         "date": "2026-03-30",
         "price": 36.41,
-        "latest_price": 36.0,
+        "latest_price": 36.12,
         "eps": 0.109,
-        "latest_update": "2026-04-02"
+        "latest_update": "2026-04-03"
     },
     {
         "code": "600726",
@@ -816,9 +817,9 @@
         "name": "新宏泰",
         "date": "2026-03-31",
         "price": 47.09,
-        "latest_price": 51.1,
+        "latest_price": 45.99,
         "eps": 0.323,
-        "latest_update": "2026-04-02"
+        "latest_update": "2026-04-03"
     },
     {
         "code": "000048",
@@ -835,9 +836,9 @@
         "name": "矩阵股份",
         "date": "2026-03-31",
         "price": 29.88,
-        "latest_price": 30.92,
+        "latest_price": 29.0,
         "eps": 0.382,
-        "latest_update": "2026-04-02"
+        "latest_update": "2026-04-03"
     },
     {
         "code": "600163",
@@ -854,44 +855,92 @@
         "name": "联环药业",
         "date": "2026-04-01",
         "price": 30.56,
-        "latest_price": 30.75,
+        "latest_price": 27.68,
         "eps": -0.123,
-        "latest_update": "2026-04-02"
+        "latest_update": "2026-04-03",
+        "stop_loss_date": "2026-04-03"
     },
     {
         "code": "002294",
         "name": "信立泰",
         "date": "2026-04-01",
         "price": 66.0,
-        "latest_price": 68.3,
+        "latest_price": 66.19,
         "eps": 0.521,
-        "latest_update": "2026-04-02"
+        "latest_update": "2026-04-03"
     },
     {
         "code": "688428",
         "name": "诺诚健华",
         "date": "2026-04-01",
         "price": 28.89,
-        "latest_price": 29.95,
+        "latest_price": 29.53,
         "eps": 0.364,
-        "latest_update": "2026-04-02"
+        "latest_update": "2026-04-03"
     },
     {
         "code": "688091",
         "name": "上海谊众",
         "date": "2026-04-01",
         "price": 62.79,
-        "latest_price": 61.27,
+        "latest_price": 59.0,
         "eps": 0.245,
-        "latest_update": "2026-04-02"
+        "latest_update": "2026-04-03",
+        "stop_loss_date": "2026-04-03"
     },
     {
         "code": "600066",
         "name": "宇通客车",
         "date": "2026-04-01",
         "price": 37.05,
-        "latest_price": 38.25,
+        "latest_price": 37.1,
         "eps": 2.509,
-        "latest_update": "2026-04-02"
+        "latest_update": "2026-04-03"
+    },
+    {
+        "code": "603016",
+        "name": "新宏泰",
+        "date": "2026-04-02",
+        "price": 50.9,
+        "latest_price": 45.99,
+        "eps": 0.323,
+        "latest_update": "2026-04-03",
+        "stop_loss_date": "2026-04-03"
+    },
+    {
+        "code": "688513",
+        "name": "苑东生物",
+        "date": "2026-04-02",
+        "price": 76.96,
+        "latest_price": 76.92,
+        "eps": 1.247,
+        "latest_update": "2026-04-03"
+    },
+    {
+        "code": "688693",
+        "name": "锴威特",
+        "date": "2026-04-02",
+        "price": 55.05,
+        "latest_price": 56.2,
+        "eps": -0.662,
+        "latest_update": "2026-04-03"
+    },
+    {
+        "code": "688428",
+        "name": "诺诚健华",
+        "date": "2026-04-02",
+        "price": 29.79,
+        "latest_price": 29.53,
+        "eps": 0.364,
+        "latest_update": "2026-04-03"
+    },
+    {
+        "code": "002821",
+        "name": "凯莱英",
+        "date": "2026-04-02",
+        "price": 127.02,
+        "latest_price": 122.19,
+        "eps": 3.138,
+        "latest_update": "2026-04-03"
     }
 ]
