@@ -750,7 +750,7 @@
         "name": "华达科技",
         "date": "2026-03-30",
         "price": 33.33,
-        "latest_price": 36.49,
+        "latest_price": 35.41,
         "eps": 0.837,
         "latest_update": "2026-04-03"
     },
@@ -779,9 +779,10 @@
         "name": "汉得信息",
         "date": "2026-03-30",
         "price": 19.22,
-        "latest_price": 18.5,
+        "latest_price": 18.38,
         "eps": 0.142,
-        "latest_update": "2026-04-03"
+        "latest_update": "2026-04-03",
+        "stop_loss_date": "2026-04-03"
     },
     {
         "code": "002085",
@@ -818,7 +819,7 @@
         "name": "华达科技",
         "date": "2026-04-01",
         "price": 36.78,
-        "latest_price": 36.49,
+        "latest_price": 35.41,
         "eps": 0.837,
         "latest_update": "2026-04-03"
     },
@@ -847,7 +848,7 @@
         "name": "卓越新能",
         "date": "2026-04-02",
         "price": 65.08,
-        "latest_price": 64.94,
+        "latest_price": 65.28,
         "eps": 1.316,
         "latest_update": "2026-04-03"
     },
@@ -856,7 +857,7 @@
         "name": "捷佳伟创",
         "date": "2026-04-02",
         "price": 107.5,
-        "latest_price": 103.5,
+        "latest_price": 103.42,
         "eps": 7.718,
         "latest_update": "2026-04-03"
     },
@@ -865,7 +866,7 @@
         "name": "鲁西化工",
         "date": "2026-04-02",
         "price": 15.77,
-        "latest_price": 15.29,
+        "latest_price": 15.34,
         "eps": 0.537,
         "latest_update": "2026-04-03"
     },
