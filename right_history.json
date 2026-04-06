@@ -771,7 +771,7 @@
         "price": 27.05,
         "latest_price": 29.38,
         "eps": 0.364,
-        "latest_update": "2026-04-03"
+        "latest_update": "2026-04-06"
     },
     {
         "code": "002709",
@@ -800,7 +800,7 @@
         "price": 36.41,
         "latest_price": 36.54,
         "eps": 0.109,
-        "latest_update": "2026-04-03"
+        "latest_update": "2026-04-06"
     },
     {
         "code": "600726",
@@ -819,7 +819,7 @@
         "price": 47.09,
         "latest_price": 45.99,
         "eps": 0.323,
-        "latest_update": "2026-04-03"
+        "latest_update": "2026-04-06"
     },
     {
         "code": "000048",
@@ -838,7 +838,7 @@
         "price": 29.88,
         "latest_price": 29.0,
         "eps": 0.382,
-        "latest_update": "2026-04-03"
+        "latest_update": "2026-04-06"
     },
     {
         "code": "600163",
@@ -867,7 +867,7 @@
         "price": 66.0,
         "latest_price": 66.4,
         "eps": 0.521,
-        "latest_update": "2026-04-03"
+        "latest_update": "2026-04-06"
     },
     {
         "code": "688428",
@@ -876,7 +876,7 @@
         "price": 28.89,
         "latest_price": 29.38,
         "eps": 0.364,
-        "latest_update": "2026-04-03"
+        "latest_update": "2026-04-06"
     },
     {
         "code": "688091",
@@ -895,7 +895,7 @@
         "price": 37.05,
         "latest_price": 37.15,
         "eps": 2.509,
-        "latest_update": "2026-04-03"
+        "latest_update": "2026-04-06"
     },
     {
         "code": "603016",
@@ -914,7 +914,7 @@
         "price": 76.96,
         "latest_price": 79.6,
         "eps": 1.247,
-        "latest_update": "2026-04-03"
+        "latest_update": "2026-04-06"
     },
     {
         "code": "688693",
@@ -923,7 +923,7 @@
         "price": 55.05,
         "latest_price": 56.41,
         "eps": -0.662,
-        "latest_update": "2026-04-03"
+        "latest_update": "2026-04-06"
     },
     {
         "code": "688428",
@@ -932,7 +932,7 @@
         "price": 29.79,
         "latest_price": 29.38,
         "eps": 0.364,
-        "latest_update": "2026-04-03"
+        "latest_update": "2026-04-06"
     },
     {
         "code": "002821",
@@ -941,6 +941,51 @@
         "price": 127.02,
         "latest_price": 122.06,
         "eps": 3.138,
-        "latest_update": "2026-04-03"
+        "latest_update": "2026-04-06"
+    },
+    {
+        "code": "688048",
+        "name": "长光华芯",
+        "date": "2026-04-03",
+        "price": 239.45,
+        "latest_price": 236.93,
+        "eps": 0.119,
+        "latest_update": "2026-04-06"
+    },
+    {
+        "code": "301216",
+        "name": "万凯新材",
+        "date": "2026-04-03",
+        "price": 28.14,
+        "latest_price": 28.13,
+        "eps": 0.134,
+        "latest_update": "2026-04-06"
+    },
+    {
+        "code": "600487",
+        "name": "亨通光电",
+        "date": "2026-04-03",
+        "price": 57.97,
+        "latest_price": 58.05,
+        "eps": 0.963,
+        "latest_update": "2026-04-06"
+    },
+    {
+        "code": "002428",
+        "name": "云南锗业",
+        "date": "2026-04-03",
+        "price": 51.6,
+        "latest_price": 51.71,
+        "eps": 0.028,
+        "latest_update": "2026-04-06"
+    },
+    {
+        "code": "600522",
+        "name": "中天科技",
+        "date": "2026-04-03",
+        "price": 30.76,
+        "latest_price": 30.67,
+        "eps": 0.685,
+        "latest_update": "2026-04-06"
     }
 ]

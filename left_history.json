@@ -752,7 +752,7 @@
         "price": 33.33,
         "latest_price": 35.41,
         "eps": 0.837,
-        "latest_update": "2026-04-03"
+        "latest_update": "2026-04-06"
     },
     {
         "code": "600860",
@@ -821,7 +821,7 @@
         "price": 36.78,
         "latest_price": 35.41,
         "eps": 0.837,
-        "latest_update": "2026-04-03"
+        "latest_update": "2026-04-06"
     },
     {
         "code": "688408",
@@ -850,7 +850,7 @@
         "price": 65.08,
         "latest_price": 65.28,
         "eps": 1.316,
-        "latest_update": "2026-04-03"
+        "latest_update": "2026-04-06"
     },
     {
         "code": "300724",
@@ -859,7 +859,7 @@
         "price": 107.5,
         "latest_price": 103.42,
         "eps": 7.718,
-        "latest_update": "2026-04-03"
+        "latest_update": "2026-04-06"
     },
     {
         "code": "000830",
@@ -868,7 +868,7 @@
         "price": 15.77,
         "latest_price": 15.34,
         "eps": 0.537,
-        "latest_update": "2026-04-03"
+        "latest_update": "2026-04-06"
     },
     {
         "code": "600792",
@@ -879,5 +879,50 @@
         "eps": -0.164,
         "latest_update": "2026-04-03",
         "stop_loss_date": "2026-04-03"
+    },
+    {
+        "code": "002202",
+        "name": "金风科技",
+        "date": "2026-04-03",
+        "price": 24.01,
+        "latest_price": 24.22,
+        "eps": 0.657,
+        "latest_update": "2026-04-06"
+    },
+    {
+        "code": "688661",
+        "name": "和林微纳",
+        "date": "2026-04-03",
+        "price": 74.78,
+        "latest_price": 74.5,
+        "eps": 0.196,
+        "latest_update": "2026-04-06"
+    },
+    {
+        "code": "002102",
+        "name": "冠福股份",
+        "date": "2026-04-03",
+        "price": 2.93,
+        "latest_price": 2.99,
+        "eps": 0.183,
+        "latest_update": "2026-04-06"
+    },
+    {
+        "code": "603358",
+        "name": "华达科技",
+        "date": "2026-04-03",
+        "price": 36.49,
+        "latest_price": 35.41,
+        "eps": 0.837,
+        "latest_update": "2026-04-06"
+    },
+    {
+        "code": "603678",
+        "name": "火炬电子",
+        "date": "2026-04-03",
+        "price": 31.88,
+        "latest_price": 31.9,
+        "eps": 0.672,
+        "latest_update": "2026-04-06"
     }
 ]
