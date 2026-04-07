@@ -839,7 +839,7 @@
         "name": "矩阵股份",
         "date": "2026-03-31",
         "price": 29.88,
-        "latest_price": 29.33,
+        "latest_price": 29.36,
         "eps": 0.382,
         "latest_update": "2026-04-07"
     },
@@ -868,7 +868,7 @@
         "name": "信立泰",
         "date": "2026-04-01",
         "price": 66.0,
-        "latest_price": 64.83,
+        "latest_price": 64.9,
         "eps": 0.521,
         "latest_update": "2026-04-07"
     },
@@ -877,7 +877,7 @@
         "name": "诺诚健华",
         "date": "2026-04-01",
         "price": 28.89,
-        "latest_price": 29.55,
+        "latest_price": 29.68,
         "eps": 0.364,
         "latest_update": "2026-04-07"
     },
@@ -896,7 +896,7 @@
         "name": "宇通客车",
         "date": "2026-04-01",
         "price": 37.05,
-        "latest_price": 36.21,
+        "latest_price": 36.35,
         "eps": 2.509,
         "latest_update": "2026-04-07"
     },
@@ -915,7 +915,7 @@
         "name": "苑东生物",
         "date": "2026-04-02",
         "price": 76.96,
-        "latest_price": 78.8,
+        "latest_price": 78.76,
         "eps": 1.247,
         "latest_update": "2026-04-07"
     },
@@ -924,7 +924,7 @@
         "name": "锴威特",
         "date": "2026-04-02",
         "price": 55.05,
-        "latest_price": 55.5,
+        "latest_price": 55.77,
         "eps": -0.662,
         "latest_update": "2026-04-07"
     },
@@ -933,7 +933,7 @@
         "name": "诺诚健华",
         "date": "2026-04-02",
         "price": 29.79,
-        "latest_price": 29.55,
+        "latest_price": 29.68,
         "eps": 0.364,
         "latest_update": "2026-04-07"
     },
@@ -962,7 +962,7 @@
         "name": "万凯新材",
         "date": "2026-04-03",
         "price": 28.14,
-        "latest_price": 28.06,
+        "latest_price": 28.13,
         "eps": 0.134,
         "latest_update": "2026-04-07"
     },
@@ -971,7 +971,7 @@
         "name": "亨通光电",
         "date": "2026-04-03",
         "price": 57.97,
-        "latest_price": 58.32,
+        "latest_price": 58.7,
         "eps": 0.963,
         "latest_update": "2026-04-07"
     },
@@ -980,7 +980,7 @@
         "name": "云南锗业",
         "date": "2026-04-03",
         "price": 51.6,
-        "latest_price": 52.64,
+        "latest_price": 52.76,
         "eps": 0.028,
         "latest_update": "2026-04-07"
     },
@@ -989,7 +989,7 @@
         "name": "中天科技",
         "date": "2026-04-03",
         "price": 30.76,
-        "latest_price": 30.15,
+        "latest_price": 30.25,
         "eps": 0.685,
         "latest_update": "2026-04-07"
     },
@@ -998,7 +998,7 @@
         "name": "长飞光纤",
         "date": "2026-04-06",
         "price": 352.5,
-        "latest_price": 352.24,
+        "latest_price": 357.1,
         "eps": 0.983,
         "latest_update": "2026-04-07"
     },
@@ -1007,7 +1007,7 @@
         "name": "长光华芯",
         "date": "2026-04-06",
         "price": 236.93,
-        "latest_price": 228.55,
+        "latest_price": 228.5,
         "eps": 0.119,
         "latest_update": "2026-04-07"
     },
@@ -1016,7 +1016,7 @@
         "name": "万凯新材",
         "date": "2026-04-06",
         "price": 28.13,
-        "latest_price": 28.06,
+        "latest_price": 28.13,
         "eps": 0.134,
         "latest_update": "2026-04-07"
     },
@@ -1025,7 +1025,7 @@
         "name": "亨通光电",
         "date": "2026-04-06",
         "price": 58.05,
-        "latest_price": 58.32,
+        "latest_price": 58.7,
         "eps": 0.963,
         "latest_update": "2026-04-07"
     },
@@ -1034,7 +1034,7 @@
         "name": "招商轮船",
         "date": "2026-04-06",
         "price": 20.39,
-        "latest_price": 20.11,
+        "latest_price": 20.26,
         "eps": 0.745,
         "latest_update": "2026-04-07"
     }
