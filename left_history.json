@@ -850,9 +850,9 @@
         "name": "卓越新能",
         "date": "2026-04-02",
         "price": 65.08,
-        "latest_price": 69.57,
+        "latest_price": 63.86,
         "eps": 1.316,
-        "latest_update": "2026-04-07"
+        "latest_update": "2026-04-08"
     },
     {
         "code": "300724",
@@ -869,9 +869,9 @@
         "name": "鲁西化工",
         "date": "2026-04-02",
         "price": 15.77,
-        "latest_price": 16.87,
+        "latest_price": 16.6,
         "eps": 0.537,
-        "latest_update": "2026-04-07"
+        "latest_update": "2026-04-08"
     },
     {
         "code": "600792",
@@ -898,18 +898,18 @@
         "name": "和林微纳",
         "date": "2026-04-03",
         "price": 74.78,
-        "latest_price": 75.07,
+        "latest_price": 81.81,
         "eps": 0.196,
-        "latest_update": "2026-04-07"
+        "latest_update": "2026-04-08"
     },
     {
         "code": "002102",
         "name": "冠福股份",
         "date": "2026-04-03",
         "price": 2.93,
-        "latest_price": 3.07,
+        "latest_price": 3.14,
         "eps": 0.183,
-        "latest_update": "2026-04-07"
+        "latest_update": "2026-04-08"
     },
     {
         "code": "603358",
@@ -926,18 +926,18 @@
         "name": "火炬电子",
         "date": "2026-04-03",
         "price": 31.88,
-        "latest_price": 30.99,
+        "latest_price": 32.68,
         "eps": 0.672,
-        "latest_update": "2026-04-07"
+        "latest_update": "2026-04-08"
     },
     {
         "code": "688190",
         "name": "云路股份",
         "date": "2026-04-06",
         "price": 84.96,
-        "latest_price": 83.48,
+        "latest_price": 86.64,
         "eps": 2.453,
-        "latest_update": "2026-04-07"
+        "latest_update": "2026-04-08"
     },
     {
         "code": "002202",
@@ -954,26 +954,71 @@
         "name": "宏发股份",
         "date": "2026-04-06",
         "price": 25.57,
-        "latest_price": 24.8,
+        "latest_price": 26.24,
         "eps": 1.136,
-        "latest_update": "2026-04-07"
+        "latest_update": "2026-04-08"
     },
     {
         "code": "603678",
         "name": "火炬电子",
         "date": "2026-04-06",
         "price": 31.9,
-        "latest_price": 30.99,
+        "latest_price": 32.68,
         "eps": 0.672,
-        "latest_update": "2026-04-07"
+        "latest_update": "2026-04-08"
     },
     {
         "code": "301071",
         "name": "力量钻石",
         "date": "2026-04-06",
         "price": 39.32,
-        "latest_price": 40.25,
+        "latest_price": 41.98,
         "eps": 0.178,
-        "latest_update": "2026-04-07"
+        "latest_update": "2026-04-08"
+    },
+    {
+        "code": "600821",
+        "name": "金开新能",
+        "date": "2026-04-07",
+        "price": 8.07,
+        "latest_price": 8.26,
+        "eps": 0.285,
+        "latest_update": "2026-04-08"
+    },
+    {
+        "code": "300080",
+        "name": "易成新能",
+        "date": "2026-04-07",
+        "price": 4.63,
+        "latest_price": 4.75,
+        "eps": -0.141,
+        "latest_update": "2026-04-08"
+    },
+    {
+        "code": "002506",
+        "name": "协鑫集成",
+        "date": "2026-04-07",
+        "price": 4.38,
+        "latest_price": 4.49,
+        "eps": -0.095,
+        "latest_update": "2026-04-08"
+    },
+    {
+        "code": "301155",
+        "name": "海力风电",
+        "date": "2026-04-07",
+        "price": 65.44,
+        "latest_price": 66.97,
+        "eps": 1.595,
+        "latest_update": "2026-04-08"
+    },
+    {
+        "code": "688339",
+        "name": "亿华通",
+        "date": "2026-04-07",
+        "price": 23.64,
+        "latest_price": 24.32,
+        "eps": -1.295,
+        "latest_update": "2026-04-08"
     }
 ]
