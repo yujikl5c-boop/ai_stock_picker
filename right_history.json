@@ -1019,7 +1019,7 @@
         "name": "长光华芯",
         "date": "2026-04-06",
         "price": 236.93,
-        "latest_price": 256.38,
+        "latest_price": 255.9,
         "eps": 0.119,
         "latest_update": "2026-04-13"
     },
@@ -1108,7 +1108,7 @@
         "name": "九安医疗",
         "date": "2026-04-08",
         "price": 87.6,
-        "latest_price": 85.96,
+        "latest_price": 85.93,
         "eps": 3.418,
         "latest_update": "2026-04-13"
     },
@@ -1117,7 +1117,7 @@
         "name": "东威科技",
         "date": "2026-04-08",
         "price": 58.54,
-        "latest_price": 59.09,
+        "latest_price": 58.93,
         "eps": 0.286,
         "latest_update": "2026-04-13"
     },
@@ -1126,7 +1126,7 @@
         "name": "莱特光电",
         "date": "2026-04-08",
         "price": 45.5,
-        "latest_price": 48.31,
+        "latest_price": 48.4,
         "eps": 0.447,
         "latest_update": "2026-04-13"
     },
@@ -1145,7 +1145,7 @@
         "name": "航天电器",
         "date": "2026-04-08",
         "price": 71.12,
-        "latest_price": 77.51,
+        "latest_price": 77.36,
         "eps": 0.401,
         "latest_update": "2026-04-13"
     },
@@ -1154,7 +1154,7 @@
         "name": "锴威特",
         "date": "2026-04-09",
         "price": 76.67,
-        "latest_price": 85.75,
+        "latest_price": 84.63,
         "eps": -0.662,
         "latest_update": "2026-04-13"
     },
@@ -1193,7 +1193,7 @@
         "name": "鼎胜新材",
         "date": "2026-04-09",
         "price": 23.82,
-        "latest_price": 24.32,
+        "latest_price": 24.4,
         "eps": 0.33,
         "latest_update": "2026-04-13"
     },
@@ -1202,7 +1202,7 @@
         "name": "锴威特",
         "date": "2026-04-10",
         "price": 82.04,
-        "latest_price": 85.75,
+        "latest_price": 84.63,
         "eps": -1.232,
         "latest_update": "2026-04-13"
     },
@@ -1211,7 +1211,7 @@
         "name": "源杰科技",
         "date": "2026-04-10",
         "price": 1238.8,
-        "latest_price": 1261.87,
+        "latest_price": 1266.0,
         "eps": 2.221,
         "latest_update": "2026-04-13"
     },
@@ -1220,7 +1220,7 @@
         "name": "中际旭创",
         "date": "2026-04-10",
         "price": 737.6,
-        "latest_price": 738.12,
+        "latest_price": 738.0,
         "eps": 9.717,
         "latest_update": "2026-04-13"
     },
@@ -1229,7 +1229,7 @@
         "name": "新易盛",
         "date": "2026-04-10",
         "price": 524.22,
-        "latest_price": 513.01,
+        "latest_price": 512.72,
         "eps": 6.365,
         "latest_update": "2026-04-13"
     },
@@ -1238,7 +1238,7 @@
         "name": "长光华芯",
         "date": "2026-04-10",
         "price": 242.46,
-        "latest_price": 256.38,
+        "latest_price": 255.9,
         "eps": 0.119,
         "latest_update": "2026-04-13"
     }
