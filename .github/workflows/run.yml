@@ -1,11 +1,13 @@
-name: 股票策略定时运行
+name: Left Side Stock Picker
 
 on:
-  workflow_dispatch:          
-    # 🌟 新增：允许接收外界 API 传来的参数
+  schedule:
+    - cron: '25 6 * * *'   # 北京时间 14:25
+    - cron: '10 7 * * *'   # 北京时间 15:10
+  workflow_dispatch:        # 允许手动触发，并支持传入参数
     inputs:
       run_mode:
-        description: '外界传入的运行模式'
+        description: '运行模式 (candidates / history / auto)'
         required: false
         default: 'auto'
 
@@ -24,41 +26,37 @@ jobs:
       - name: 2. 设置 Python 环境
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: '3.10'
 
       - name: 3. 安装依赖
-        run: |
-          pip install --upgrade pip
-          pip install mootdx pandas numpy openpyxl
+        run: pip install -r requirements.txt
 
-      - name: 4. 运行主程序 (精准接收飞牛OS指令)
+      - name: 4. 运行主程序（支持外界传入模式）
         run: |
-          # 读取外界传入的参数
           MODE="${{ github.event.inputs.run_mode }}"
           if [ -z "$MODE" ]; then
             MODE="auto"
           fi
-          echo "🚀 接收到外界遥控指令，当前强制执行模式: $MODE"
+          echo "🚀 接收到指令，运行模式: $MODE"
           python -u main.py $MODE
-        timeout-minutes: 120
 
-      - name: 5. 提交代码回仓库
+      - name: 5. 提交结果到仓库
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           git status
-          git commit -m "🤖 Auto-update: 每日量化选股报告与历史数据更新" || echo "没有文件变动"
+          git commit -m "Auto update $(date '+%Y-%m-%d %H:%M')" || echo "No changes"
           git push
 
       - name: 6. 准备部署网页
         uses: actions/configure-pages@v5
-        
+
       - name: 7. 打包网页文件
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
-          
+
       - name: 8. 发布到 GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
