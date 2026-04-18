@@ -1142,7 +1142,8 @@
         "price": 230.64,
         "latest_price": 240.88,
         "eps": 4.258,
-        "latest_update": "2026-04-17"
+        "latest_update": "2026-04-18",
+        "expire_date": "2026-04-18"
     },
     {
         "code": "300274",
@@ -1151,7 +1152,8 @@
         "price": 130.88,
         "latest_price": 132.75,
         "eps": 6.493,
-        "latest_update": "2026-04-17"
+        "latest_update": "2026-04-18",
+        "expire_date": "2026-04-18"
     },
     {
         "code": "600759",
@@ -1170,7 +1172,8 @@
         "price": 219.48,
         "latest_price": 231.02,
         "eps": 2.374,
-        "latest_update": "2026-04-17"
+        "latest_update": "2026-04-18",
+        "expire_date": "2026-04-18"
     },
     {
         "code": "300345",
@@ -1179,7 +1182,8 @@
         "price": 6.77,
         "latest_price": 6.7,
         "eps": -0.177,
-        "latest_update": "2026-04-17"
+        "latest_update": "2026-04-18",
+        "expire_date": "2026-04-18"
     },
     {
         "code": "000818",
@@ -1198,7 +1202,7 @@
         "price": 234.77,
         "latest_price": 240.88,
         "eps": 4.258,
-        "latest_update": "2026-04-17"
+        "latest_update": "2026-04-18"
     },
     {
         "code": "000048",
@@ -1207,7 +1211,7 @@
         "price": 15.39,
         "latest_price": 14.86,
         "eps": 0.288,
-        "latest_update": "2026-04-17"
+        "latest_update": "2026-04-18"
     },
     {
         "code": "300080",
@@ -1216,7 +1220,7 @@
         "price": 4.69,
         "latest_price": 4.65,
         "eps": -0.141,
-        "latest_update": "2026-04-17"
+        "latest_update": "2026-04-18"
     },
     {
         "code": "688196",
@@ -1225,7 +1229,7 @@
         "price": 62.2,
         "latest_price": 59.96,
         "eps": 1.316,
-        "latest_update": "2026-04-17"
+        "latest_update": "2026-04-18"
     },
     {
         "code": "000048",
@@ -1244,7 +1248,7 @@
         "price": 10.41,
         "latest_price": 10.21,
         "eps": 0.219,
-        "latest_update": "2026-04-17"
+        "latest_update": "2026-04-18"
     },
     {
         "code": "301595",
@@ -1253,7 +1257,7 @@
         "price": 49.17,
         "latest_price": 49.54,
         "eps": 0.567,
-        "latest_update": "2026-04-17"
+        "latest_update": "2026-04-18"
     },
     {
         "code": "301155",
@@ -1262,7 +1266,7 @@
         "price": 66.01,
         "latest_price": 66.72,
         "eps": 1.595,
-        "latest_update": "2026-04-17"
+        "latest_update": "2026-04-18"
     },
     {
         "code": "002311",
@@ -1271,7 +1275,7 @@
         "price": 48.25,
         "latest_price": 48.09,
         "eps": 2.49,
-        "latest_update": "2026-04-17"
+        "latest_update": "2026-04-18"
     },
     {
         "code": "605499",
@@ -1280,7 +1284,7 @@
         "price": 193.73,
         "latest_price": 199.8,
         "eps": 7.818,
-        "latest_update": "2026-04-17"
+        "latest_update": "2026-04-18"
     },
     {
         "code": "600250",
@@ -1289,6 +1293,51 @@
         "price": 11.36,
         "latest_price": 11.51,
         "eps": 0.061,
-        "latest_update": "2026-04-17"
+        "latest_update": "2026-04-18"
+    },
+    {
+        "code": "000818",
+        "name": "航锦科技",
+        "date": "2026-04-17",
+        "price": 14.93,
+        "latest_price": 14.93,
+        "eps": 0.023,
+        "latest_update": "2026-04-18"
+    },
+    {
+        "code": "300033",
+        "name": "同花顺",
+        "date": "2026-04-17",
+        "price": 240.88,
+        "latest_price": 240.88,
+        "eps": 4.258,
+        "latest_update": "2026-04-18"
+    },
+    {
+        "code": "300345",
+        "name": "华民股份",
+        "date": "2026-04-17",
+        "price": 6.7,
+        "latest_price": 6.7,
+        "eps": -0.177,
+        "latest_update": "2026-04-18"
+    },
+    {
+        "code": "300777",
+        "name": "中简科技",
+        "date": "2026-04-17",
+        "price": 32.15,
+        "latest_price": 32.15,
+        "eps": 0.716,
+        "latest_update": "2026-04-18"
+    },
+    {
+        "code": "300080",
+        "name": "易成新能",
+        "date": "2026-04-17",
+        "price": 4.65,
+        "latest_price": 4.65,
+        "eps": -0.141,
+        "latest_update": "2026-04-18"
     }
 ]
