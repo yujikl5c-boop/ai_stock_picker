@@ -1200,7 +1200,7 @@
         "name": "同花顺",
         "date": "2026-04-13",
         "price": 234.77,
-        "latest_price": 246.02,
+        "latest_price": 245.6,
         "eps": 4.258,
         "latest_update": "2026-04-20"
     },
@@ -1209,7 +1209,7 @@
         "name": "京基智农",
         "date": "2026-04-13",
         "price": 15.39,
-        "latest_price": 14.96,
+        "latest_price": 15.0,
         "eps": 0.288,
         "latest_update": "2026-04-20"
     },
@@ -1227,7 +1227,7 @@
         "name": "卓越新能",
         "date": "2026-04-13",
         "price": 62.2,
-        "latest_price": 60.54,
+        "latest_price": 61.36,
         "eps": 1.316,
         "latest_update": "2026-04-20"
     },
@@ -1246,7 +1246,7 @@
         "name": "京能热力",
         "date": "2026-04-14",
         "price": 10.41,
-        "latest_price": 10.22,
+        "latest_price": 10.3,
         "eps": 0.219,
         "latest_update": "2026-04-20"
     },
@@ -1255,7 +1255,7 @@
         "name": "太力科技",
         "date": "2026-04-14",
         "price": 49.17,
-        "latest_price": 49.14,
+        "latest_price": 49.08,
         "eps": 0.567,
         "latest_update": "2026-04-20"
     },
@@ -1264,7 +1264,7 @@
         "name": "海力风电",
         "date": "2026-04-14",
         "price": 66.01,
-        "latest_price": 66.87,
+        "latest_price": 66.93,
         "eps": 1.595,
         "latest_update": "2026-04-20"
     },
@@ -1273,7 +1273,7 @@
         "name": "海大集团",
         "date": "2026-04-14",
         "price": 48.25,
-        "latest_price": 47.7,
+        "latest_price": 47.79,
         "eps": 2.49,
         "latest_update": "2026-04-20"
     },
@@ -1282,7 +1282,7 @@
         "name": "东鹏饮料",
         "date": "2026-04-15",
         "price": 193.73,
-        "latest_price": 204.6,
+        "latest_price": 203.58,
         "eps": 7.818,
         "latest_update": "2026-04-20"
     },
@@ -1291,7 +1291,7 @@
         "name": "南京商旅",
         "date": "2026-04-15",
         "price": 11.36,
-        "latest_price": 11.74,
+        "latest_price": 11.66,
         "eps": 0.061,
         "latest_update": "2026-04-20"
     },
@@ -1300,7 +1300,7 @@
         "name": "航锦科技",
         "date": "2026-04-17",
         "price": 14.93,
-        "latest_price": 14.98,
+        "latest_price": 14.95,
         "eps": 0.023,
         "latest_update": "2026-04-20"
     },
@@ -1309,7 +1309,7 @@
         "name": "同花顺",
         "date": "2026-04-17",
         "price": 240.88,
-        "latest_price": 246.02,
+        "latest_price": 245.6,
         "eps": 4.258,
         "latest_update": "2026-04-20"
     },
@@ -1318,7 +1318,7 @@
         "name": "华民股份",
         "date": "2026-04-17",
         "price": 6.7,
-        "latest_price": 6.86,
+        "latest_price": 6.84,
         "eps": -0.177,
         "latest_update": "2026-04-20"
     },
@@ -1327,7 +1327,7 @@
         "name": "中简科技",
         "date": "2026-04-17",
         "price": 32.15,
-        "latest_price": 34.15,
+        "latest_price": 34.0,
         "eps": 0.716,
         "latest_update": "2026-04-20"
     },
