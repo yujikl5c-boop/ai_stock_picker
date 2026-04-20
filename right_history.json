@@ -1279,18 +1279,18 @@
         "name": "东方国信",
         "date": "2026-04-13",
         "price": 17.0,
-        "latest_price": 16.66,
+        "latest_price": 16.41,
         "eps": -0.086,
-        "latest_update": "2026-04-19"
+        "latest_update": "2026-04-20"
     },
     {
         "code": "688180",
         "name": "君实生物",
         "date": "2026-04-13",
         "price": 41.58,
-        "latest_price": 45.04,
+        "latest_price": 43.89,
         "eps": -0.852,
-        "latest_update": "2026-04-19"
+        "latest_update": "2026-04-20"
     },
     {
         "code": "000070",
@@ -1317,18 +1317,19 @@
         "name": "云南锗业",
         "date": "2026-04-14",
         "price": 58.29,
-        "latest_price": 62.0,
+        "latest_price": 68.2,
         "eps": 0.028,
-        "latest_update": "2026-04-19"
+        "latest_update": "2026-04-20",
+        "take_profit_date": "2026-04-20"
     },
     {
         "code": "688090",
         "name": "瑞松科技",
         "date": "2026-04-14",
         "price": 68.81,
-        "latest_price": 68.86,
+        "latest_price": 69.66,
         "eps": -0.05,
-        "latest_update": "2026-04-19"
+        "latest_update": "2026-04-20"
     },
     {
         "code": "002008",
@@ -1345,98 +1346,102 @@
         "name": "润建通信",
         "date": "2026-04-14",
         "price": 59.71,
-        "latest_price": 61.34,
+        "latest_price": 59.38,
         "eps": 0.023,
-        "latest_update": "2026-04-19"
+        "latest_update": "2026-04-20"
     },
     {
         "code": "603256",
         "name": "宏和科技",
         "date": "2026-04-15",
         "price": 101.38,
-        "latest_price": 105.3,
+        "latest_price": 102.43,
         "eps": 0.223,
-        "latest_update": "2026-04-19"
+        "latest_update": "2026-04-20"
     },
     {
         "code": "688141",
         "name": "杰华特",
         "date": "2026-04-15",
         "price": 67.74,
-        "latest_price": 66.7,
+        "latest_price": 65.44,
         "eps": -1.592,
-        "latest_update": "2026-04-19"
+        "latest_update": "2026-04-20"
     },
     {
         "code": "300870",
         "name": "欧陆通",
         "date": "2026-04-15",
         "price": 338.43,
-        "latest_price": 358.88,
+        "latest_price": 393.7,
         "eps": 2.033,
-        "latest_update": "2026-04-19"
+        "latest_update": "2026-04-20",
+        "take_profit_date": "2026-04-20"
     },
     {
         "code": "688180",
         "name": "君实生物",
         "date": "2026-04-15",
         "price": 43.67,
-        "latest_price": 45.04,
+        "latest_price": 43.89,
         "eps": -0.852,
-        "latest_update": "2026-04-19"
+        "latest_update": "2026-04-20"
     },
     {
         "code": "002840",
         "name": "华统股份",
         "date": "2026-04-15",
         "price": 13.41,
-        "latest_price": 13.56,
+        "latest_price": 13.47,
         "eps": 0.089,
-        "latest_update": "2026-04-19"
+        "latest_update": "2026-04-20"
     },
     {
         "code": "688693",
         "name": "锴威特",
         "date": "2026-04-17",
         "price": 101.86,
-        "latest_price": 101.86,
+        "latest_price": 90.31,
         "eps": -1.232,
-        "latest_update": "2026-04-19"
+        "latest_update": "2026-04-20",
+        "stop_loss_date": "2026-04-20"
     },
     {
         "code": "688677",
         "name": "海泰新光",
         "date": "2026-04-17",
         "price": 82.23,
-        "latest_price": 82.23,
+        "latest_price": 86.39,
         "eps": 1.138,
-        "latest_update": "2026-04-19"
+        "latest_update": "2026-04-20"
     },
     {
         "code": "688048",
         "name": "长光华芯",
         "date": "2026-04-17",
         "price": 328.01,
-        "latest_price": 328.01,
+        "latest_price": 310.2,
         "eps": 0.119,
-        "latest_update": "2026-04-19"
+        "latest_update": "2026-04-20",
+        "stop_loss_date": "2026-04-20"
     },
     {
         "code": "688498",
         "name": "源杰科技",
         "date": "2026-04-17",
         "price": 1445.0,
-        "latest_price": 1445.0,
+        "latest_price": 1387.12,
         "eps": 2.221,
-        "latest_update": "2026-04-19"
+        "latest_update": "2026-04-20",
+        "stop_loss_date": "2026-04-20"
     },
     {
         "code": "002222",
         "name": "福晶科技",
         "date": "2026-04-17",
         "price": 90.68,
-        "latest_price": 90.68,
+        "latest_price": 91.28,
         "eps": 0.464,
-        "latest_update": "2026-04-19"
+        "latest_update": "2026-04-20"
     }
 ]
