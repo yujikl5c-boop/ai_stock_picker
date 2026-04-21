@@ -1329,7 +1329,7 @@
         "name": "瑞松科技",
         "date": "2026-04-14",
         "price": 68.81,
-        "latest_price": 73.51,
+        "latest_price": 73.47,
         "eps": -0.05,
         "latest_update": "2026-04-21"
     },
@@ -1358,7 +1358,7 @@
         "name": "宏和科技",
         "date": "2026-04-15",
         "price": 101.38,
-        "latest_price": 106.36,
+        "latest_price": 106.42,
         "eps": 0.223,
         "latest_update": "2026-04-21"
     },
@@ -1387,7 +1387,7 @@
         "name": "君实生物",
         "date": "2026-04-15",
         "price": 43.67,
-        "latest_price": 42.17,
+        "latest_price": 42.32,
         "eps": -0.852,
         "latest_update": "2026-04-21"
     },
@@ -1396,7 +1396,7 @@
         "name": "华统股份",
         "date": "2026-04-15",
         "price": 13.41,
-        "latest_price": 13.55,
+        "latest_price": 13.48,
         "eps": 0.089,
         "latest_update": "2026-04-21"
     },
@@ -1464,7 +1464,7 @@
         "name": "鸿富瀚",
         "date": "2026-04-20",
         "price": 174.91,
-        "latest_price": 178.69,
+        "latest_price": 178.23,
         "eps": 1.127,
         "latest_update": "2026-04-21"
     },
@@ -1473,7 +1473,7 @@
         "name": "瑞松科技",
         "date": "2026-04-20",
         "price": 72.22,
-        "latest_price": 73.51,
+        "latest_price": 73.47,
         "eps": -0.05,
         "latest_update": "2026-04-21"
     },
@@ -1482,7 +1482,7 @@
         "name": "申菱环境",
         "date": "2026-04-20",
         "price": 126.99,
-        "latest_price": 125.3,
+        "latest_price": 124.84,
         "eps": 0.564,
         "latest_update": "2026-04-21"
     },
@@ -1491,7 +1491,7 @@
         "name": "天银机电",
         "date": "2026-04-20",
         "price": 63.52,
-        "latest_price": 67.99,
+        "latest_price": 68.68,
         "eps": 0.03,
         "latest_update": "2026-04-21"
     }
