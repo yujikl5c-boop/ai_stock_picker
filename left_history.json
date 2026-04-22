@@ -1290,7 +1290,7 @@
         "name": "东鹏饮料",
         "date": "2026-04-15",
         "price": 193.73,
-        "latest_price": 200.59,
+        "latest_price": 201.4,
         "eps": 7.818,
         "latest_update": "2026-04-22"
     },
@@ -1299,7 +1299,7 @@
         "name": "南京商旅",
         "date": "2026-04-15",
         "price": 11.36,
-        "latest_price": 11.24,
+        "latest_price": 11.25,
         "eps": 0.061,
         "latest_update": "2026-04-22"
     },
@@ -1308,7 +1308,7 @@
         "name": "航锦科技",
         "date": "2026-04-17",
         "price": 14.93,
-        "latest_price": 14.47,
+        "latest_price": 14.51,
         "eps": 0.023,
         "latest_update": "2026-04-22"
     },
@@ -1317,7 +1317,7 @@
         "name": "同花顺",
         "date": "2026-04-17",
         "price": 240.88,
-        "latest_price": 246.95,
+        "latest_price": 246.74,
         "eps": 4.258,
         "latest_update": "2026-04-22"
     },
@@ -1335,7 +1335,7 @@
         "name": "中简科技",
         "date": "2026-04-17",
         "price": 32.15,
-        "latest_price": 34.4,
+        "latest_price": 34.47,
         "eps": 0.716,
         "latest_update": "2026-04-22"
     },
@@ -1353,7 +1353,7 @@
         "name": "京基智农",
         "date": "2026-04-20",
         "price": 15.0,
-        "latest_price": 14.8,
+        "latest_price": 14.78,
         "eps": 0.288,
         "latest_update": "2026-04-22"
     },
@@ -1362,7 +1362,7 @@
         "name": "辽宁能源",
         "date": "2026-04-20",
         "price": 3.88,
-        "latest_price": 3.97,
+        "latest_price": 3.98,
         "eps": -0.076,
         "latest_update": "2026-04-22"
     },
@@ -1371,7 +1371,7 @@
         "name": "联环药业",
         "date": "2026-04-20",
         "price": 21.3,
-        "latest_price": 20.58,
+        "latest_price": 20.65,
         "eps": -0.123,
         "latest_update": "2026-04-22"
     },
@@ -1380,7 +1380,7 @@
         "name": "同花顺",
         "date": "2026-04-20",
         "price": 245.6,
-        "latest_price": 246.95,
+        "latest_price": 246.74,
         "eps": 4.258,
         "latest_update": "2026-04-22"
     },
@@ -1389,7 +1389,7 @@
         "name": "国新能源",
         "date": "2026-04-20",
         "price": 3.2,
-        "latest_price": 3.27,
+        "latest_price": 3.28,
         "eps": -0.005,
         "latest_update": "2026-04-22"
     },
@@ -1398,7 +1398,7 @@
         "name": "辽宁能源",
         "date": "2026-04-21",
         "price": 3.98,
-        "latest_price": 3.97,
+        "latest_price": 3.98,
         "eps": -0.076,
         "latest_update": "2026-04-22"
     },
@@ -1416,7 +1416,7 @@
         "name": "国新能源",
         "date": "2026-04-21",
         "price": 3.26,
-        "latest_price": 3.27,
+        "latest_price": 3.28,
         "eps": -0.005,
         "latest_update": "2026-04-22"
     },
@@ -1425,7 +1425,7 @@
         "name": "云煤能源",
         "date": "2026-04-21",
         "price": 4.01,
-        "latest_price": 4.13,
+        "latest_price": 4.12,
         "eps": -0.164,
         "latest_update": "2026-04-22"
     },
