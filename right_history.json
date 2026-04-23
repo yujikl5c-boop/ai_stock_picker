@@ -1449,7 +1449,7 @@
         "name": "福晶科技",
         "date": "2026-04-17",
         "price": 90.68,
-        "latest_price": 91.55,
+        "latest_price": 92.2,
         "eps": 0.464,
         "latest_update": "2026-04-23"
     },
@@ -1468,7 +1468,7 @@
         "name": "鸿富瀚",
         "date": "2026-04-20",
         "price": 174.91,
-        "latest_price": 188.95,
+        "latest_price": 189.96,
         "eps": 1.127,
         "latest_update": "2026-04-23"
     },
@@ -1477,7 +1477,7 @@
         "name": "瑞松科技",
         "date": "2026-04-20",
         "price": 72.22,
-        "latest_price": 71.83,
+        "latest_price": 72.34,
         "eps": -0.05,
         "latest_update": "2026-04-23"
     },
@@ -1486,7 +1486,7 @@
         "name": "申菱环境",
         "date": "2026-04-20",
         "price": 126.99,
-        "latest_price": 123.9,
+        "latest_price": 124.1,
         "eps": 0.564,
         "latest_update": "2026-04-23"
     },
@@ -1495,16 +1495,17 @@
         "name": "天银机电",
         "date": "2026-04-20",
         "price": 63.52,
-        "latest_price": 70.97,
+        "latest_price": 72.33,
         "eps": 0.03,
-        "latest_update": "2026-04-23"
+        "latest_update": "2026-04-23",
+        "take_profit_date": "2026-04-23"
     },
     {
         "code": "688383",
         "name": "新益昌",
         "date": "2026-04-21",
         "price": 102.52,
-        "latest_price": 99.38,
+        "latest_price": 99.8,
         "eps": 0.077,
         "latest_update": "2026-04-23"
     },
@@ -1513,7 +1514,7 @@
         "name": "莱特光电",
         "date": "2026-04-21",
         "price": 54.44,
-        "latest_price": 53.58,
+        "latest_price": 53.35,
         "eps": 0.447,
         "latest_update": "2026-04-23"
     },
@@ -1522,7 +1523,7 @@
         "name": "开勒股份",
         "date": "2026-04-21",
         "price": 99.93,
-        "latest_price": 97.92,
+        "latest_price": 98.72,
         "eps": 0.24,
         "latest_update": "2026-04-23"
     },
@@ -1531,7 +1532,7 @@
         "name": "宏昌电子",
         "date": "2026-04-21",
         "price": 13.82,
-        "latest_price": 13.79,
+        "latest_price": 13.87,
         "eps": 0.022,
         "latest_update": "2026-04-23"
     },
@@ -1540,7 +1541,7 @@
         "name": "天银机电",
         "date": "2026-04-21",
         "price": 67.99,
-        "latest_price": 70.97,
+        "latest_price": 72.33,
         "eps": 0.03,
         "latest_update": "2026-04-23"
     },
@@ -1559,7 +1560,7 @@
         "name": "剑桥科技",
         "date": "2026-04-22",
         "price": 167.06,
-        "latest_price": 163.57,
+        "latest_price": 164.33,
         "eps": 0.747,
         "latest_update": "2026-04-23"
     },
