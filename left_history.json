@@ -1290,152 +1290,203 @@
         "name": "东鹏饮料",
         "date": "2026-04-15",
         "price": 193.73,
-        "latest_price": 201.4,
+        "latest_price": 204.41,
         "eps": 7.818,
-        "latest_update": "2026-04-22"
+        "latest_update": "2026-04-23",
+        "expire_date": "2026-04-23"
     },
     {
         "code": "600250",
         "name": "南京商旅",
         "date": "2026-04-15",
         "price": 11.36,
-        "latest_price": 11.25,
+        "latest_price": 11.17,
         "eps": 0.061,
-        "latest_update": "2026-04-22"
+        "latest_update": "2026-04-23",
+        "expire_date": "2026-04-23"
     },
     {
         "code": "000818",
         "name": "航锦科技",
         "date": "2026-04-17",
         "price": 14.93,
-        "latest_price": 14.51,
+        "latest_price": 14.68,
         "eps": 0.023,
-        "latest_update": "2026-04-22"
+        "latest_update": "2026-04-23"
     },
     {
         "code": "300033",
         "name": "同花顺",
         "date": "2026-04-17",
         "price": 240.88,
-        "latest_price": 246.74,
+        "latest_price": 236.97,
         "eps": 4.258,
-        "latest_update": "2026-04-22"
+        "latest_update": "2026-04-23"
     },
     {
         "code": "300345",
         "name": "华民股份",
         "date": "2026-04-17",
         "price": 6.7,
-        "latest_price": 6.64,
+        "latest_price": 6.34,
         "eps": -0.177,
-        "latest_update": "2026-04-22"
+        "latest_update": "2026-04-23",
+        "stop_loss_date": "2026-04-23"
     },
     {
         "code": "300777",
         "name": "中简科技",
         "date": "2026-04-17",
         "price": 32.15,
-        "latest_price": 34.47,
+        "latest_price": 35.78,
         "eps": 0.716,
-        "latest_update": "2026-04-22"
+        "latest_update": "2026-04-23"
     },
     {
         "code": "300080",
         "name": "易成新能",
         "date": "2026-04-17",
         "price": 4.65,
-        "latest_price": 4.66,
+        "latest_price": 4.46,
         "eps": -0.141,
-        "latest_update": "2026-04-22"
+        "latest_update": "2026-04-23",
+        "stop_loss_date": "2026-04-23"
     },
     {
         "code": "000048",
         "name": "京基智农",
         "date": "2026-04-20",
         "price": 15.0,
-        "latest_price": 14.78,
+        "latest_price": 14.49,
         "eps": 0.288,
-        "latest_update": "2026-04-22"
+        "latest_update": "2026-04-23"
     },
     {
         "code": "600758",
         "name": "辽宁能源",
         "date": "2026-04-20",
         "price": 3.88,
-        "latest_price": 3.98,
+        "latest_price": 4.15,
         "eps": -0.076,
-        "latest_update": "2026-04-22"
+        "latest_update": "2026-04-23"
     },
     {
         "code": "600513",
         "name": "联环药业",
         "date": "2026-04-20",
         "price": 21.3,
-        "latest_price": 20.65,
+        "latest_price": 20.26,
         "eps": -0.123,
-        "latest_update": "2026-04-22"
+        "latest_update": "2026-04-23",
+        "stop_loss_date": "2026-04-23"
     },
     {
         "code": "300033",
         "name": "同花顺",
         "date": "2026-04-20",
         "price": 245.6,
-        "latest_price": 246.74,
+        "latest_price": 236.97,
         "eps": 4.258,
-        "latest_update": "2026-04-22"
+        "latest_update": "2026-04-23"
     },
     {
         "code": "600617",
         "name": "国新能源",
         "date": "2026-04-20",
         "price": 3.2,
-        "latest_price": 3.28,
+        "latest_price": 3.33,
         "eps": -0.005,
-        "latest_update": "2026-04-22"
+        "latest_update": "2026-04-23"
     },
     {
         "code": "600758",
         "name": "辽宁能源",
         "date": "2026-04-21",
         "price": 3.98,
-        "latest_price": 3.98,
+        "latest_price": 4.15,
         "eps": -0.076,
-        "latest_update": "2026-04-22"
+        "latest_update": "2026-04-23"
     },
     {
         "code": "002893",
         "name": "京能热力",
         "date": "2026-04-21",
         "price": 10.43,
-        "latest_price": 10.52,
+        "latest_price": 10.73,
         "eps": 0.219,
-        "latest_update": "2026-04-22"
+        "latest_update": "2026-04-23"
     },
     {
         "code": "600617",
         "name": "国新能源",
         "date": "2026-04-21",
         "price": 3.26,
-        "latest_price": 3.28,
+        "latest_price": 3.33,
         "eps": -0.005,
-        "latest_update": "2026-04-22"
+        "latest_update": "2026-04-23"
     },
     {
         "code": "600792",
         "name": "云煤能源",
         "date": "2026-04-21",
         "price": 4.01,
-        "latest_price": 4.12,
+        "latest_price": 4.21,
         "eps": -0.164,
-        "latest_update": "2026-04-22"
+        "latest_update": "2026-04-23"
     },
     {
         "code": "300264",
         "name": "佳创视讯",
         "date": "2026-04-21",
         "price": 8.52,
-        "latest_price": 8.62,
+        "latest_price": 8.38,
         "eps": -0.041,
-        "latest_update": "2026-04-22"
+        "latest_update": "2026-04-23"
+    },
+    {
+        "code": "000818",
+        "name": "航锦科技",
+        "date": "2026-04-22",
+        "price": 14.47,
+        "latest_price": 14.68,
+        "eps": 0.023,
+        "latest_update": "2026-04-23"
+    },
+    {
+        "code": "603568",
+        "name": "伟明环保",
+        "date": "2026-04-22",
+        "price": 20.96,
+        "latest_price": 21.27,
+        "eps": 1.294,
+        "latest_update": "2026-04-23"
+    },
+    {
+        "code": "688678",
+        "name": "福立旺",
+        "date": "2026-04-22",
+        "price": 23.67,
+        "latest_price": 23.62,
+        "eps": 0.137,
+        "latest_update": "2026-04-23"
+    },
+    {
+        "code": "300033",
+        "name": "同花顺",
+        "date": "2026-04-22",
+        "price": 246.95,
+        "latest_price": 236.97,
+        "eps": 4.258,
+        "latest_update": "2026-04-23",
+        "stop_loss_date": "2026-04-23"
+    },
+    {
+        "code": "600537",
+        "name": "亿晶光电",
+        "date": "2026-04-22",
+        "price": 3.5,
+        "latest_price": 3.39,
+        "eps": -0.181,
+        "latest_update": "2026-04-23"
     }
 ]

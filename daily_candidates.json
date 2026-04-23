@@ -1,107 +1,67 @@
 {
-    "date": "2026-04-22",
+    "date": "2026-04-23",
     "left": [
-        {
-            "code": "000818",
-            "name": "航锦科技",
-            "price": 14.47,
-            "bias_val": -17.070235263776247,
-            "ma20_angle": -63.01290494352846,
-            "left_buy_signal": true,
-            "right_buy_signal": false,
-            "eps": 0.023
-        },
         {
             "code": "603568",
             "name": "伟明环保",
-            "price": 20.96,
-            "bias_val": -14.447233617012593,
-            "ma20_angle": -45.794265557761555,
+            "price": 21.27,
+            "bias_val": -12.24161406114619,
+            "ma20_angle": -46.97551727851568,
             "left_buy_signal": true,
             "right_buy_signal": false,
             "eps": 1.294
-        },
-        {
-            "code": "688678",
-            "name": "福立旺",
-            "price": 23.67,
-            "bias_val": -11.408039523916454,
-            "ma20_angle": -30.21380125210983,
-            "left_buy_signal": true,
-            "right_buy_signal": false,
-            "eps": 0.137
-        },
-        {
-            "code": "300033",
-            "name": "同花顺",
-            "price": 246.95,
-            "bias_val": -9.938658361354042,
-            "ma20_angle": -46.80590547050815,
-            "left_buy_signal": true,
-            "right_buy_signal": false,
-            "eps": 4.258
-        },
-        {
-            "code": "600537",
-            "name": "亿晶光电",
-            "price": 3.5,
-            "bias_val": -9.173478655767472,
-            "ma20_angle": -10.992816214471967,
-            "left_buy_signal": true,
-            "right_buy_signal": false,
-            "eps": -0.181
         }
     ],
     "right": [
         {
-            "code": "601869",
-            "name": "长飞光纤",
-            "price": 410.02,
-            "bias_val": 18.689156682307782,
-            "ma20_angle": 69.14378513436243,
+            "code": "688227",
+            "name": "品高股份",
+            "price": 114.08,
+            "bias_val": 50.56985039364882,
+            "ma20_angle": 74.0477638580725,
             "left_buy_signal": false,
             "right_buy_signal": true,
-            "eps": 0.983
+            "eps": -0.465
         },
         {
-            "code": "603083",
-            "name": "剑桥科技",
-            "price": 167.06,
-            "bias_val": 38.93301176764106,
-            "ma20_angle": 69.04849083751571,
+            "code": "600105",
+            "name": "永鼎股份",
+            "price": 48.51,
+            "bias_val": 37.470775770456946,
+            "ma20_angle": 72.93097340519974,
             "left_buy_signal": false,
             "right_buy_signal": true,
-            "eps": 0.747
+            "eps": 0.109
         },
         {
-            "code": "688143",
-            "name": "长盈通",
-            "price": 78.15,
-            "bias_val": 23.78041054232134,
-            "ma20_angle": 67.44681740199194,
+            "code": "603115",
+            "name": "海星股份",
+            "price": 57.56,
+            "bias_val": 26.986928465059844,
+            "ma20_angle": 67.36319690356639,
             "left_buy_signal": false,
             "right_buy_signal": true,
-            "eps": 0.239
+            "eps": 0.164
         },
         {
-            "code": "688001",
-            "name": "华兴源创",
-            "price": 47.33,
-            "bias_val": 25.354238949069046,
-            "ma20_angle": 66.93853311937862,
+            "code": "002281",
+            "name": "光迅科技",
+            "price": 131.59,
+            "bias_val": 27.63522262690532,
+            "ma20_angle": 65.92517485567599,
             "left_buy_signal": false,
             "right_buy_signal": true,
-            "eps": 0.341
+            "eps": 0.297
         },
         {
-            "code": "002222",
-            "name": "福晶科技",
-            "price": 98.1,
-            "bias_val": 23.261336650457977,
-            "ma20_angle": 64.92715106555447,
+            "code": "002947",
+            "name": "恒铭达",
+            "price": 77.95,
+            "bias_val": 24.278562545837186,
+            "ma20_angle": 64.75373824913704,
             "left_buy_signal": false,
             "right_buy_signal": true,
-            "eps": 0.464
+            "eps": 2.076
         }
     ]
 }
