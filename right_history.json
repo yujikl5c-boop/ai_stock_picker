@@ -1449,9 +1449,9 @@
         "name": "福晶科技",
         "date": "2026-04-17",
         "price": 90.68,
-        "latest_price": 92.2,
+        "latest_price": 89.81,
         "eps": 0.464,
-        "latest_update": "2026-04-23"
+        "latest_update": "2026-04-24"
     },
     {
         "code": "300870",
@@ -1470,25 +1470,25 @@
         "price": 174.91,
         "latest_price": 189.96,
         "eps": 1.127,
-        "latest_update": "2026-04-23"
+        "latest_update": "2026-04-24"
     },
     {
         "code": "688090",
         "name": "瑞松科技",
         "date": "2026-04-20",
         "price": 72.22,
-        "latest_price": 72.34,
+        "latest_price": 72.5,
         "eps": -0.05,
-        "latest_update": "2026-04-23"
+        "latest_update": "2026-04-24"
     },
     {
         "code": "301018",
         "name": "申菱环境",
         "date": "2026-04-20",
         "price": 126.99,
-        "latest_price": 124.1,
+        "latest_price": 125.16,
         "eps": 0.564,
-        "latest_update": "2026-04-23"
+        "latest_update": "2026-04-24"
     },
     {
         "code": "300342",
@@ -1505,45 +1505,45 @@
         "name": "新益昌",
         "date": "2026-04-21",
         "price": 102.52,
-        "latest_price": 99.8,
+        "latest_price": 100.81,
         "eps": 0.077,
-        "latest_update": "2026-04-23"
+        "latest_update": "2026-04-24"
     },
     {
         "code": "688150",
         "name": "莱特光电",
         "date": "2026-04-21",
         "price": 54.44,
-        "latest_price": 53.35,
+        "latest_price": 55.0,
         "eps": 0.447,
-        "latest_update": "2026-04-23"
+        "latest_update": "2026-04-24"
     },
     {
         "code": "301070",
         "name": "开勒股份",
         "date": "2026-04-21",
         "price": 99.93,
-        "latest_price": 98.72,
+        "latest_price": 96.8,
         "eps": 0.24,
-        "latest_update": "2026-04-23"
+        "latest_update": "2026-04-24"
     },
     {
         "code": "603002",
         "name": "宏昌电子",
         "date": "2026-04-21",
         "price": 13.82,
-        "latest_price": 13.87,
+        "latest_price": 14.4,
         "eps": 0.022,
-        "latest_update": "2026-04-23"
+        "latest_update": "2026-04-24"
     },
     {
         "code": "300342",
         "name": "天银机电",
         "date": "2026-04-21",
         "price": 67.99,
-        "latest_price": 72.33,
+        "latest_price": 71.92,
         "eps": 0.03,
-        "latest_update": "2026-04-23"
+        "latest_update": "2026-04-24"
     },
     {
         "code": "601869",
@@ -1560,9 +1560,10 @@
         "name": "剑桥科技",
         "date": "2026-04-22",
         "price": 167.06,
-        "latest_price": 164.33,
+        "latest_price": 155.16,
         "eps": 0.747,
-        "latest_update": "2026-04-23"
+        "latest_update": "2026-04-24",
+        "stop_loss_date": "2026-04-24"
     },
     {
         "code": "688143",
@@ -1593,5 +1594,50 @@
         "eps": 0.464,
         "latest_update": "2026-04-23",
         "stop_loss_date": "2026-04-23"
+    },
+    {
+        "code": "688227",
+        "name": "品高股份",
+        "date": "2026-04-23",
+        "price": 114.08,
+        "latest_price": 120.15,
+        "eps": -0.465,
+        "latest_update": "2026-04-24"
+    },
+    {
+        "code": "600105",
+        "name": "永鼎股份",
+        "date": "2026-04-23",
+        "price": 48.51,
+        "latest_price": 49.73,
+        "eps": 0.109,
+        "latest_update": "2026-04-24"
+    },
+    {
+        "code": "603115",
+        "name": "海星股份",
+        "date": "2026-04-23",
+        "price": 57.56,
+        "latest_price": 59.0,
+        "eps": 0.164,
+        "latest_update": "2026-04-24"
+    },
+    {
+        "code": "002281",
+        "name": "光迅科技",
+        "date": "2026-04-23",
+        "price": 131.59,
+        "latest_price": 129.23,
+        "eps": 0.297,
+        "latest_update": "2026-04-24"
+    },
+    {
+        "code": "002947",
+        "name": "恒铭达",
+        "date": "2026-04-23",
+        "price": 77.95,
+        "latest_price": 82.59,
+        "eps": 2.076,
+        "latest_update": "2026-04-24"
     }
 ]
