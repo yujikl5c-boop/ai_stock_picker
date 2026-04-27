@@ -1310,9 +1310,10 @@
         "name": "航锦科技",
         "date": "2026-04-17",
         "price": 14.93,
-        "latest_price": 14.56,
+        "latest_price": 14.14,
         "eps": 0.023,
-        "latest_update": "2026-04-24"
+        "latest_update": "2026-04-27",
+        "stop_loss_date": "2026-04-27"
     },
     {
         "code": "300033",
@@ -1369,9 +1370,9 @@
         "name": "辽宁能源",
         "date": "2026-04-20",
         "price": 3.88,
-        "latest_price": 3.98,
+        "latest_price": 4.1,
         "eps": -0.076,
-        "latest_update": "2026-04-24"
+        "latest_update": "2026-04-27"
     },
     {
         "code": "600513",
@@ -1398,45 +1399,45 @@
         "name": "国新能源",
         "date": "2026-04-20",
         "price": 3.2,
-        "latest_price": 3.32,
+        "latest_price": 3.37,
         "eps": -0.005,
-        "latest_update": "2026-04-24"
+        "latest_update": "2026-04-27"
     },
     {
         "code": "600758",
         "name": "辽宁能源",
         "date": "2026-04-21",
         "price": 3.98,
-        "latest_price": 3.98,
+        "latest_price": 4.1,
         "eps": -0.076,
-        "latest_update": "2026-04-24"
+        "latest_update": "2026-04-27"
     },
     {
         "code": "002893",
         "name": "京能热力",
         "date": "2026-04-21",
         "price": 10.43,
-        "latest_price": 10.61,
+        "latest_price": 10.46,
         "eps": 0.219,
-        "latest_update": "2026-04-24"
+        "latest_update": "2026-04-27"
     },
     {
         "code": "600617",
         "name": "国新能源",
         "date": "2026-04-21",
         "price": 3.26,
-        "latest_price": 3.32,
+        "latest_price": 3.37,
         "eps": -0.005,
-        "latest_update": "2026-04-24"
+        "latest_update": "2026-04-27"
     },
     {
         "code": "600792",
         "name": "云煤能源",
         "date": "2026-04-21",
         "price": 4.01,
-        "latest_price": 4.19,
+        "latest_price": 4.32,
         "eps": -0.164,
-        "latest_update": "2026-04-24"
+        "latest_update": "2026-04-27"
     },
     {
         "code": "300264",
@@ -1453,9 +1454,9 @@
         "name": "航锦科技",
         "date": "2026-04-22",
         "price": 14.47,
-        "latest_price": 14.56,
+        "latest_price": 14.14,
         "eps": 0.023,
-        "latest_update": "2026-04-24"
+        "latest_update": "2026-04-27"
     },
     {
         "code": "603568",
@@ -1464,16 +1465,16 @@
         "price": 20.96,
         "latest_price": 20.83,
         "eps": 1.294,
-        "latest_update": "2026-04-24"
+        "latest_update": "2026-04-27"
     },
     {
         "code": "688678",
         "name": "福立旺",
         "date": "2026-04-22",
         "price": 23.67,
-        "latest_price": 23.1,
+        "latest_price": 23.22,
         "eps": 0.137,
-        "latest_update": "2026-04-24"
+        "latest_update": "2026-04-27"
     },
     {
         "code": "300033",
@@ -1490,9 +1491,9 @@
         "name": "亿晶光电",
         "date": "2026-04-22",
         "price": 3.5,
-        "latest_price": 3.72,
+        "latest_price": 3.58,
         "eps": -0.181,
-        "latest_update": "2026-04-24"
+        "latest_update": "2026-04-27"
     },
     {
         "code": "603568",
@@ -1501,6 +1502,51 @@
         "price": 21.27,
         "latest_price": 20.83,
         "eps": 1.294,
-        "latest_update": "2026-04-24"
+        "latest_update": "2026-04-27"
+    },
+    {
+        "code": "600513",
+        "name": "联环药业",
+        "date": "2026-04-24",
+        "price": 20.29,
+        "latest_price": 20.55,
+        "eps": -0.344,
+        "latest_update": "2026-04-27"
+    },
+    {
+        "code": "603169",
+        "name": "兰石重装",
+        "date": "2026-04-24",
+        "price": 8.32,
+        "latest_price": 8.37,
+        "eps": -0.456,
+        "latest_update": "2026-04-27"
+    },
+    {
+        "code": "000818",
+        "name": "航锦科技",
+        "date": "2026-04-24",
+        "price": 14.67,
+        "latest_price": 14.14,
+        "eps": 0.023,
+        "latest_update": "2026-04-27"
+    },
+    {
+        "code": "603718",
+        "name": "海利生物",
+        "date": "2026-04-24",
+        "price": 3.97,
+        "latest_price": 3.87,
+        "eps": 0.031,
+        "latest_update": "2026-04-27"
+    },
+    {
+        "code": "300386",
+        "name": "飞天诚信",
+        "date": "2026-04-24",
+        "price": 12.78,
+        "latest_price": 12.85,
+        "eps": -0.067,
+        "latest_update": "2026-04-27"
     }
 ]
