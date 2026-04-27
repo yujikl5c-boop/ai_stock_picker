@@ -1469,7 +1469,7 @@
         "name": "鸿富瀚",
         "date": "2026-04-20",
         "price": 174.91,
-        "latest_price": 190.44,
+        "latest_price": 190.91,
         "eps": 1.127,
         "latest_update": "2026-04-27"
     },
@@ -1478,7 +1478,7 @@
         "name": "瑞松科技",
         "date": "2026-04-20",
         "price": 72.22,
-        "latest_price": 74.04,
+        "latest_price": 74.33,
         "eps": -0.05,
         "latest_update": "2026-04-27"
     },
@@ -1487,7 +1487,7 @@
         "name": "申菱环境",
         "date": "2026-04-20",
         "price": 126.99,
-        "latest_price": 125.34,
+        "latest_price": 125.54,
         "eps": 0.564,
         "latest_update": "2026-04-27"
     },
@@ -1506,7 +1506,7 @@
         "name": "新益昌",
         "date": "2026-04-21",
         "price": 102.52,
-        "latest_price": 101.12,
+        "latest_price": 101.18,
         "eps": 0.077,
         "latest_update": "2026-04-27"
     },
@@ -1515,7 +1515,7 @@
         "name": "莱特光电",
         "date": "2026-04-21",
         "price": 54.44,
-        "latest_price": 52.9,
+        "latest_price": 52.93,
         "eps": 0.447,
         "latest_update": "2026-04-27"
     },
@@ -1524,7 +1524,7 @@
         "name": "开勒股份",
         "date": "2026-04-21",
         "price": 99.93,
-        "latest_price": 97.29,
+        "latest_price": 97.04,
         "eps": 0.24,
         "latest_update": "2026-04-27"
     },
@@ -1533,7 +1533,7 @@
         "name": "宏昌电子",
         "date": "2026-04-21",
         "price": 13.82,
-        "latest_price": 14.95,
+        "latest_price": 15.15,
         "eps": 0.022,
         "latest_update": "2026-04-27"
     },
@@ -1542,7 +1542,7 @@
         "name": "天银机电",
         "date": "2026-04-21",
         "price": 67.99,
-        "latest_price": 70.98,
+        "latest_price": 71.82,
         "eps": 0.03,
         "latest_update": "2026-04-27"
     },
@@ -1601,7 +1601,7 @@
         "name": "品高股份",
         "date": "2026-04-23",
         "price": 114.08,
-        "latest_price": 122.0,
+        "latest_price": 122.74,
         "eps": -0.465,
         "latest_update": "2026-04-27"
     },
@@ -1610,7 +1610,7 @@
         "name": "永鼎股份",
         "date": "2026-04-23",
         "price": 48.51,
-        "latest_price": 48.17,
+        "latest_price": 48.52,
         "eps": 0.109,
         "latest_update": "2026-04-27"
     },
@@ -1619,7 +1619,7 @@
         "name": "海星股份",
         "date": "2026-04-23",
         "price": 57.56,
-        "latest_price": 58.88,
+        "latest_price": 58.62,
         "eps": 0.164,
         "latest_update": "2026-04-27"
     },
@@ -1628,7 +1628,7 @@
         "name": "光迅科技",
         "date": "2026-04-23",
         "price": 131.59,
-        "latest_price": 134.12,
+        "latest_price": 134.52,
         "eps": 0.297,
         "latest_update": "2026-04-27"
     },
@@ -1637,7 +1637,7 @@
         "name": "恒铭达",
         "date": "2026-04-23",
         "price": 77.95,
-        "latest_price": 80.79,
+        "latest_price": 80.64,
         "eps": 2.076,
         "latest_update": "2026-04-27"
     },
@@ -1646,7 +1646,7 @@
         "name": "杰华特",
         "date": "2026-04-24",
         "price": 83.6,
-        "latest_price": 85.11,
+        "latest_price": 84.38,
         "eps": -1.592,
         "latest_update": "2026-04-27"
     },
@@ -1655,7 +1655,7 @@
         "name": "中船特气",
         "date": "2026-04-24",
         "price": 73.47,
-        "latest_price": 71.96,
+        "latest_price": 71.4,
         "eps": 0.191,
         "latest_update": "2026-04-27"
     },
@@ -1664,7 +1664,7 @@
         "name": "天华新能",
         "date": "2026-04-24",
         "price": 91.99,
-        "latest_price": 93.78,
+        "latest_price": 94.23,
         "eps": 1.166,
         "latest_update": "2026-04-27"
     },
@@ -1673,7 +1673,7 @@
         "name": "恒铭达",
         "date": "2026-04-24",
         "price": 82.59,
-        "latest_price": 80.79,
+        "latest_price": 80.64,
         "eps": 2.076,
         "latest_update": "2026-04-27"
     },
@@ -1682,7 +1682,7 @@
         "name": "莱特光电",
         "date": "2026-04-24",
         "price": 55.0,
-        "latest_price": 52.9,
+        "latest_price": 52.93,
         "eps": 0.447,
         "latest_update": "2026-04-27"
     }
