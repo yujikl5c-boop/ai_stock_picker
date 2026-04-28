@@ -1469,27 +1469,30 @@
         "name": "鸿富瀚",
         "date": "2026-04-20",
         "price": 174.91,
-        "latest_price": 190.91,
+        "latest_price": 185.82,
         "eps": 1.127,
-        "latest_update": "2026-04-27"
+        "latest_update": "2026-04-28",
+        "expire_date": "2026-04-28"
     },
     {
         "code": "688090",
         "name": "瑞松科技",
         "date": "2026-04-20",
         "price": 72.22,
-        "latest_price": 74.33,
+        "latest_price": 69.39,
         "eps": -0.05,
-        "latest_update": "2026-04-27"
+        "latest_update": "2026-04-28",
+        "expire_date": "2026-04-28"
     },
     {
         "code": "301018",
         "name": "申菱环境",
         "date": "2026-04-20",
         "price": 126.99,
-        "latest_price": 125.54,
+        "latest_price": 121.25,
         "eps": 0.564,
-        "latest_update": "2026-04-27"
+        "latest_update": "2026-04-28",
+        "stop_loss_date": "2026-04-28"
     },
     {
         "code": "300342",
@@ -1506,45 +1509,47 @@
         "name": "新益昌",
         "date": "2026-04-21",
         "price": 102.52,
-        "latest_price": 101.18,
+        "latest_price": 98.9,
         "eps": 0.077,
-        "latest_update": "2026-04-27"
+        "latest_update": "2026-04-28"
     },
     {
         "code": "688150",
         "name": "莱特光电",
         "date": "2026-04-21",
         "price": 54.44,
-        "latest_price": 52.93,
+        "latest_price": 50.79,
         "eps": 0.447,
-        "latest_update": "2026-04-27"
+        "latest_update": "2026-04-28",
+        "stop_loss_date": "2026-04-28"
     },
     {
         "code": "301070",
         "name": "开勒股份",
         "date": "2026-04-21",
         "price": 99.93,
-        "latest_price": 97.04,
+        "latest_price": 94.0,
         "eps": 0.24,
-        "latest_update": "2026-04-27"
+        "latest_update": "2026-04-28",
+        "stop_loss_date": "2026-04-28"
     },
     {
         "code": "603002",
         "name": "宏昌电子",
         "date": "2026-04-21",
         "price": 13.82,
-        "latest_price": 15.15,
+        "latest_price": 14.8,
         "eps": 0.022,
-        "latest_update": "2026-04-27"
+        "latest_update": "2026-04-28"
     },
     {
         "code": "300342",
         "name": "天银机电",
         "date": "2026-04-21",
         "price": 67.99,
-        "latest_price": 71.82,
+        "latest_price": 68.4,
         "eps": 0.03,
-        "latest_update": "2026-04-27"
+        "latest_update": "2026-04-28"
     },
     {
         "code": "601869",
@@ -1601,89 +1606,140 @@
         "name": "品高股份",
         "date": "2026-04-23",
         "price": 114.08,
-        "latest_price": 122.74,
+        "latest_price": 128.29,
         "eps": -0.465,
-        "latest_update": "2026-04-27"
+        "latest_update": "2026-04-28",
+        "take_profit_date": "2026-04-28"
     },
     {
         "code": "600105",
         "name": "永鼎股份",
         "date": "2026-04-23",
         "price": 48.51,
-        "latest_price": 48.52,
+        "latest_price": 44.69,
         "eps": 0.109,
-        "latest_update": "2026-04-27"
+        "latest_update": "2026-04-28",
+        "stop_loss_date": "2026-04-28"
     },
     {
         "code": "603115",
         "name": "海星股份",
         "date": "2026-04-23",
         "price": 57.56,
-        "latest_price": 58.62,
+        "latest_price": 57.94,
         "eps": 0.164,
-        "latest_update": "2026-04-27"
+        "latest_update": "2026-04-28"
     },
     {
         "code": "002281",
         "name": "光迅科技",
         "date": "2026-04-23",
         "price": 131.59,
-        "latest_price": 134.52,
+        "latest_price": 136.51,
         "eps": 0.297,
-        "latest_update": "2026-04-27"
+        "latest_update": "2026-04-28"
     },
     {
         "code": "002947",
         "name": "恒铭达",
         "date": "2026-04-23",
         "price": 77.95,
-        "latest_price": 80.64,
+        "latest_price": 76.28,
         "eps": 2.076,
-        "latest_update": "2026-04-27"
+        "latest_update": "2026-04-28"
     },
     {
         "code": "688141",
         "name": "杰华特",
         "date": "2026-04-24",
         "price": 83.6,
-        "latest_price": 84.38,
+        "latest_price": 80.08,
         "eps": -1.592,
-        "latest_update": "2026-04-27"
+        "latest_update": "2026-04-28",
+        "stop_loss_date": "2026-04-28"
     },
     {
         "code": "688146",
         "name": "中船特气",
         "date": "2026-04-24",
         "price": 73.47,
-        "latest_price": 71.4,
+        "latest_price": 74.32,
         "eps": 0.191,
-        "latest_update": "2026-04-27"
+        "latest_update": "2026-04-28"
     },
     {
         "code": "300390",
         "name": "天华新能",
         "date": "2026-04-24",
         "price": 91.99,
-        "latest_price": 94.23,
+        "latest_price": 92.94,
         "eps": 1.166,
-        "latest_update": "2026-04-27"
+        "latest_update": "2026-04-28"
     },
     {
         "code": "002947",
         "name": "恒铭达",
         "date": "2026-04-24",
         "price": 82.59,
-        "latest_price": 80.64,
+        "latest_price": 76.28,
         "eps": 2.076,
-        "latest_update": "2026-04-27"
+        "latest_update": "2026-04-28",
+        "stop_loss_date": "2026-04-28"
     },
     {
         "code": "688150",
         "name": "莱特光电",
         "date": "2026-04-24",
         "price": 55.0,
-        "latest_price": 52.93,
+        "latest_price": 50.79,
         "eps": 0.447,
-        "latest_update": "2026-04-27"
+        "latest_update": "2026-04-28",
+        "stop_loss_date": "2026-04-28"
+    },
+    {
+        "code": "300870",
+        "name": "欧陆通",
+        "date": "2026-04-27",
+        "price": 386.96,
+        "latest_price": 375.47,
+        "eps": -0.115,
+        "latest_update": "2026-04-28"
+    },
+    {
+        "code": "300390",
+        "name": "天华新能",
+        "date": "2026-04-27",
+        "price": 93.78,
+        "latest_price": 92.94,
+        "eps": 1.166,
+        "latest_update": "2026-04-28"
+    },
+    {
+        "code": "002176",
+        "name": "江特电机",
+        "date": "2026-04-27",
+        "price": 14.48,
+        "latest_price": 14.65,
+        "eps": -0.066,
+        "latest_update": "2026-04-28"
+    },
+    {
+        "code": "002475",
+        "name": "立讯精密",
+        "date": "2026-04-27",
+        "price": 72.1,
+        "latest_price": 69.13,
+        "eps": 2.278,
+        "latest_update": "2026-04-28",
+        "stop_loss_date": "2026-04-28"
+    },
+    {
+        "code": "300604",
+        "name": "长川科技",
+        "date": "2026-04-27",
+        "price": 174.46,
+        "latest_price": 178.83,
+        "eps": 0.556,
+        "latest_update": "2026-04-28"
     }
 ]
