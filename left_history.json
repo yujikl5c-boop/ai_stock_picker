@@ -1410,7 +1410,7 @@
         "name": "辽宁能源",
         "date": "2026-04-21",
         "price": 3.98,
-        "latest_price": 4.09,
+        "latest_price": 4.1,
         "eps": -0.076,
         "latest_update": "2026-04-28"
     },
@@ -1419,7 +1419,7 @@
         "name": "京能热力",
         "date": "2026-04-21",
         "price": 10.43,
-        "latest_price": 10.73,
+        "latest_price": 10.69,
         "eps": 0.219,
         "latest_update": "2026-04-28"
     },
@@ -1428,7 +1428,7 @@
         "name": "国新能源",
         "date": "2026-04-21",
         "price": 3.26,
-        "latest_price": 3.45,
+        "latest_price": 3.46,
         "eps": -0.005,
         "latest_update": "2026-04-28"
     },
@@ -1456,7 +1456,7 @@
         "name": "航锦科技",
         "date": "2026-04-22",
         "price": 14.47,
-        "latest_price": 13.95,
+        "latest_price": 14.02,
         "eps": 0.023,
         "latest_update": "2026-04-28"
     },
@@ -1465,7 +1465,7 @@
         "name": "伟明环保",
         "date": "2026-04-22",
         "price": 20.96,
-        "latest_price": 20.68,
+        "latest_price": 20.6,
         "eps": 1.294,
         "latest_update": "2026-04-28"
     },
@@ -1503,7 +1503,7 @@
         "name": "伟明环保",
         "date": "2026-04-23",
         "price": 21.27,
-        "latest_price": 20.68,
+        "latest_price": 20.6,
         "eps": 1.294,
         "latest_update": "2026-04-28"
     },
@@ -1512,7 +1512,7 @@
         "name": "联环药业",
         "date": "2026-04-24",
         "price": 20.29,
-        "latest_price": 20.54,
+        "latest_price": 20.57,
         "eps": -0.344,
         "latest_update": "2026-04-28"
     },
@@ -1521,7 +1521,7 @@
         "name": "兰石重装",
         "date": "2026-04-24",
         "price": 8.32,
-        "latest_price": 8.18,
+        "latest_price": 8.22,
         "eps": -0.456,
         "latest_update": "2026-04-28"
     },
@@ -1540,7 +1540,7 @@
         "name": "海利生物",
         "date": "2026-04-24",
         "price": 3.97,
-        "latest_price": 3.83,
+        "latest_price": 3.85,
         "eps": 0.031,
         "latest_update": "2026-04-28"
     },
@@ -1549,7 +1549,7 @@
         "name": "飞天诚信",
         "date": "2026-04-24",
         "price": 12.78,
-        "latest_price": 12.4,
+        "latest_price": 12.48,
         "eps": -0.067,
         "latest_update": "2026-04-28"
     },
@@ -1558,7 +1558,7 @@
         "name": "兰石重装",
         "date": "2026-04-27",
         "price": 8.37,
-        "latest_price": 8.18,
+        "latest_price": 8.22,
         "eps": -0.456,
         "latest_update": "2026-04-28"
     },
@@ -1567,7 +1567,7 @@
         "name": "联环药业",
         "date": "2026-04-27",
         "price": 20.55,
-        "latest_price": 20.54,
+        "latest_price": 20.57,
         "eps": -0.344,
         "latest_update": "2026-04-28"
     },
@@ -1586,7 +1586,7 @@
         "name": "海利生物",
         "date": "2026-04-27",
         "price": 3.87,
-        "latest_price": 3.83,
+        "latest_price": 3.85,
         "eps": 0.031,
         "latest_update": "2026-04-28"
     },
@@ -1595,7 +1595,7 @@
         "name": "兆丰股份",
         "date": "2026-04-27",
         "price": 61.38,
-        "latest_price": 59.71,
+        "latest_price": 59.55,
         "eps": -0.162,
         "latest_update": "2026-04-28"
     }

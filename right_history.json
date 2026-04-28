@@ -1509,7 +1509,7 @@
         "name": "新益昌",
         "date": "2026-04-21",
         "price": 102.52,
-        "latest_price": 98.9,
+        "latest_price": 100.05,
         "eps": 0.077,
         "latest_update": "2026-04-28"
     },
@@ -1538,7 +1538,7 @@
         "name": "宏昌电子",
         "date": "2026-04-21",
         "price": 13.82,
-        "latest_price": 14.8,
+        "latest_price": 14.75,
         "eps": 0.022,
         "latest_update": "2026-04-28"
     },
@@ -1547,7 +1547,7 @@
         "name": "天银机电",
         "date": "2026-04-21",
         "price": 67.99,
-        "latest_price": 68.4,
+        "latest_price": 67.85,
         "eps": 0.03,
         "latest_update": "2026-04-28"
     },
@@ -1626,7 +1626,7 @@
         "name": "海星股份",
         "date": "2026-04-23",
         "price": 57.56,
-        "latest_price": 57.94,
+        "latest_price": 57.65,
         "eps": 0.164,
         "latest_update": "2026-04-28"
     },
@@ -1635,7 +1635,7 @@
         "name": "光迅科技",
         "date": "2026-04-23",
         "price": 131.59,
-        "latest_price": 136.51,
+        "latest_price": 137.0,
         "eps": 0.297,
         "latest_update": "2026-04-28"
     },
@@ -1644,7 +1644,7 @@
         "name": "恒铭达",
         "date": "2026-04-23",
         "price": 77.95,
-        "latest_price": 76.28,
+        "latest_price": 76.88,
         "eps": 2.076,
         "latest_update": "2026-04-28"
     },
@@ -1663,7 +1663,7 @@
         "name": "中船特气",
         "date": "2026-04-24",
         "price": 73.47,
-        "latest_price": 74.32,
+        "latest_price": 74.02,
         "eps": 0.191,
         "latest_update": "2026-04-28"
     },
@@ -1672,7 +1672,7 @@
         "name": "天华新能",
         "date": "2026-04-24",
         "price": 91.99,
-        "latest_price": 92.94,
+        "latest_price": 92.99,
         "eps": 1.166,
         "latest_update": "2026-04-28"
     },
@@ -1701,7 +1701,7 @@
         "name": "欧陆通",
         "date": "2026-04-27",
         "price": 386.96,
-        "latest_price": 375.47,
+        "latest_price": 378.41,
         "eps": -0.115,
         "latest_update": "2026-04-28"
     },
@@ -1710,7 +1710,7 @@
         "name": "天华新能",
         "date": "2026-04-27",
         "price": 93.78,
-        "latest_price": 92.94,
+        "latest_price": 92.99,
         "eps": 1.166,
         "latest_update": "2026-04-28"
     },
@@ -1719,7 +1719,7 @@
         "name": "江特电机",
         "date": "2026-04-27",
         "price": 14.48,
-        "latest_price": 14.65,
+        "latest_price": 14.63,
         "eps": -0.066,
         "latest_update": "2026-04-28"
     },
@@ -1738,7 +1738,7 @@
         "name": "长川科技",
         "date": "2026-04-27",
         "price": 174.46,
-        "latest_price": 178.83,
+        "latest_price": 179.31,
         "eps": 0.556,
         "latest_update": "2026-04-28"
     }
